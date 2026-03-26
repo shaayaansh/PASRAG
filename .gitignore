@@ -1,0 +1,5 @@
+.DS_Store
+.venv/
+.venv_pas_rag/
+__pycache__/
+*.pyc
