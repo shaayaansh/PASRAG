@@ -13,7 +13,11 @@ client = SambaNova(
 )
 
 
-def generate_grounded_answer(query: Dict[str, Any], results: List[Dict[str, Any]]) -> Dict[str, Any]:
+def generate_grounded_answer(
+    query: Dict[str, Any],
+    results: List[Dict[str, Any]],
+    model_name: str = "gpt-oss-120b",
+) -> Dict[str, Any]:
 
     if not results:
         return {
@@ -123,18 +127,23 @@ Instructions:
         }
 
     try:
+        
         completion = client.chat.completions.create(
-            model="gpt-oss-120b",
+            model=model_name,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ],
             temperature=0.1,
-            max_tokens=500,
+            max_tokens=5000,
         )
 
         content = completion.choices[0].message.content or ""
         content = content.strip()
+
+        # print("USER PROMPT IS: ", user_prompt, "\n\n\n")
+        # print("MODEL RESPONSE IS: ", content)
+        # print("=="*20)
 
         # Remove accidental code fences if present.
         if content.startswith("```"):
@@ -194,6 +203,7 @@ Instructions:
         }
 
     except Exception as e:
+        print("ERROR OCCURRED:", e) 
         fallback = _fallback()
         fallback["faithfulness_notes"].append(f"Generation fallback triggered: {type(e).__name__}")
         return fallback

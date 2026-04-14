@@ -3,10 +3,10 @@
     "mode": "baseline",
     "n_queries": 423,
     "lambda_weight": 0.65,
-    "mean_recall_at_k": 0.903,
-    "mean_ndcg_at_k": 0.8577,
-    "mean_gen_f1": 0.34,
-    "mean_citation_correctness": 0.6572,
+    "mean_recall_at_k": 0.8719,
+    "mean_ndcg_at_k": 0.8091,
+    "mean_gen_f1": 0.3566,
+    "mean_citation_correctness": 0.7589,
     "mean_ale_m": 0.0
   },
   "rows": [
@@ -18,10 +18,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3366,
+      "gen_f1": 0.2804,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R1;DOC_CTX_R3;DOC_CTX_R2;DOC_CTX_R37;DOC_CTX_R141"
+      "top_doc_ids": "DOC_CTX_R1;DOC_CTX_R2;DOC_CTX_R3;DOC_CTX_S1;DOC_CTX_R177"
     },
     {
       "qid": "Q_HOTEL",
@@ -29,12 +29,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.3226,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.3333,
+      "ndcg_at_k": 0.4693,
+      "gen_f1": 0.3542,
+      "citation_correctness": 0.2,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H30;DOC_CTX_H23;DOC_CTX_H12;DOC_CTX_H80;DOC_CTX_H63"
+      "top_doc_ids": "DOC_CTX_H1;DOC_CTX_H80;DOC_CTX_H63;DOC_CTX_H27;DOC_CTX_H12"
     },
     {
       "qid": "Q_SUBWAY",
@@ -42,12 +42,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.1935,
+      "recall_at_k": 0.3333,
+      "ndcg_at_k": 0.1815,
+      "gen_f1": 0.2316,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S8;DOC_CTX_S12;DOC_CTX_S110;DOC_CTX_S56;DOC_CTX_S109"
+      "top_doc_ids": "DOC_CTX_S9;DOC_CTX_S50;DOC_CTX_S76;DOC_CTX_S21;DOC_CTX_S4"
     },
     {
       "qid": "Q_SYN_1000",
@@ -57,10 +57,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4762,
+      "gen_f1": 0.4783,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L19;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L42;DOC_CTX_L41"
+      "top_doc_ids": "DOC_CTX_L19;DOC_CTX_S103;DOC_CTX_C25;DOC_CTX_M8;DOC_CTX_PH38"
     },
     {
       "qid": "Q_SYN_1001",
@@ -70,10 +70,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3019,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5098,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B21;DOC_CTX_B25;DOC_CTX_B37;DOC_CTX_B2;DOC_CTX_B42"
+      "top_doc_ids": "DOC_CTX_B21;DOC_CTX_M32;DOC_CTX_M48;DOC_CTX_H73;DOC_CTX_M53"
     },
     {
       "qid": "Q_SYN_1003",
@@ -83,10 +83,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.325,
+      "gen_f1": 0.3457,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G2;DOC_CTX_G60;DOC_CTX_G36;DOC_CTX_G16;DOC_CTX_G20"
+      "top_doc_ids": "DOC_CTX_G36;DOC_CTX_G16;DOC_CTX_G2;DOC_CTX_G60;DOC_CTX_S17"
     },
     {
       "qid": "Q_SYN_1005",
@@ -95,11 +95,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4912,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.4727,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S117;DOC_CTX_S34;DOC_CTX_S64;DOC_CTX_S5;DOC_CTX_S35"
+      "top_doc_ids": "DOC_CTX_S64;DOC_CTX_S34;DOC_CTX_S117;DOC_CTX_S5;DOC_CTX_C30"
     },
     {
       "qid": "Q_SYN_1009",
@@ -108,11 +108,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9047,
+      "ndcg_at_k": 0.9558,
       "gen_f1": 0.2571,
-      "citation_correctness": 0.5,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T33;DOC_CTX_T10;DOC_CTX_T31;DOC_CTX_T11;DOC_CTX_T26"
+      "top_doc_ids": "DOC_CTX_T33;DOC_CTX_T31;DOC_CTX_T10;DOC_CTX_T26;DOC_CTX_T11"
     },
     {
       "qid": "Q_SYN_1011",
@@ -122,10 +122,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3836,
+      "gen_f1": 0.2466,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH64;DOC_CTX_PH25;DOC_CTX_PH28;DOC_CTX_PH43;DOC_CTX_PH57"
+      "top_doc_ids": "DOC_CTX_PH25;DOC_CTX_PH64;DOC_CTX_G21;DOC_CTX_G18;DOC_CTX_B34"
     },
     {
       "qid": "Q_SYN_1012",
@@ -133,12 +133,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.7877,
-      "gen_f1": 0.2535,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.5414,
+      "gen_f1": 0.3333,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H74;DOC_CTX_H66;DOC_CTX_H39;DOC_CTX_H41;DOC_CTX_H37"
+      "top_doc_ids": "DOC_CTX_H37;DOC_CTX_H82;DOC_CTX_H41;DOC_CTX_H9;DOC_CTX_H26"
     },
     {
       "qid": "Q_SYN_1018",
@@ -148,10 +148,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3235,
+      "gen_f1": 0.5085,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS25;DOC_CTX_HS11;DOC_CTX_HS18;DOC_CTX_HS20;DOC_CTX_HS17"
+      "top_doc_ids": "DOC_CTX_HS11;DOC_CTX_HS25;DOC_CTX_PH23;DOC_CTX_R120;DOC_CTX_PH9"
     },
     {
       "qid": "Q_SYN_1021",
@@ -161,10 +161,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3864,
+      "gen_f1": 0.3448,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S3;DOC_CTX_S2;DOC_CTX_S114;DOC_CTX_S28;DOC_CTX_S58"
+      "top_doc_ids": "DOC_CTX_S3;DOC_CTX_S114;DOC_CTX_S2;DOC_CTX_S28;DOC_CTX_C15"
     },
     {
       "qid": "Q_SYN_1022",
@@ -174,10 +174,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3273,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3611,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C101;DOC_CTX_C45;DOC_CTX_C11;DOC_CTX_C72;DOC_CTX_C15"
+      "top_doc_ids": "DOC_CTX_C101;DOC_CTX_G61;DOC_CTX_L5;DOC_CTX_L31;DOC_CTX_L22"
     },
     {
       "qid": "Q_SYN_1024",
@@ -186,11 +186,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.5,
-      "ndcg_at_k": 0.4415,
-      "gen_f1": 0.2769,
+      "ndcg_at_k": 0.6367,
+      "gen_f1": 0.4839,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P84;DOC_CTX_P59;DOC_CTX_P8;DOC_CTX_P13;DOC_CTX_P52"
+      "top_doc_ids": "DOC_CTX_P56;DOC_CTX_P59;DOC_CTX_P57;DOC_CTX_L5;DOC_CTX_P87"
     },
     {
       "qid": "Q_SYN_1027",
@@ -200,10 +200,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.274,
+      "gen_f1": 0.25,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C21;DOC_CTX_C1;DOC_CTX_C48;DOC_CTX_C14;DOC_CTX_C89"
+      "top_doc_ids": "DOC_CTX_C21;DOC_CTX_C1;DOC_CTX_S93;DOC_CTX_S73;DOC_CTX_G21"
     },
     {
       "qid": "Q_SYN_1033",
@@ -211,12 +211,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.4144,
-      "gen_f1": 0.2254,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.2,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R175;DOC_CTX_R97;DOC_CTX_R131;DOC_CTX_R103;DOC_CTX_R9"
+      "top_doc_ids": "DOC_CTX_R102;DOC_CTX_R175;DOC_CTX_S71;DOC_CTX_S30;DOC_CTX_S81"
     },
     {
       "qid": "Q_SYN_1038",
@@ -226,10 +226,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3235,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4474,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G23;DOC_CTX_G21;DOC_CTX_G18;DOC_CTX_G71;DOC_CTX_G9"
+      "top_doc_ids": "DOC_CTX_G23;DOC_CTX_G21;DOC_CTX_PH28;DOC_CTX_C1;DOC_CTX_L1"
     },
     {
       "qid": "Q_SYN_1039",
@@ -238,11 +238,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.25,
-      "ndcg_at_k": 0.1952,
-      "gen_f1": 0.3953,
+      "ndcg_at_k": 0.3904,
+      "gen_f1": 0.367,
       "citation_correctness": 0.3333,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H5;DOC_CTX_H71;DOC_CTX_H13;DOC_CTX_H84;DOC_CTX_H29"
+      "top_doc_ids": "DOC_CTX_H13;DOC_CTX_H71;DOC_CTX_H5;DOC_CTX_H31;DOC_CTX_P37"
     },
     {
       "qid": "Q_SYN_1042",
@@ -252,10 +252,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4746,
+      "gen_f1": 0.4054,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S112;DOC_CTX_S39;DOC_CTX_S35;DOC_CTX_S65;DOC_CTX_S70"
+      "top_doc_ids": "DOC_CTX_S39;DOC_CTX_S112;DOC_CTX_PH64;DOC_CTX_HS23;DOC_CTX_H26"
     },
     {
       "qid": "Q_SYN_1048",
@@ -264,11 +264,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9558,
+      "ndcg_at_k": 0.9829,
       "gen_f1": 0.3846,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L29;DOC_CTX_L20;DOC_CTX_L40;DOC_CTX_L32;DOC_CTX_L31"
+      "top_doc_ids": "DOC_CTX_L31;DOC_CTX_L29;DOC_CTX_L32;DOC_CTX_L40;DOC_CTX_L20"
     },
     {
       "qid": "Q_SYN_1051",
@@ -276,12 +276,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.4415,
-      "gen_f1": 0.3423,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.1681,
+      "gen_f1": 0.2687,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P62;DOC_CTX_P71;DOC_CTX_P73;DOC_CTX_P84;DOC_CTX_P59"
+      "top_doc_ids": "DOC_CTX_P56;DOC_CTX_P87;DOC_CTX_P59;DOC_CTX_P73;DOC_CTX_P80"
     },
     {
       "qid": "Q_SYN_1053",
@@ -291,10 +291,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2333,
+      "gen_f1": 0.1905,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH22;DOC_CTX_PH63;DOC_CTX_PH36;DOC_CTX_PH44;DOC_CTX_PH3"
+      "top_doc_ids": "DOC_CTX_PH22;DOC_CTX_S7;DOC_CTX_G73;DOC_CTX_R155;DOC_CTX_S84"
     },
     {
       "qid": "Q_SYN_1055",
@@ -302,12 +302,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.5856,
-      "gen_f1": 0.3,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.8319,
+      "gen_f1": 0.3038,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C11;DOC_CTX_C72;DOC_CTX_C101;DOC_CTX_C22;DOC_CTX_C74"
+      "top_doc_ids": "DOC_CTX_C59;DOC_CTX_C11;DOC_CTX_C101;DOC_CTX_C72;DOC_CTX_C22"
     },
     {
       "qid": "Q_SYN_1056",
@@ -317,10 +317,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3125,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH57;DOC_CTX_PH64;DOC_CTX_PH28;DOC_CTX_PH25;DOC_CTX_PH43"
+      "top_doc_ids": "DOC_CTX_PH57;DOC_CTX_HS3;DOC_CTX_L1;DOC_CTX_B22;DOC_CTX_R180"
     },
     {
       "qid": "Q_SYN_1057",
@@ -330,10 +330,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4889,
+      "gen_f1": 0.3774,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T13;DOC_CTX_T9;DOC_CTX_T25;DOC_CTX_T20;DOC_CTX_T6"
+      "top_doc_ids": "DOC_CTX_T13;DOC_CTX_S76;DOC_CTX_S15;DOC_CTX_S40;DOC_CTX_PH37"
     },
     {
       "qid": "Q_SYN_1060",
@@ -341,12 +341,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3175,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.6131,
+      "gen_f1": 0.3143,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P42;DOC_CTX_P57;DOC_CTX_P18;DOC_CTX_P12;DOC_CTX_P30"
+      "top_doc_ids": "DOC_CTX_P57;DOC_CTX_L5;DOC_CTX_L31;DOC_CTX_M21;DOC_CTX_L22"
     },
     {
       "qid": "Q_SYN_1063",
@@ -356,10 +356,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 0.0,
       "ndcg_at_k": 0.0,
-      "gen_f1": 0.3371,
+      "gen_f1": 0.3182,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S8;DOC_CTX_S18;DOC_CTX_S12;DOC_CTX_S16;DOC_CTX_S31"
+      "top_doc_ids": "DOC_CTX_S22;DOC_CTX_S9;DOC_CTX_S31;DOC_CTX_S16;DOC_CTX_S38"
     },
     {
       "qid": "Q_SYN_1066",
@@ -369,10 +369,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3457,
+      "gen_f1": 0.3492,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L22;DOC_CTX_L31;DOC_CTX_L5;DOC_CTX_L25;DOC_CTX_L33"
+      "top_doc_ids": "DOC_CTX_L5;DOC_CTX_L31;DOC_CTX_L22;DOC_CTX_M21;DOC_CTX_B16"
     },
     {
       "qid": "Q_SYN_1070",
@@ -382,10 +382,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.1887,
+      "gen_f1": 0.1091,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H47;DOC_CTX_H7;DOC_CTX_H29;DOC_CTX_H18;DOC_CTX_H83"
+      "top_doc_ids": "DOC_CTX_H47;DOC_CTX_H7;DOC_CTX_S50;DOC_CTX_S18;DOC_CTX_S119"
     },
     {
       "qid": "Q_SYN_1072",
@@ -393,12 +393,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3117,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.5925,
+      "gen_f1": 0.2368,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C11;DOC_CTX_C72;DOC_CTX_C59;DOC_CTX_C45;DOC_CTX_C53"
+      "top_doc_ids": "DOC_CTX_C53;DOC_CTX_C72;DOC_CTX_C11;DOC_CTX_H2;DOC_CTX_C59"
     },
     {
       "qid": "Q_SYN_1075",
@@ -406,12 +406,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.8048,
-      "gen_f1": 0.4545,
-      "citation_correctness": 0.6,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.2812,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R44;DOC_CTX_R104;DOC_CTX_R114;DOC_CTX_R81;DOC_CTX_R132"
+      "top_doc_ids": "DOC_CTX_C36;DOC_CTX_C42;DOC_CTX_G36;DOC_CTX_P37;DOC_CTX_P21"
     },
     {
       "qid": "Q_SYN_1076",
@@ -420,11 +420,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.25,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.4307,
+      "gen_f1": 0.3478,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R75;DOC_CTX_R1001;DOC_CTX_R89;DOC_CTX_R159;DOC_CTX_R18"
+      "top_doc_ids": "DOC_CTX_H66;DOC_CTX_T2;DOC_CTX_P44;DOC_CTX_R75;DOC_CTX_G35"
     },
     {
       "qid": "Q_SYN_1078",
@@ -432,12 +432,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4516,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.6131,
+      "gen_f1": 0.4,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS22;DOC_CTX_HS18;DOC_CTX_HS20;DOC_CTX_HS17;DOC_CTX_HS6"
+      "top_doc_ids": "DOC_CTX_HS22;DOC_CTX_P21;DOC_CTX_P37;DOC_CTX_PH60;DOC_CTX_P88"
     },
     {
       "qid": "Q_SYN_1081",
@@ -447,10 +447,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4935,
+      "gen_f1": 0.5067,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S36;DOC_CTX_S45;DOC_CTX_S66;DOC_CTX_S67;DOC_CTX_S48"
+      "top_doc_ids": "DOC_CTX_S67;DOC_CTX_S45;DOC_CTX_S36;DOC_CTX_S66;DOC_CTX_R16"
     },
     {
       "qid": "Q_SYN_1085",
@@ -460,10 +460,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1509,
+      "gen_f1": 0.1481,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R5;DOC_CTX_R1001;DOC_CTX_R89;DOC_CTX_R159;DOC_CTX_R18"
+      "top_doc_ids": "DOC_CTX_R5;DOC_CTX_H70;DOC_CTX_T6;DOC_CTX_C1;DOC_CTX_M40"
     },
     {
       "qid": "Q_SYN_1087",
@@ -472,11 +472,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3333,
+      "ndcg_at_k": 0.9469,
+      "gen_f1": 0.3377,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R99;DOC_CTX_R28;DOC_CTX_R5;DOC_CTX_R57;DOC_CTX_R71"
+      "top_doc_ids": "DOC_CTX_R28;DOC_CTX_R99;DOC_CTX_P33;DOC_CTX_C1;DOC_CTX_R5"
     },
     {
       "qid": "Q_SYN_1088",
@@ -485,11 +485,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.321,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.1034,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H47;DOC_CTX_H7;DOC_CTX_H69;DOC_CTX_H42;DOC_CTX_H24"
+      "top_doc_ids": "DOC_CTX_H7;DOC_CTX_H47;DOC_CTX_R141;DOC_CTX_B47;DOC_CTX_S50"
     },
     {
       "qid": "Q_SYN_1089",
@@ -498,11 +498,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3529,
+      "ndcg_at_k": 0.6309,
+      "gen_f1": 0.3768,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T16;DOC_CTX_T5;DOC_CTX_T24;DOC_CTX_T1;DOC_CTX_T27"
+      "top_doc_ids": "DOC_CTX_T5;DOC_CTX_T16;DOC_CTX_S3;DOC_CTX_M11;DOC_CTX_L15"
     },
     {
       "qid": "Q_SYN_1090",
@@ -510,12 +510,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3947,
+      "recall_at_k": 0.6667,
+      "ndcg_at_k": 0.7654,
+      "gen_f1": 0.3881,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P95;DOC_CTX_P3;DOC_CTX_P94;DOC_CTX_P18;DOC_CTX_P12"
+      "top_doc_ids": "DOC_CTX_P95;DOC_CTX_P94;DOC_CTX_M17;DOC_CTX_S99;DOC_CTX_R115"
     },
     {
       "qid": "Q_SYN_1096",
@@ -528,7 +528,7 @@
       "gen_f1": 0.4857,
       "citation_correctness": 0.4,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P37;DOC_CTX_P21;DOC_CTX_P90;DOC_CTX_P81;DOC_CTX_P88"
+      "top_doc_ids": "DOC_CTX_P37;DOC_CTX_P88;DOC_CTX_P90;DOC_CTX_P21;DOC_CTX_P81"
     },
     {
       "qid": "Q_SYN_1099",
@@ -538,10 +538,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2545,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5185,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L38;DOC_CTX_L25;DOC_CTX_L8;DOC_CTX_L15;DOC_CTX_L43"
+      "top_doc_ids": "DOC_CTX_L38;DOC_CTX_H31;DOC_CTX_B8;DOC_CTX_B19;DOC_CTX_B3"
     },
     {
       "qid": "Q_SYN_1108",
@@ -550,11 +550,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3636,
+      "ndcg_at_k": 0.9675,
+      "gen_f1": 0.4359,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA9;DOC_CTX_BA8;DOC_CTX_BA26;DOC_CTX_BA4;DOC_CTX_BA11"
+      "top_doc_ids": "DOC_CTX_BA26;DOC_CTX_BA8;DOC_CTX_H2;DOC_CTX_BA9;DOC_CTX_P8"
     },
     {
       "qid": "Q_SYN_1110",
@@ -564,10 +564,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3429,
+      "gen_f1": 0.3288,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P13;DOC_CTX_P29;DOC_CTX_P52;DOC_CTX_P62;DOC_CTX_P71"
+      "top_doc_ids": "DOC_CTX_P13;DOC_CTX_P29;DOC_CTX_P52;DOC_CTX_H80;DOC_CTX_S111"
     },
     {
       "qid": "Q_SYN_1111",
@@ -577,10 +577,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4524,
+      "gen_f1": 0.3902,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S35;DOC_CTX_S70;DOC_CTX_S82;DOC_CTX_S104;DOC_CTX_S6"
+      "top_doc_ids": "DOC_CTX_S70;DOC_CTX_S35;DOC_CTX_S104;DOC_CTX_S82;DOC_CTX_C52"
     },
     {
       "qid": "Q_SYN_1114",
@@ -588,12 +588,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.7095,
-      "gen_f1": 0.3284,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.5414,
+      "gen_f1": 0.3235,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T38;DOC_CTX_T21;DOC_CTX_T7;DOC_CTX_T16;DOC_CTX_T19"
+      "top_doc_ids": "DOC_CTX_T38;DOC_CTX_T21;DOC_CTX_T7;DOC_CTX_P37;DOC_CTX_T19"
     },
     {
       "qid": "Q_SYN_1117",
@@ -601,12 +601,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.2903,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.3509,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P71;DOC_CTX_P42;DOC_CTX_P84;DOC_CTX_P59;DOC_CTX_P8"
+      "top_doc_ids": "DOC_CTX_M9;DOC_CTX_M21;DOC_CTX_L5;DOC_CTX_L31;DOC_CTX_L22"
     },
     {
       "qid": "Q_SYN_1127",
@@ -616,10 +616,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4,
+      "gen_f1": 0.4068,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P79;DOC_CTX_P12;DOC_CTX_P34;DOC_CTX_P7;DOC_CTX_P39"
+      "top_doc_ids": "DOC_CTX_P79;DOC_CTX_L18;DOC_CTX_S69;DOC_CTX_S115;DOC_CTX_S65"
     },
     {
       "qid": "Q_SYN_1129",
@@ -629,10 +629,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2128,
+      "gen_f1": 0.2041,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H64;DOC_CTX_H85;DOC_CTX_H21;DOC_CTX_H8;DOC_CTX_H14"
+      "top_doc_ids": "DOC_CTX_H64;DOC_CTX_G42;DOC_CTX_H73;DOC_CTX_H15;DOC_CTX_H21"
     },
     {
       "qid": "Q_SYN_1131",
@@ -642,10 +642,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.338,
+      "gen_f1": 0.2817,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G8;DOC_CTX_G69;DOC_CTX_G57;DOC_CTX_G28;DOC_CTX_G23"
+      "top_doc_ids": "DOC_CTX_G8;DOC_CTX_G57;DOC_CTX_G69;DOC_CTX_R76;DOC_CTX_C103"
     },
     {
       "qid": "Q_SYN_1133",
@@ -653,12 +653,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.2273,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.4255,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R141;DOC_CTX_R31;DOC_CTX_R44;DOC_CTX_R104;DOC_CTX_R114"
+      "top_doc_ids": "DOC_CTX_C59;DOC_CTX_T21;DOC_CTX_C11;DOC_CTX_C81;DOC_CTX_BA3"
     },
     {
       "qid": "Q_SYN_1135",
@@ -666,12 +666,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9829,
-      "gen_f1": 0.3824,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.3904,
+      "gen_f1": 0.3188,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B12;DOC_CTX_B44;DOC_CTX_B11;DOC_CTX_B43;DOC_CTX_B45"
+      "top_doc_ids": "DOC_CTX_B12;DOC_CTX_G30;DOC_CTX_G57;DOC_CTX_B28;DOC_CTX_B43"
     },
     {
       "qid": "Q_SYN_1136",
@@ -681,10 +681,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1538,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5333,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH35;DOC_CTX_PH11;DOC_CTX_PH43;DOC_CTX_PH4;DOC_CTX_PH57"
+      "top_doc_ids": "DOC_CTX_PH35;DOC_CTX_PH11;DOC_CTX_S96;DOC_CTX_H79;DOC_CTX_HS13"
     },
     {
       "qid": "Q_SYN_1141",
@@ -693,11 +693,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4898,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.6309,
+      "gen_f1": 0.2182,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L15;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L42;DOC_CTX_L41"
+      "top_doc_ids": "DOC_CTX_P37;DOC_CTX_L15;DOC_CTX_B17;DOC_CTX_P90;DOC_CTX_C36"
     },
     {
       "qid": "Q_SYN_1144",
@@ -705,12 +705,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.25,
-      "ndcg_at_k": 0.1681,
-      "gen_f1": 0.3291,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.6367,
+      "gen_f1": 0.375,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M35;DOC_CTX_M47;DOC_CTX_M1;DOC_CTX_M18;DOC_CTX_M11"
+      "top_doc_ids": "DOC_CTX_M18;DOC_CTX_M24;DOC_CTX_M11;DOC_CTX_M35;DOC_CTX_M1"
     },
     {
       "qid": "Q_SYN_1145",
@@ -719,11 +719,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.5,
-      "gen_f1": 0.2963,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 0.4307,
+      "gen_f1": 0.3889,
+      "citation_correctness": 0.25,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C9;DOC_CTX_C73;DOC_CTX_C104;DOC_CTX_C106;DOC_CTX_C22"
+      "top_doc_ids": "DOC_CTX_C73;DOC_CTX_C106;DOC_CTX_C9;DOC_CTX_C104;DOC_CTX_S75"
     },
     {
       "qid": "Q_SYN_1153",
@@ -731,12 +731,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.3633,
-      "gen_f1": 0.2188,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.3904,
+      "gen_f1": 0.3659,
+      "citation_correctness": 0.2,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH45;DOC_CTX_PH56;DOC_CTX_PH27;DOC_CTX_PH42;DOC_CTX_PH8"
+      "top_doc_ids": "DOC_CTX_PH27;DOC_CTX_PH48;DOC_CTX_PH23;DOC_CTX_PH56;DOC_CTX_PH45"
     },
     {
       "qid": "Q_SYN_1159",
@@ -746,10 +746,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2192,
+      "gen_f1": 0.2703,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C101;DOC_CTX_C15;DOC_CTX_C94;DOC_CTX_C44;DOC_CTX_C11"
+      "top_doc_ids": "DOC_CTX_C15;DOC_CTX_C101;DOC_CTX_C44;DOC_CTX_C94;DOC_CTX_S3"
     },
     {
       "qid": "Q_SYN_1164",
@@ -759,10 +759,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2727,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4186,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L12;DOC_CTX_L7;DOC_CTX_L1;DOC_CTX_L42;DOC_CTX_L41"
+      "top_doc_ids": "DOC_CTX_L12;DOC_CTX_M10;DOC_CTX_P44;DOC_CTX_R75;DOC_CTX_S93"
     },
     {
       "qid": "Q_SYN_1165",
@@ -772,10 +772,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2456,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4054,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B33;DOC_CTX_B47;DOC_CTX_B15;DOC_CTX_B20;DOC_CTX_B14"
+      "top_doc_ids": "DOC_CTX_B33;DOC_CTX_L42;DOC_CTX_C81;DOC_CTX_P54;DOC_CTX_H69"
     },
     {
       "qid": "Q_SYN_1167",
@@ -785,10 +785,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3291,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4444,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH9;DOC_CTX_PH27;DOC_CTX_PH42;DOC_CTX_PH48;DOC_CTX_PH23"
+      "top_doc_ids": "DOC_CTX_PH9;DOC_CTX_G31;DOC_CTX_H30;DOC_CTX_L43;DOC_CTX_B42"
     },
     {
       "qid": "Q_SYN_1168",
@@ -801,7 +801,7 @@
       "gen_f1": 0.3421,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B22;DOC_CTX_B7;DOC_CTX_B48;DOC_CTX_B35;DOC_CTX_B15"
+      "top_doc_ids": "DOC_CTX_B22;DOC_CTX_B35;DOC_CTX_B7;DOC_CTX_B48;DOC_CTX_G67"
     },
     {
       "qid": "Q_SYN_1170",
@@ -811,10 +811,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.413,
+      "gen_f1": 0.4,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L41;DOC_CTX_L28;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L22"
+      "top_doc_ids": "DOC_CTX_L28;DOC_CTX_L41;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_P37"
     },
     {
       "qid": "Q_SYN_1171",
@@ -822,12 +822,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.2667,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.151,
+      "gen_f1": 0.3261,
+      "citation_correctness": 0.2,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G33;DOC_CTX_G53;DOC_CTX_G22;DOC_CTX_G12;DOC_CTX_G46"
+      "top_doc_ids": "DOC_CTX_G75;DOC_CTX_G18;DOC_CTX_G57;DOC_CTX_G71;DOC_CTX_G23"
     },
     {
       "qid": "Q_SYN_1174",
@@ -835,12 +835,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.7877,
-      "gen_f1": 0.3714,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.5585,
+      "gen_f1": 0.1842,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA2;DOC_CTX_BA3;DOC_CTX_BA8;DOC_CTX_BA12;DOC_CTX_BA31"
+      "top_doc_ids": "DOC_CTX_BA16;DOC_CTX_S9;DOC_CTX_BA8;DOC_CTX_BA2;DOC_CTX_S40"
     },
     {
       "qid": "Q_SYN_1179",
@@ -849,11 +849,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3964,
+      "ndcg_at_k": 0.7328,
+      "gen_f1": 0.3776,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P2;DOC_CTX_P53;DOC_CTX_P50;DOC_CTX_P21;DOC_CTX_P14"
+      "top_doc_ids": "DOC_CTX_P14;DOC_CTX_P2;DOC_CTX_P50;DOC_CTX_P53;DOC_CTX_P21"
     },
     {
       "qid": "Q_SYN_1180",
@@ -862,11 +862,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3099,
+      "ndcg_at_k": 0.906,
+      "gen_f1": 0.3038,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T38;DOC_CTX_T19;DOC_CTX_T5;DOC_CTX_T15;DOC_CTX_T21"
+      "top_doc_ids": "DOC_CTX_T38;DOC_CTX_P37;DOC_CTX_T19;DOC_CTX_T5;DOC_CTX_H13"
     },
     {
       "qid": "Q_SYN_1181",
@@ -876,10 +876,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2264,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4727,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH21;DOC_CTX_PH1;DOC_CTX_PH33;DOC_CTX_PH18;DOC_CTX_PH17"
+      "top_doc_ids": "DOC_CTX_PH21;DOC_CTX_M20;DOC_CTX_H9;DOC_CTX_B31;DOC_CTX_M46"
     },
     {
       "qid": "Q_SYN_1182",
@@ -889,10 +889,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.303,
+      "gen_f1": 0.3235,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L21;DOC_CTX_L9;DOC_CTX_L35;DOC_CTX_L1;DOC_CTX_L19"
+      "top_doc_ids": "DOC_CTX_L21;DOC_CTX_L9;DOC_CTX_M12;DOC_CTX_H33;DOC_CTX_C90"
     },
     {
       "qid": "Q_SYN_1184",
@@ -901,11 +901,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3438,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.9197,
+      "gen_f1": 0.2769,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H85;DOC_CTX_H73;DOC_CTX_H55;DOC_CTX_H21;DOC_CTX_H8"
+      "top_doc_ids": "DOC_CTX_H73;DOC_CTX_H55;DOC_CTX_H85;DOC_CTX_C28;DOC_CTX_R80"
     },
     {
       "qid": "Q_SYN_1186",
@@ -914,11 +914,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.25,
-      "ndcg_at_k": 0.3904,
-      "gen_f1": 0.25,
-      "citation_correctness": 0.2,
+      "ndcg_at_k": 0.2463,
+      "gen_f1": 0.1622,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H84;DOC_CTX_H29;DOC_CTX_H18;DOC_CTX_H47;DOC_CTX_H83"
+      "top_doc_ids": "DOC_CTX_H83;DOC_CTX_H19;DOC_CTX_H5;DOC_CTX_H77;DOC_CTX_H29"
     },
     {
       "qid": "Q_SYN_1189",
@@ -928,10 +928,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3778,
+      "gen_f1": 0.4211,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH38;DOC_CTX_PH31;DOC_CTX_PH52;DOC_CTX_PH14;DOC_CTX_PH5"
+      "top_doc_ids": "DOC_CTX_PH38;DOC_CTX_PH52;DOC_CTX_PH31;DOC_CTX_S103;DOC_CTX_HS19"
     },
     {
       "qid": "Q_SYN_1191",
@@ -941,10 +941,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2951,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4384,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH70;DOC_CTX_PH62;DOC_CTX_PH20;DOC_CTX_PH8;DOC_CTX_PH61"
+      "top_doc_ids": "DOC_CTX_PH70;DOC_CTX_HS22;DOC_CTX_C56;DOC_CTX_C66;DOC_CTX_G32"
     },
     {
       "qid": "Q_SYN_1192",
@@ -952,12 +952,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.5654,
-      "gen_f1": 0.2597,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.3973,
+      "gen_f1": 0.2025,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C36;DOC_CTX_C42;DOC_CTX_C24;DOC_CTX_C91;DOC_CTX_C59"
+      "top_doc_ids": "DOC_CTX_C36;DOC_CTX_C42;DOC_CTX_C24;DOC_CTX_C56;DOC_CTX_C91"
     },
     {
       "qid": "Q_SYN_1195",
@@ -965,12 +965,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3284,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.8048,
+      "gen_f1": 0.3385,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L44;DOC_CTX_L11;DOC_CTX_L37;DOC_CTX_L10;DOC_CTX_L25"
+      "top_doc_ids": "DOC_CTX_L44;DOC_CTX_L11;DOC_CTX_P60;DOC_CTX_L37;DOC_CTX_P91"
     },
     {
       "qid": "Q_SYN_1201",
@@ -979,11 +979,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3056,
+      "ndcg_at_k": 0.6183,
+      "gen_f1": 0.4,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H47;DOC_CTX_H7;DOC_CTX_H69;DOC_CTX_H84;DOC_CTX_H29"
+      "top_doc_ids": "DOC_CTX_S40;DOC_CTX_S51;DOC_CTX_H7;DOC_CTX_H47;DOC_CTX_H69"
     },
     {
       "qid": "Q_SYN_1204",
@@ -993,10 +993,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4776,
+      "gen_f1": 0.4,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S46;DOC_CTX_S72;DOC_CTX_S95;DOC_CTX_S28;DOC_CTX_S33"
+      "top_doc_ids": "DOC_CTX_S72;DOC_CTX_S46;DOC_CTX_H13;DOC_CTX_PH50;DOC_CTX_H71"
     },
     {
       "qid": "Q_SYN_1205",
@@ -1006,10 +1006,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3279,
+      "gen_f1": 0.3871,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH58;DOC_CTX_PH9;DOC_CTX_PH61;DOC_CTX_PH56;DOC_CTX_PH23"
+      "top_doc_ids": "DOC_CTX_PH58;DOC_CTX_PH9;DOC_CTX_HS18;DOC_CTX_PH61;DOC_CTX_G31"
     },
     {
       "qid": "Q_SYN_1207",
@@ -1019,10 +1019,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3784,
+      "gen_f1": 0.3514,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H66;DOC_CTX_H26;DOC_CTX_H45;DOC_CTX_H70;DOC_CTX_H3"
+      "top_doc_ids": "DOC_CTX_H26;DOC_CTX_H45;DOC_CTX_H66;DOC_CTX_H70;DOC_CTX_HS6"
     },
     {
       "qid": "Q_SYN_1213",
@@ -1030,12 +1030,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.5925,
-      "gen_f1": 0.3571,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.6367,
+      "gen_f1": 0.2955,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S46;DOC_CTX_S72;DOC_CTX_S95;DOC_CTX_S28;DOC_CTX_S33"
+      "top_doc_ids": "DOC_CTX_S72;DOC_CTX_S95;DOC_CTX_C36;DOC_CTX_C42;DOC_CTX_P37"
     },
     {
       "qid": "Q_SYN_1216",
@@ -1044,11 +1044,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.25,
-      "ndcg_at_k": 0.3904,
-      "gen_f1": 0.3111,
-      "citation_correctness": 0.3333,
+      "ndcg_at_k": 0.151,
+      "gen_f1": 0.3014,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H85;DOC_CTX_H21;DOC_CTX_H3;DOC_CTX_H30;DOC_CTX_H60"
+      "top_doc_ids": "DOC_CTX_H53;DOC_CTX_H73;DOC_CTX_H80;DOC_CTX_H1;DOC_CTX_H15"
     },
     {
       "qid": "Q_SYN_1219",
@@ -1056,12 +1056,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.25,
-      "ndcg_at_k": 0.1952,
-      "gen_f1": 0.2121,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.5414,
+      "gen_f1": 0.2462,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L35;DOC_CTX_L4;DOC_CTX_L1;DOC_CTX_L26;DOC_CTX_L18"
+      "top_doc_ids": "DOC_CTX_L1;DOC_CTX_L26;DOC_CTX_L18;DOC_CTX_L35;DOC_CTX_L12"
     },
     {
       "qid": "Q_SYN_1222",
@@ -1071,10 +1071,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.172,
-      "citation_correctness": 0.0,
+      "gen_f1": 0.3333,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS16;DOC_CTX_HS5;DOC_CTX_HS20;DOC_CTX_HS17;DOC_CTX_HS6"
+      "top_doc_ids": "DOC_CTX_HS16;DOC_CTX_HS5;DOC_CTX_S100;DOC_CTX_S107;DOC_CTX_S92"
     },
     {
       "qid": "Q_SYN_1228",
@@ -1084,10 +1084,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.5417,
+      "gen_f1": 0.5098,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L21;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L42;DOC_CTX_L41"
+      "top_doc_ids": "DOC_CTX_L21;DOC_CTX_B51;DOC_CTX_P32;DOC_CTX_S100;DOC_CTX_P48"
     },
     {
       "qid": "Q_SYN_1231",
@@ -1096,11 +1096,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3733,
+      "ndcg_at_k": 0.9829,
+      "gen_f1": 0.2857,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T9;DOC_CTX_T4;DOC_CTX_T22;DOC_CTX_T40;DOC_CTX_T6"
+      "top_doc_ids": "DOC_CTX_T9;DOC_CTX_T4;DOC_CTX_T40;DOC_CTX_S48;DOC_CTX_T22"
     },
     {
       "qid": "Q_SYN_1233",
@@ -1108,12 +1108,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.6131,
-      "gen_f1": 0.4545,
-      "citation_correctness": 1.0,
+      "recall_at_k": 1.0,
+      "ndcg_at_k": 0.9197,
+      "gen_f1": 0.3529,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G46;DOC_CTX_G78;DOC_CTX_G64;DOC_CTX_G66;DOC_CTX_G1"
+      "top_doc_ids": "DOC_CTX_G46;DOC_CTX_G1;DOC_CTX_G67;DOC_CTX_G64;DOC_CTX_R53"
     },
     {
       "qid": "Q_SYN_1240",
@@ -1123,10 +1123,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3099,
+      "gen_f1": 0.4156,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH61;DOC_CTX_PH48;DOC_CTX_PH9;DOC_CTX_PH14;DOC_CTX_PH5"
+      "top_doc_ids": "DOC_CTX_PH48;DOC_CTX_PH9;DOC_CTX_PH61;DOC_CTX_H2;DOC_CTX_HS22"
     },
     {
       "qid": "Q_SYN_1246",
@@ -1134,12 +1134,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.209,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.5143,
+      "gen_f1": 0.2647,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH56;DOC_CTX_PH50;DOC_CTX_PH27;DOC_CTX_PH62;DOC_CTX_PH20"
+      "top_doc_ids": "DOC_CTX_PH27;DOC_CTX_PH62;DOC_CTX_PH58;DOC_CTX_PH48;DOC_CTX_PH9"
     },
     {
       "qid": "Q_SYN_1252",
@@ -1149,10 +1149,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2963,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4082,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G71;DOC_CTX_G18;DOC_CTX_G8;DOC_CTX_G35;DOC_CTX_G69"
+      "top_doc_ids": "DOC_CTX_G71;DOC_CTX_B22;DOC_CTX_R1001;DOC_CTX_S112;DOC_CTX_HS23"
     },
     {
       "qid": "Q_SYN_1255",
@@ -1162,10 +1162,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.475,
+      "gen_f1": 0.4,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S70;DOC_CTX_S79;DOC_CTX_S117;DOC_CTX_S48;DOC_CTX_S43"
+      "top_doc_ids": "DOC_CTX_S70;DOC_CTX_S117;DOC_CTX_S79;DOC_CTX_C109;DOC_CTX_C46"
     },
     {
       "qid": "Q_SYN_1258",
@@ -1175,10 +1175,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4561,
+      "gen_f1": 0.4211,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P25;DOC_CTX_P45;DOC_CTX_P12;DOC_CTX_P19;DOC_CTX_P60"
+      "top_doc_ids": "DOC_CTX_P25;DOC_CTX_P45;DOC_CTX_C70;DOC_CTX_BA33;DOC_CTX_C30"
     },
     {
       "qid": "Q_SYN_1261",
@@ -1186,12 +1186,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.7095,
-      "gen_f1": 0.2727,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.3191,
+      "gen_f1": 0.3077,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH43;DOC_CTX_PH57;DOC_CTX_PH64;DOC_CTX_PH28;DOC_CTX_PH25"
+      "top_doc_ids": "DOC_CTX_PH57;DOC_CTX_PH64;DOC_CTX_PH13;DOC_CTX_PH19;DOC_CTX_PH25"
     },
     {
       "qid": "Q_SYN_1264",
@@ -1200,11 +1200,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4068,
+      "ndcg_at_k": 0.906,
+      "gen_f1": 0.3273,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P7;DOC_CTX_P55;DOC_CTX_P15;DOC_CTX_P12;DOC_CTX_P16"
+      "top_doc_ids": "DOC_CTX_P15;DOC_CTX_H41;DOC_CTX_P7;DOC_CTX_P55;DOC_CTX_L26"
     },
     {
       "qid": "Q_SYN_1266",
@@ -1214,10 +1214,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3143,
+      "gen_f1": 0.2609,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA19;DOC_CTX_BA10;DOC_CTX_BA29;DOC_CTX_BA38;DOC_CTX_BA23"
+      "top_doc_ids": "DOC_CTX_S100;DOC_CTX_BA10;DOC_CTX_BA19;DOC_CTX_R77;DOC_CTX_H42"
     },
     {
       "qid": "Q_SYN_1267",
@@ -1225,12 +1225,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.4144,
-      "gen_f1": 0.338,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.3904,
+      "gen_f1": 0.1408,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R179;DOC_CTX_R123;DOC_CTX_R151;DOC_CTX_R51;DOC_CTX_R124"
+      "top_doc_ids": "DOC_CTX_R51;DOC_CTX_S97;DOC_CTX_R151;DOC_CTX_H73;DOC_CTX_H55"
     },
     {
       "qid": "Q_SYN_1268",
@@ -1240,10 +1240,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2727,
+      "gen_f1": 0.3636,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH48;DOC_CTX_PH9;DOC_CTX_PH61;DOC_CTX_PH14;DOC_CTX_PH5"
+      "top_doc_ids": "DOC_CTX_PH9;DOC_CTX_PH48;DOC_CTX_H30;DOC_CTX_B42;DOC_CTX_M38"
     },
     {
       "qid": "Q_SYN_1270",
@@ -1253,10 +1253,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3797,
+      "gen_f1": 0.2045,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L43;DOC_CTX_L22;DOC_CTX_L31;DOC_CTX_L5;DOC_CTX_L25"
+      "top_doc_ids": "DOC_CTX_L5;DOC_CTX_L31;DOC_CTX_L22;DOC_CTX_L43;DOC_CTX_M30"
     },
     {
       "qid": "Q_SYN_1273",
@@ -1264,12 +1264,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.7606,
-      "gen_f1": 0.45,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.8319,
+      "gen_f1": 0.3797,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS9;DOC_CTX_HS22;DOC_CTX_HS25;DOC_CTX_HS18;DOC_CTX_HS11"
+      "top_doc_ids": "DOC_CTX_HS11;DOC_CTX_HS22;DOC_CTX_HS18;DOC_CTX_H2;DOC_CTX_HS9"
     },
     {
       "qid": "Q_SYN_1275",
@@ -1277,12 +1277,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.7606,
-      "gen_f1": 0.3457,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.8319,
+      "gen_f1": 0.3415,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P62;DOC_CTX_P59;DOC_CTX_P80;DOC_CTX_P87;DOC_CTX_P57"
+      "top_doc_ids": "DOC_CTX_P80;DOC_CTX_P57;DOC_CTX_P59;DOC_CTX_P62;DOC_CTX_H2"
     },
     {
       "qid": "Q_SYN_1276",
@@ -1290,12 +1290,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.5143,
-      "gen_f1": 0.3421,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.1846,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA35;DOC_CTX_BA32;DOC_CTX_BA23;DOC_CTX_BA34;DOC_CTX_BA14"
+      "top_doc_ids": "DOC_CTX_M15;DOC_CTX_M23;DOC_CTX_M20;DOC_CTX_M46;DOC_CTX_L37"
     },
     {
       "qid": "Q_SYN_1279",
@@ -1305,10 +1305,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2571,
+      "gen_f1": 0.4444,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C96;DOC_CTX_C6;DOC_CTX_C48;DOC_CTX_C14;DOC_CTX_C89"
+      "top_doc_ids": "DOC_CTX_C6;DOC_CTX_C96;DOC_CTX_G18;DOC_CTX_P64;DOC_CTX_PH64"
     },
     {
       "qid": "Q_SYN_1281",
@@ -1318,10 +1318,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3288,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4667,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C6;DOC_CTX_C21;DOC_CTX_C1;DOC_CTX_C96;DOC_CTX_C103"
+      "top_doc_ids": "DOC_CTX_C6;DOC_CTX_G18;DOC_CTX_S112;DOC_CTX_R156;DOC_CTX_H26"
     },
     {
       "qid": "Q_SYN_1282",
@@ -1331,10 +1331,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4156,
+      "gen_f1": 0.3377,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S112;DOC_CTX_S73;DOC_CTX_S93;DOC_CTX_S37;DOC_CTX_S3"
+      "top_doc_ids": "DOC_CTX_S73;DOC_CTX_S112;DOC_CTX_S93;DOC_CTX_C21;DOC_CTX_PH28"
     },
     {
       "qid": "Q_SYN_1285",
@@ -1342,12 +1342,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.25,
-      "citation_correctness": 0.0,
+      "recall_at_k": 1.0,
+      "ndcg_at_k": 0.9829,
+      "gen_f1": 0.4051,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L42;DOC_CTX_L41;DOC_CTX_L28"
+      "top_doc_ids": "DOC_CTX_L5;DOC_CTX_L31;DOC_CTX_L22;DOC_CTX_L15;DOC_CTX_L43"
     },
     {
       "qid": "Q_SYN_1286",
@@ -1357,10 +1357,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.56,
+      "gen_f1": 0.1875,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M53;DOC_CTX_M4;DOC_CTX_M1;DOC_CTX_M3;DOC_CTX_M6"
+      "top_doc_ids": "DOC_CTX_M53;DOC_CTX_L31;DOC_CTX_B16;DOC_CTX_R4;DOC_CTX_S91"
     },
     {
       "qid": "Q_SYN_1288",
@@ -1368,12 +1368,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9558,
-      "gen_f1": 0.3125,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.1681,
+      "gen_f1": 0.1765,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H50;DOC_CTX_H35;DOC_CTX_H37;DOC_CTX_H28;DOC_CTX_H1003"
+      "top_doc_ids": "DOC_CTX_H37;DOC_CTX_P60;DOC_CTX_P25;DOC_CTX_H50;DOC_CTX_P91"
     },
     {
       "qid": "Q_SYN_1297",
@@ -1382,11 +1382,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.25,
-      "ndcg_at_k": 0.151,
-      "gen_f1": 0.0267,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 0.2463,
+      "gen_f1": 0.0811,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R73;DOC_CTX_R52;DOC_CTX_R118;DOC_CTX_R169;DOC_CTX_R168"
+      "top_doc_ids": "DOC_CTX_R73;DOC_CTX_R155;DOC_CTX_R52;DOC_CTX_R118;DOC_CTX_R169"
     },
     {
       "qid": "Q_SYN_1298",
@@ -1395,11 +1395,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.2353,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.3846,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P13;DOC_CTX_P52;DOC_CTX_P29;DOC_CTX_P84;DOC_CTX_P59"
+      "top_doc_ids": "DOC_CTX_P52;DOC_CTX_P29;DOC_CTX_P13;DOC_CTX_H80;DOC_CTX_S116"
     },
     {
       "qid": "Q_SYN_1300",
@@ -1408,11 +1408,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.2462,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.6934,
+      "gen_f1": 0.3333,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C46;DOC_CTX_C105;DOC_CTX_C109;DOC_CTX_C102;DOC_CTX_C48"
+      "top_doc_ids": "DOC_CTX_S70;DOC_CTX_C46;DOC_CTX_C105;DOC_CTX_C109;DOC_CTX_C102"
     },
     {
       "qid": "Q_SYN_1303",
@@ -1422,10 +1422,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2456,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4074,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C76;DOC_CTX_C48;DOC_CTX_C14;DOC_CTX_C89;DOC_CTX_C26"
+      "top_doc_ids": "DOC_CTX_C76;DOC_CTX_S90;DOC_CTX_S52;DOC_CTX_H58;DOC_CTX_G65"
     },
     {
       "qid": "Q_SYN_1306",
@@ -1435,10 +1435,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2609,
+      "gen_f1": 0.2286,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C24;DOC_CTX_C33;DOC_CTX_C48;DOC_CTX_C14;DOC_CTX_C89"
+      "top_doc_ids": "DOC_CTX_C24;DOC_CTX_C33;DOC_CTX_S17;DOC_CTX_H40;DOC_CTX_S31"
     },
     {
       "qid": "Q_SYN_1308",
@@ -1446,12 +1446,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.906,
-      "gen_f1": 0.4948,
+      "recall_at_k": 0.6667,
+      "ndcg_at_k": 0.7039,
+      "gen_f1": 0.3789,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S114;DOC_CTX_S28;DOC_CTX_S13;DOC_CTX_S78;DOC_CTX_S8"
+      "top_doc_ids": "DOC_CTX_S114;DOC_CTX_S28;DOC_CTX_S78;DOC_CTX_C31;DOC_CTX_C57"
     },
     {
       "qid": "Q_SYN_1309",
@@ -1461,10 +1461,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3243,
+      "gen_f1": 0.3014,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS16;DOC_CTX_HS8;DOC_CTX_HS5;DOC_CTX_HS20;DOC_CTX_HS17"
+      "top_doc_ids": "DOC_CTX_HS16;DOC_CTX_HS8;DOC_CTX_HS5;DOC_CTX_S107;DOC_CTX_S106"
     },
     {
       "qid": "Q_SYN_1313",
@@ -1474,10 +1474,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4681,
+      "gen_f1": 0.3774,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH19;DOC_CTX_PH13;DOC_CTX_PH25;DOC_CTX_PH43;DOC_CTX_PH28"
+      "top_doc_ids": "DOC_CTX_PH19;DOC_CTX_PH13;DOC_CTX_H66;DOC_CTX_P44;DOC_CTX_S73"
     },
     {
       "qid": "Q_SYN_1315",
@@ -1486,11 +1486,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9829,
+      "ndcg_at_k": 0.7606,
       "gen_f1": 0.3077,
-      "citation_correctness": 1.0,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH43;DOC_CTX_PH28;DOC_CTX_PH25;DOC_CTX_PH13;DOC_CTX_PH19"
+      "top_doc_ids": "DOC_CTX_PH13;DOC_CTX_PH19;DOC_CTX_PH25;DOC_CTX_PH28;DOC_CTX_PH43"
     },
     {
       "qid": "Q_SYN_1318",
@@ -1499,11 +1499,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9829,
+      "ndcg_at_k": 1.0,
       "gen_f1": 0.2581,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH54;DOC_CTX_PH65;DOC_CTX_PH2;DOC_CTX_PH26;DOC_CTX_PH69"
+      "top_doc_ids": "DOC_CTX_PH65;DOC_CTX_PH54;DOC_CTX_PH2;DOC_CTX_PH69;DOC_CTX_PH26"
     },
     {
       "qid": "Q_SYN_1325",
@@ -1513,10 +1513,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4348,
+      "gen_f1": 0.2857,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M18;DOC_CTX_M24;DOC_CTX_M35;DOC_CTX_M47;DOC_CTX_M11"
+      "top_doc_ids": "DOC_CTX_M18;DOC_CTX_M24;DOC_CTX_B40;DOC_CTX_P81;DOC_CTX_C24"
     },
     {
       "qid": "Q_SYN_1327",
@@ -1526,10 +1526,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.25,
+      "gen_f1": 0.338,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS2;DOC_CTX_HS11;DOC_CTX_HS20;DOC_CTX_HS17;DOC_CTX_HS6"
+      "top_doc_ids": "DOC_CTX_HS2;DOC_CTX_L29;DOC_CTX_S75;DOC_CTX_H21;DOC_CTX_H15"
     },
     {
       "qid": "Q_SYN_1329",
@@ -1542,7 +1542,7 @@
       "gen_f1": 0.2466,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C65;DOC_CTX_C93;DOC_CTX_C50;DOC_CTX_C49;DOC_CTX_C76"
+      "top_doc_ids": "DOC_CTX_C65;DOC_CTX_S100;DOC_CTX_C93;DOC_CTX_S1003;DOC_CTX_H42"
     },
     {
       "qid": "Q_SYN_1330",
@@ -1550,12 +1550,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.3462,
-      "gen_f1": 0.3721,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.3904,
+      "gen_f1": 0.3678,
       "citation_correctness": 0.3333,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H5;DOC_CTX_H71;DOC_CTX_H13;DOC_CTX_H3;DOC_CTX_H30"
+      "top_doc_ids": "DOC_CTX_H13;DOC_CTX_H71;DOC_CTX_H5;DOC_CTX_P37;DOC_CTX_C36"
     },
     {
       "qid": "Q_SYN_1336",
@@ -1565,10 +1565,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3579,
+      "gen_f1": 0.3551,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T18;DOC_CTX_T32;DOC_CTX_T17;DOC_CTX_T10;DOC_CTX_T11"
+      "top_doc_ids": "DOC_CTX_T18;DOC_CTX_T32;DOC_CTX_T17;DOC_CTX_H54;DOC_CTX_H79"
     },
     {
       "qid": "Q_SYN_1339",
@@ -1576,12 +1576,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9047,
-      "gen_f1": 0.45,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.3904,
+      "gen_f1": 0.3377,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS22;DOC_CTX_HS9;DOC_CTX_HS25;DOC_CTX_HS18;DOC_CTX_HS11"
+      "top_doc_ids": "DOC_CTX_HS22;DOC_CTX_P21;DOC_CTX_P37;DOC_CTX_PH60;DOC_CTX_P88"
     },
     {
       "qid": "Q_SYN_1340",
@@ -1591,10 +1591,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.5,
-      "citation_correctness": 1.0,
+      "gen_f1": 0.1132,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P8;DOC_CTX_P90;DOC_CTX_P56;DOC_CTX_P88;DOC_CTX_P18"
+      "top_doc_ids": "DOC_CTX_P8;DOC_CTX_L15;DOC_CTX_C44;DOC_CTX_S114;DOC_CTX_C15"
     },
     {
       "qid": "Q_SYN_1341",
@@ -1603,11 +1603,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.5,
+      "ndcg_at_k": 0.6309,
       "gen_f1": 0.2535,
-      "citation_correctness": 0.0,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C28;DOC_CTX_C97;DOC_CTX_C73;DOC_CTX_C104;DOC_CTX_C106"
+      "top_doc_ids": "DOC_CTX_C97;DOC_CTX_C73;DOC_CTX_C28;DOC_CTX_C106;DOC_CTX_C104"
     },
     {
       "qid": "Q_SYN_1344",
@@ -1617,10 +1617,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2857,
+      "gen_f1": 0.2222,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B34;DOC_CTX_B22;DOC_CTX_B11;DOC_CTX_B45;DOC_CTX_B48"
+      "top_doc_ids": "DOC_CTX_B34;DOC_CTX_G18;DOC_CTX_R60;DOC_CTX_R176;DOC_CTX_PH64"
     },
     {
       "qid": "Q_SYN_1345",
@@ -1630,10 +1630,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4706,
+      "gen_f1": 0.4667,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H59;DOC_CTX_H84;DOC_CTX_H29;DOC_CTX_H18;DOC_CTX_H47"
+      "top_doc_ids": "DOC_CTX_H59;DOC_CTX_P67;DOC_CTX_C76;DOC_CTX_H27;DOC_CTX_H65"
     },
     {
       "qid": "Q_SYN_1348",
@@ -1641,12 +1641,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.25,
-      "ndcg_at_k": 0.151,
-      "gen_f1": 0.3288,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.5143,
+      "gen_f1": 0.4384,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M4;DOC_CTX_M35;DOC_CTX_M47;DOC_CTX_M1;DOC_CTX_M11"
+      "top_doc_ids": "DOC_CTX_M1;DOC_CTX_M9;DOC_CTX_M11;DOC_CTX_M3;DOC_CTX_M30"
     },
     {
       "qid": "Q_SYN_1351",
@@ -1654,12 +1654,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9558,
-      "gen_f1": 0.4186,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.4415,
+      "gen_f1": 0.2887,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R148;DOC_CTX_R119;DOC_CTX_R57;DOC_CTX_R96;DOC_CTX_R71"
+      "top_doc_ids": "DOC_CTX_R57;DOC_CTX_R148;DOC_CTX_R119;DOC_CTX_R20;DOC_CTX_C92"
     },
     {
       "qid": "Q_SYN_1353",
@@ -1669,10 +1669,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3768,
+      "gen_f1": 0.3944,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H13;DOC_CTX_H1;DOC_CTX_H23;DOC_CTX_H30;DOC_CTX_H2"
+      "top_doc_ids": "DOC_CTX_H13;DOC_CTX_HS22;DOC_CTX_R104;DOC_CTX_H1;DOC_CTX_H23"
     },
     {
       "qid": "Q_SYN_1355",
@@ -1681,11 +1681,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3333,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.6309,
+      "gen_f1": 0.3934,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G60;DOC_CTX_G36;DOC_CTX_G10;DOC_CTX_G1;DOC_CTX_G53"
+      "top_doc_ids": "DOC_CTX_G36;DOC_CTX_G60;DOC_CTX_P90;DOC_CTX_R81;DOC_CTX_B17"
     },
     {
       "qid": "Q_SYN_1357",
@@ -1694,11 +1694,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.5,
-      "ndcg_at_k": 0.5856,
-      "gen_f1": 0.1944,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5414,
+      "gen_f1": 0.4578,
+      "citation_correctness": 0.4,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H85;DOC_CTX_H21;DOC_CTX_H8;DOC_CTX_H14;DOC_CTX_H73"
+      "top_doc_ids": "DOC_CTX_H15;DOC_CTX_H21;DOC_CTX_H64;DOC_CTX_H73;DOC_CTX_H55"
     },
     {
       "qid": "Q_SYN_1358",
@@ -1707,11 +1707,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.1569,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.4307,
+      "gen_f1": 0.32,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R46;DOC_CTX_R175;DOC_CTX_R97;DOC_CTX_R131;DOC_CTX_R103"
+      "top_doc_ids": "DOC_CTX_S1001;DOC_CTX_H57;DOC_CTX_C7;DOC_CTX_R46;DOC_CTX_G40"
     },
     {
       "qid": "Q_SYN_1360",
@@ -1719,12 +1719,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.3633,
-      "gen_f1": 0.2933,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.6096,
+      "gen_f1": 0.3836,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS20;DOC_CTX_HS6;DOC_CTX_HS14;DOC_CTX_HS23;DOC_CTX_HS4"
+      "top_doc_ids": "DOC_CTX_HS6;DOC_CTX_HS23;DOC_CTX_HS7;DOC_CTX_HS14;DOC_CTX_HS15"
     },
     {
       "qid": "Q_SYN_1361",
@@ -1732,12 +1732,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.7095,
-      "gen_f1": 0.3333,
-      "citation_correctness": 0.5,
+      "recall_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.359,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G44;DOC_CTX_G10;DOC_CTX_G60;DOC_CTX_G31;DOC_CTX_G50"
+      "top_doc_ids": "DOC_CTX_G16;DOC_CTX_G50;DOC_CTX_G31;DOC_CTX_G44;DOC_CTX_G10"
     },
     {
       "qid": "Q_SYN_1369",
@@ -1747,10 +1747,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3636,
+      "gen_f1": 0.3448,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH43;DOC_CTX_PH51;DOC_CTX_PH57;DOC_CTX_PH64;DOC_CTX_PH28"
+      "top_doc_ids": "DOC_CTX_PH51;DOC_CTX_PH43;DOC_CTX_G45;DOC_CTX_G12;DOC_CTX_H79"
     },
     {
       "qid": "Q_SYN_1372",
@@ -1760,10 +1760,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4091,
+      "gen_f1": 0.4235,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M13;DOC_CTX_M28;DOC_CTX_M5;DOC_CTX_M46;DOC_CTX_M20"
+      "top_doc_ids": "DOC_CTX_M28;DOC_CTX_M13;DOC_CTX_S81;DOC_CTX_S71;DOC_CTX_S89"
     },
     {
       "qid": "Q_SYN_1373",
@@ -1773,10 +1773,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.16,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4231,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH1;DOC_CTX_PH2;DOC_CTX_PH33;DOC_CTX_PH18;DOC_CTX_PH5"
+      "top_doc_ids": "DOC_CTX_PH1;DOC_CTX_HS8;DOC_CTX_G56;DOC_CTX_L6;DOC_CTX_S90"
     },
     {
       "qid": "Q_SYN_1378",
@@ -1786,10 +1786,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4,
+      "gen_f1": 0.254,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L43;DOC_CTX_L22;DOC_CTX_L15;DOC_CTX_L31;DOC_CTX_L5"
+      "top_doc_ids": "DOC_CTX_L22;DOC_CTX_L43;DOC_CTX_M30;DOC_CTX_S3;DOC_CTX_B1"
     },
     {
       "qid": "Q_SYN_1387",
@@ -1799,10 +1799,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3333,
+      "gen_f1": 0.475,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P77;DOC_CTX_P24;DOC_CTX_P76;DOC_CTX_P18;DOC_CTX_P12"
+      "top_doc_ids": "DOC_CTX_P77;DOC_CTX_P24;DOC_CTX_P76;DOC_CTX_L19;DOC_CTX_S103"
     },
     {
       "qid": "Q_SYN_1390",
@@ -1811,11 +1811,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.5,
-      "ndcg_at_k": 0.6367,
-      "gen_f1": 0.325,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.5856,
+      "gen_f1": 0.3544,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G12;DOC_CTX_G75;DOC_CTX_G8;DOC_CTX_G35;DOC_CTX_G48"
+      "top_doc_ids": "DOC_CTX_G12;DOC_CTX_G57;DOC_CTX_G75;DOC_CTX_G71;DOC_CTX_G23"
     },
     {
       "qid": "Q_SYN_1395",
@@ -1825,10 +1825,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3235,
+      "gen_f1": 0.3908,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH28;DOC_CTX_PH25;DOC_CTX_PH43;DOC_CTX_PH13;DOC_CTX_PH19"
+      "top_doc_ids": "DOC_CTX_PH25;DOC_CTX_PH28;DOC_CTX_HS23;DOC_CTX_G71;DOC_CTX_S112"
     },
     {
       "qid": "Q_SYN_1399",
@@ -1838,10 +1838,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2857,
+      "gen_f1": 0.2133,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C80;DOC_CTX_C95;DOC_CTX_C92;DOC_CTX_C48;DOC_CTX_C14"
+      "top_doc_ids": "DOC_CTX_C92;DOC_CTX_C80;DOC_CTX_C95;DOC_CTX_B53;DOC_CTX_R20"
     },
     {
       "qid": "Q_SYN_1402",
@@ -1850,11 +1850,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.75,
-      "ndcg_at_k": 0.6096,
-      "gen_f1": 0.2857,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 0.7366,
+      "gen_f1": 0.4578,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S6;DOC_CTX_S112;DOC_CTX_S73;DOC_CTX_S57;DOC_CTX_S104"
+      "top_doc_ids": "DOC_CTX_S73;DOC_CTX_S6;DOC_CTX_S57;DOC_CTX_S104;DOC_CTX_S112"
     },
     {
       "qid": "Q_SYN_1405",
@@ -1862,12 +1862,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.3457,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.2463,
+      "gen_f1": 0.3077,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G56;DOC_CTX_G1;DOC_CTX_G72;DOC_CTX_G33;DOC_CTX_G53"
+      "top_doc_ids": "DOC_CTX_G75;DOC_CTX_G18;DOC_CTX_G25;DOC_CTX_G1;DOC_CTX_G56"
     },
     {
       "qid": "Q_SYN_1406",
@@ -1876,11 +1876,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3175,
+      "ndcg_at_k": 0.8503,
+      "gen_f1": 0.5455,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T4;DOC_CTX_T22;DOC_CTX_T9;DOC_CTX_T40;DOC_CTX_T6"
+      "top_doc_ids": "DOC_CTX_T4;DOC_CTX_S34;DOC_CTX_T9;DOC_CTX_S64;DOC_CTX_T22"
     },
     {
       "qid": "Q_SYN_1408",
@@ -1893,7 +1893,7 @@
       "gen_f1": 0.1967,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T7;DOC_CTX_T38;DOC_CTX_T24;DOC_CTX_T1;DOC_CTX_T27"
+      "top_doc_ids": "DOC_CTX_T7;DOC_CTX_T38;DOC_CTX_M47;DOC_CTX_R120;DOC_CTX_M3"
     },
     {
       "qid": "Q_SYN_1411",
@@ -1903,10 +1903,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.375,
+      "gen_f1": 0.35,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T9;DOC_CTX_T39;DOC_CTX_T40;DOC_CTX_T25;DOC_CTX_T20"
+      "top_doc_ids": "DOC_CTX_T39;DOC_CTX_T9;DOC_CTX_T40;DOC_CTX_M15;DOC_CTX_M23"
     },
     {
       "qid": "Q_SYN_1413",
@@ -1915,11 +1915,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4634,
+      "ndcg_at_k": 0.6309,
+      "gen_f1": 0.5376,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C49;DOC_CTX_C65;DOC_CTX_C93;DOC_CTX_C37;DOC_CTX_C90"
+      "top_doc_ids": "DOC_CTX_C90;DOC_CTX_C49;DOC_CTX_S100;DOC_CTX_C65;DOC_CTX_C37"
     },
     {
       "qid": "Q_SYN_1414",
@@ -1929,10 +1929,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4773,
+      "gen_f1": 0.3768,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S102;DOC_CTX_S42;DOC_CTX_S108;DOC_CTX_S103;DOC_CTX_S43"
+      "top_doc_ids": "DOC_CTX_S103;DOC_CTX_S108;DOC_CTX_S42;DOC_CTX_S102;DOC_CTX_C25"
     },
     {
       "qid": "Q_SYN_1417",
@@ -1940,12 +1940,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.25,
-      "ndcg_at_k": 0.1681,
-      "gen_f1": 0.2632,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.8319,
+      "gen_f1": 0.2835,
+      "citation_correctness": 0.75,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P26;DOC_CTX_P53;DOC_CTX_P59;DOC_CTX_P37;DOC_CTX_P21"
+      "top_doc_ids": "DOC_CTX_P37;DOC_CTX_P90;DOC_CTX_P81;DOC_CTX_P21;DOC_CTX_PH50"
     },
     {
       "qid": "Q_SYN_1419",
@@ -1955,10 +1955,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2414,
+      "gen_f1": 0.2373,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH43;DOC_CTX_PH13;DOC_CTX_PH28;DOC_CTX_PH25;DOC_CTX_PH19"
+      "top_doc_ids": "DOC_CTX_PH43;DOC_CTX_R18;DOC_CTX_PH13;DOC_CTX_PH19;DOC_CTX_PH25"
     },
     {
       "qid": "Q_SYN_1420",
@@ -1967,11 +1967,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3492,
+      "ndcg_at_k": 0.5438,
+      "gen_f1": 0.5,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P50;DOC_CTX_P14;DOC_CTX_P54;DOC_CTX_P18;DOC_CTX_P12"
+      "top_doc_ids": "DOC_CTX_S51;DOC_CTX_H83;DOC_CTX_P50;DOC_CTX_L33;DOC_CTX_P14"
     },
     {
       "qid": "Q_SYN_1421",
@@ -1981,10 +1981,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3214,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5306,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M49;DOC_CTX_M4;DOC_CTX_M35;DOC_CTX_M47;DOC_CTX_M1"
+      "top_doc_ids": "DOC_CTX_M49;DOC_CTX_L43;DOC_CTX_H1;DOC_CTX_L25;DOC_CTX_P56"
     },
     {
       "qid": "Q_SYN_1429",
@@ -1992,12 +1992,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3143,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.3904,
+      "gen_f1": 0.3333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R123;DOC_CTX_R51;DOC_CTX_R1003;DOC_CTX_R38;DOC_CTX_R37"
+      "top_doc_ids": "DOC_CTX_R51;DOC_CTX_C104;DOC_CTX_C9;DOC_CTX_H15;DOC_CTX_H64"
     },
     {
       "qid": "Q_SYN_1430",
@@ -2006,11 +2006,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.5,
-      "ndcg_at_k": 0.4415,
-      "gen_f1": 0.2439,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5585,
+      "gen_f1": 0.3678,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C9;DOC_CTX_C73;DOC_CTX_C104;DOC_CTX_C28;DOC_CTX_C22"
+      "top_doc_ids": "DOC_CTX_C73;DOC_CTX_C9;DOC_CTX_H53;DOC_CTX_C97;DOC_CTX_C106"
     },
     {
       "qid": "Q_SYN_1432",
@@ -2018,12 +2018,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4533,
-      "citation_correctness": 0.6667,
+      "recall_at_k": 0.6667,
+      "ndcg_at_k": 0.7654,
+      "gen_f1": 0.3878,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G36;DOC_CTX_G16;DOC_CTX_G60;DOC_CTX_G32;DOC_CTX_G10"
+      "top_doc_ids": "DOC_CTX_G36;DOC_CTX_G16;DOC_CTX_P90;DOC_CTX_P88;DOC_CTX_P81"
     },
     {
       "qid": "Q_SYN_1435",
@@ -2031,12 +2031,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.5856,
-      "gen_f1": 0.25,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.7877,
+      "gen_f1": 0.3077,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S17;DOC_CTX_S16;DOC_CTX_S31;DOC_CTX_S72;DOC_CTX_S2"
+      "top_doc_ids": "DOC_CTX_S17;DOC_CTX_S31;DOC_CTX_S16;DOC_CTX_S72;DOC_CTX_S38"
     },
     {
       "qid": "Q_SYN_1438",
@@ -2046,10 +2046,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3175,
+      "gen_f1": 0.3582,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS17;DOC_CTX_HS10;DOC_CTX_HS20;DOC_CTX_HS6;DOC_CTX_HS13"
+      "top_doc_ids": "DOC_CTX_HS17;DOC_CTX_HS10;DOC_CTX_M8;DOC_CTX_S103;DOC_CTX_M39"
     },
     {
       "qid": "Q_SYN_1443",
@@ -2059,10 +2059,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2295,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3505,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH36;DOC_CTX_PH22;DOC_CTX_PH63;DOC_CTX_PH14;DOC_CTX_PH5"
+      "top_doc_ids": "DOC_CTX_PH36;DOC_CTX_C68;DOC_CTX_R169;DOC_CTX_S59;DOC_CTX_B14"
     },
     {
       "qid": "Q_SYN_1444",
@@ -2072,10 +2072,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4198,
+      "gen_f1": 0.375,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS9;DOC_CTX_HS4;DOC_CTX_HS22;DOC_CTX_HS18;DOC_CTX_HS20"
+      "top_doc_ids": "DOC_CTX_HS18;DOC_CTX_HS22;DOC_CTX_HS4;DOC_CTX_HS9;DOC_CTX_S40"
     },
     {
       "qid": "Q_SYN_1450",
@@ -2085,10 +2085,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3023,
+      "gen_f1": 0.3288,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T12;DOC_CTX_T13;DOC_CTX_T30;DOC_CTX_T3;DOC_CTX_T9"
+      "top_doc_ids": "DOC_CTX_T3;DOC_CTX_T13;DOC_CTX_T30;DOC_CTX_T12;DOC_CTX_S76"
     },
     {
       "qid": "Q_SYN_1456",
@@ -2097,11 +2097,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9558,
+      "ndcg_at_k": 1.0,
       "gen_f1": 0.3692,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B12;DOC_CTX_B44;DOC_CTX_B11;DOC_CTX_B45;DOC_CTX_B28"
+      "top_doc_ids": "DOC_CTX_B12;DOC_CTX_B45;DOC_CTX_B28;DOC_CTX_B44;DOC_CTX_B11"
     },
     {
       "qid": "Q_SYN_1459",
@@ -2111,10 +2111,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3714,
+      "gen_f1": 0.375,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H3;DOC_CTX_H27;DOC_CTX_H30;DOC_CTX_H23;DOC_CTX_H73"
+      "top_doc_ids": "DOC_CTX_H27;DOC_CTX_H3;DOC_CTX_C53;DOC_CTX_PH23;DOC_CTX_R12"
     },
     {
       "qid": "Q_SYN_1462",
@@ -2122,12 +2122,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.25,
-      "ndcg_at_k": 0.151,
-      "gen_f1": 0.3117,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.7537,
+      "gen_f1": 0.3186,
+      "citation_correctness": 0.6,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G44;DOC_CTX_G47;DOC_CTX_G49;DOC_CTX_G60;DOC_CTX_G31"
+      "top_doc_ids": "DOC_CTX_G19;DOC_CTX_G60;DOC_CTX_G17;DOC_CTX_G50;DOC_CTX_G49"
     },
     {
       "qid": "Q_SYN_1465",
@@ -2137,10 +2137,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2979,
+      "gen_f1": 0.386,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P39;DOC_CTX_P2;DOC_CTX_P50;DOC_CTX_P26;DOC_CTX_P54"
+      "top_doc_ids": "DOC_CTX_P39;DOC_CTX_S48;DOC_CTX_R101;DOC_CTX_BA31;DOC_CTX_H83"
     },
     {
       "qid": "Q_SYN_1469",
@@ -2150,10 +2150,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2642,
-      "citation_correctness": 0.2,
+      "gen_f1": 0.3333,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M55;DOC_CTX_M22;DOC_CTX_M54;DOC_CTX_M29;DOC_CTX_M37"
+      "top_doc_ids": "DOC_CTX_M55;DOC_CTX_BA37;DOC_CTX_PH35;DOC_CTX_M54;DOC_CTX_M22"
     },
     {
       "qid": "Q_SYN_1471",
@@ -2163,10 +2163,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3636,
+      "gen_f1": 0.3333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G60;DOC_CTX_G16;DOC_CTX_G44;DOC_CTX_G47;DOC_CTX_G32"
+      "top_doc_ids": "DOC_CTX_G60;DOC_CTX_G16;DOC_CTX_R62;DOC_CTX_C33;DOC_CTX_C24"
     },
     {
       "qid": "Q_SYN_1474",
@@ -2176,10 +2176,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2745,
+      "gen_f1": 0.5333,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H67;DOC_CTX_H34;DOC_CTX_H36;DOC_CTX_H32;DOC_CTX_H57"
+      "top_doc_ids": "DOC_CTX_H67;DOC_CTX_S71;DOC_CTX_C107;DOC_CTX_HS21;DOC_CTX_R66"
     },
     {
       "qid": "Q_SYN_1476",
@@ -2189,10 +2189,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3636,
+      "gen_f1": 0.25,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R180;DOC_CTX_R1001;DOC_CTX_R75;DOC_CTX_R176;DOC_CTX_R156"
+      "top_doc_ids": "DOC_CTX_R180;DOC_CTX_L1;DOC_CTX_B22;DOC_CTX_R1001;DOC_CTX_B48"
     },
     {
       "qid": "Q_SYN_1477",
@@ -2201,11 +2201,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.25,
-      "ndcg_at_k": 0.151,
-      "gen_f1": 0.2933,
+      "ndcg_at_k": 0.1681,
+      "gen_f1": 0.2703,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T21;DOC_CTX_T19;DOC_CTX_T7;DOC_CTX_T38;DOC_CTX_T24"
+      "top_doc_ids": "DOC_CTX_T38;DOC_CTX_T7;DOC_CTX_T19;DOC_CTX_T24;DOC_CTX_T5"
     },
     {
       "qid": "Q_SYN_1480",
@@ -2214,11 +2214,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.36,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA36;DOC_CTX_BA4;DOC_CTX_BA11;DOC_CTX_BA21;DOC_CTX_BA17"
+      "top_doc_ids": "DOC_CTX_S70;DOC_CTX_C109;DOC_CTX_BA36;DOC_CTX_P7;DOC_CTX_C105"
     },
     {
       "qid": "Q_SYN_1484",
@@ -2228,10 +2228,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 0.8,
       "ndcg_at_k": 0.8688,
-      "gen_f1": 0.4865,
+      "gen_f1": 0.2571,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH23;DOC_CTX_PH56;DOC_CTX_PH62;DOC_CTX_PH58;DOC_CTX_PH50"
+      "top_doc_ids": "DOC_CTX_PH23;DOC_CTX_PH58;DOC_CTX_PH62;DOC_CTX_PH56;DOC_CTX_PH50"
     },
     {
       "qid": "Q_SYN_1485",
@@ -2241,10 +2241,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4225,
-      "citation_correctness": 0.0,
+      "gen_f1": 0.4615,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P34;DOC_CTX_P25;DOC_CTX_P9;DOC_CTX_P40;DOC_CTX_P86"
+      "top_doc_ids": "DOC_CTX_P34;DOC_CTX_L11;DOC_CTX_H37;DOC_CTX_M15;DOC_CTX_T40"
     },
     {
       "qid": "Q_SYN_1487",
@@ -2253,11 +2253,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.5,
-      "ndcg_at_k": 0.4144,
-      "gen_f1": 0.359,
+      "ndcg_at_k": 0.5585,
+      "gen_f1": 0.4103,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P2;DOC_CTX_P50;DOC_CTX_P26;DOC_CTX_P53;DOC_CTX_P21"
+      "top_doc_ids": "DOC_CTX_P50;DOC_CTX_P87;DOC_CTX_P26;DOC_CTX_P31;DOC_CTX_H83"
     },
     {
       "qid": "Q_SYN_1489",
@@ -2266,11 +2266,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.5,
-      "ndcg_at_k": 0.3191,
-      "gen_f1": 0.3636,
+      "ndcg_at_k": 0.3462,
+      "gen_f1": 0.3684,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S107;DOC_CTX_S92;DOC_CTX_S1002;DOC_CTX_S14;DOC_CTX_S44"
+      "top_doc_ids": "DOC_CTX_S107;DOC_CTX_S90;DOC_CTX_S106;DOC_CTX_S1002;DOC_CTX_S100"
     },
     {
       "qid": "Q_SYN_1492",
@@ -2280,10 +2280,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3385,
+      "gen_f1": 0.3333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA4;DOC_CTX_BA26;DOC_CTX_BA9;DOC_CTX_BA3;DOC_CTX_BA30"
+      "top_doc_ids": "DOC_CTX_BA4;DOC_CTX_BA26;DOC_CTX_P8;DOC_CTX_P13;DOC_CTX_S22"
     },
     {
       "qid": "Q_SYN_1493",
@@ -2293,10 +2293,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3077,
+      "gen_f1": 0.4737,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S111;DOC_CTX_S116;DOC_CTX_S13;DOC_CTX_S29;DOC_CTX_S18"
+      "top_doc_ids": "DOC_CTX_S111;DOC_CTX_S116;DOC_CTX_S29;DOC_CTX_R83;DOC_CTX_S13"
     },
     {
       "qid": "Q_SYN_1495",
@@ -2306,10 +2306,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.9047,
-      "gen_f1": 0.3846,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3652,
+      "citation_correctness": 0.8,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G18;DOC_CTX_G69;DOC_CTX_G23;DOC_CTX_G71;DOC_CTX_G9"
+      "top_doc_ids": "DOC_CTX_G18;DOC_CTX_G21;DOC_CTX_G9;DOC_CTX_G71;DOC_CTX_G23"
     },
     {
       "qid": "Q_SYN_1496",
@@ -2318,11 +2318,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.5116,
+      "ndcg_at_k": 0.6309,
+      "gen_f1": 0.5714,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H30;DOC_CTX_H3;DOC_CTX_H80;DOC_CTX_H27;DOC_CTX_H65"
+      "top_doc_ids": "DOC_CTX_H80;DOC_CTX_H30;DOC_CTX_H3;DOC_CTX_T38;DOC_CTX_H27"
     },
     {
       "qid": "Q_SYN_1498",
@@ -2331,11 +2331,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.75,
-      "ndcg_at_k": 0.5143,
-      "gen_f1": 0.3636,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 0.6096,
+      "gen_f1": 0.315,
+      "citation_correctness": 0.6,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T10;DOC_CTX_T11;DOC_CTX_T18;DOC_CTX_T32;DOC_CTX_T17"
+      "top_doc_ids": "DOC_CTX_T10;DOC_CTX_T18;DOC_CTX_T32;DOC_CTX_T17;DOC_CTX_T11"
     },
     {
       "qid": "Q_SYN_1501",
@@ -2343,12 +2343,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.7095,
-      "gen_f1": 0.2571,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.3633,
+      "gen_f1": 0.2609,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH43;DOC_CTX_PH57;DOC_CTX_PH64;DOC_CTX_PH28;DOC_CTX_PH25"
+      "top_doc_ids": "DOC_CTX_PH57;DOC_CTX_PH64;DOC_CTX_PH43;DOC_CTX_PH19;DOC_CTX_PH13"
     },
     {
       "qid": "Q_SYN_1507",
@@ -2358,10 +2358,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2581,
+      "gen_f1": 0.4545,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L1;DOC_CTX_L7;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L42"
+      "top_doc_ids": "DOC_CTX_L1;DOC_CTX_L7;DOC_CTX_M50;DOC_CTX_M40;DOC_CTX_C103"
     },
     {
       "qid": "Q_SYN_1513",
@@ -2370,11 +2370,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9558,
-      "gen_f1": 0.4091,
+      "ndcg_at_k": 0.9047,
+      "gen_f1": 0.433,
       "citation_correctness": 0.8,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H85;DOC_CTX_H8;DOC_CTX_H64;DOC_CTX_H15;DOC_CTX_H16"
+      "top_doc_ids": "DOC_CTX_H15;DOC_CTX_H64;DOC_CTX_H16;DOC_CTX_H8;DOC_CTX_H85"
     },
     {
       "qid": "Q_SYN_1515",
@@ -2383,11 +2383,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.4,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.4507,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S63;DOC_CTX_S73;DOC_CTX_S93;DOC_CTX_S35;DOC_CTX_S70"
+      "top_doc_ids": "DOC_CTX_S73;DOC_CTX_S63;DOC_CTX_S93;DOC_CTX_L12;DOC_CTX_T2"
     },
     {
       "qid": "Q_SYN_1519",
@@ -2397,10 +2397,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2692,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3284,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G10;DOC_CTX_G32;DOC_CTX_G36;DOC_CTX_G16;DOC_CTX_G44"
+      "top_doc_ids": "DOC_CTX_G10;DOC_CTX_PH60;DOC_CTX_L15;DOC_CTX_H2;DOC_CTX_S28"
     },
     {
       "qid": "Q_SYN_1520",
@@ -2410,10 +2410,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3509,
+      "gen_f1": 0.2456,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R15;DOC_CTX_R66;DOC_CTX_R84;DOC_CTX_R175;DOC_CTX_R97"
+      "top_doc_ids": "DOC_CTX_R15;DOC_CTX_H62;DOC_CTX_H46;DOC_CTX_S20;DOC_CTX_H34"
     },
     {
       "qid": "Q_SYN_1522",
@@ -2421,12 +2421,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.8319,
-      "gen_f1": 0.35,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.2463,
+      "gen_f1": 0.0513,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R141;DOC_CTX_R25;DOC_CTX_R31;DOC_CTX_R1002;DOC_CTX_R43"
+      "top_doc_ids": "DOC_CTX_R1002;DOC_CTX_R166;DOC_CTX_S40;DOC_CTX_S51;DOC_CTX_R12"
     },
     {
       "qid": "Q_SYN_1527",
@@ -2436,10 +2436,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3478,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5672,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G71;DOC_CTX_G18;DOC_CTX_G9;DOC_CTX_G8;DOC_CTX_G69"
+      "top_doc_ids": "DOC_CTX_G71;DOC_CTX_B22;DOC_CTX_R156;DOC_CTX_R1001;DOC_CTX_HS23"
     },
     {
       "qid": "Q_SYN_1528",
@@ -2449,10 +2449,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 0.0,
       "ndcg_at_k": 0.0,
-      "gen_f1": 0.15,
+      "gen_f1": 0.2078,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R148;DOC_CTX_R119;DOC_CTX_R140;DOC_CTX_R57;DOC_CTX_R154"
+      "top_doc_ids": "DOC_CTX_H82;DOC_CTX_H37;DOC_CTX_R140;DOC_CTX_P27;DOC_CTX_H41"
     },
     {
       "qid": "Q_SYN_1531",
@@ -2462,10 +2462,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3175,
+      "gen_f1": 0.3158,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B35;DOC_CTX_B20;DOC_CTX_B53;DOC_CTX_B15;DOC_CTX_B14"
+      "top_doc_ids": "DOC_CTX_B35;DOC_CTX_B53;DOC_CTX_B20;DOC_CTX_L44;DOC_CTX_G67"
     },
     {
       "qid": "Q_SYN_1536",
@@ -2475,10 +2475,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3662,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3564,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G73;DOC_CTX_G6;DOC_CTX_G59;DOC_CTX_G5;DOC_CTX_G68"
+      "top_doc_ids": "DOC_CTX_G73;DOC_CTX_R155;DOC_CTX_S7;DOC_CTX_R174;DOC_CTX_S84"
     },
     {
       "qid": "Q_SYN_1537",
@@ -2488,10 +2488,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2857,
+      "gen_f1": 0.3333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH3;DOC_CTX_PH53;DOC_CTX_PH34;DOC_CTX_PH7;DOC_CTX_PH30"
+      "top_doc_ids": "DOC_CTX_PH3;DOC_CTX_PH53;DOC_CTX_S1001;DOC_CTX_G40;DOC_CTX_P68"
     },
     {
       "qid": "Q_SYN_1540",
@@ -2499,12 +2499,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.5143,
-      "gen_f1": 0.2718,
-      "citation_correctness": 0.6,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.3191,
+      "gen_f1": 0.1159,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R41;DOC_CTX_R40;DOC_CTX_R14;DOC_CTX_R109;DOC_CTX_R149"
+      "top_doc_ids": "DOC_CTX_R77;DOC_CTX_R41;DOC_CTX_R40;DOC_CTX_R162;DOC_CTX_R14"
     },
     {
       "qid": "Q_SYN_1543",
@@ -2514,10 +2514,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 0.0,
       "ndcg_at_k": 0.0,
-      "gen_f1": 0.1081,
+      "gen_f1": 0.1026,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R170;DOC_CTX_R121;DOC_CTX_R74;DOC_CTX_R129;DOC_CTX_R100"
+      "top_doc_ids": "DOC_CTX_S48;DOC_CTX_S70;DOC_CTX_R170;DOC_CTX_R16;DOC_CTX_R129"
     },
     {
       "qid": "Q_SYN_1549",
@@ -2525,12 +2525,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.4415,
-      "gen_f1": 0.4103,
-      "citation_correctness": 0.4,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.151,
+      "gen_f1": 0.2769,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH62;DOC_CTX_PH20;DOC_CTX_PH61;DOC_CTX_PH60;DOC_CTX_PH70"
+      "top_doc_ids": "DOC_CTX_PH62;DOC_CTX_PH60;DOC_CTX_PH70;DOC_CTX_PH50;DOC_CTX_PH61"
     },
     {
       "qid": "Q_SYN_1552",
@@ -2539,11 +2539,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
+      "ndcg_at_k": 0.7606,
       "gen_f1": 0.3947,
-      "citation_correctness": 1.0,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L29;DOC_CTX_L20;DOC_CTX_L40;DOC_CTX_L32;DOC_CTX_L31"
+      "top_doc_ids": "DOC_CTX_L31;DOC_CTX_L29;DOC_CTX_L32;DOC_CTX_L40;DOC_CTX_L20"
     },
     {
       "qid": "Q_SYN_1555",
@@ -2551,12 +2551,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3962,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.6131,
+      "gen_f1": 0.2388,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G36;DOC_CTX_G60;DOC_CTX_G32;DOC_CTX_G10;DOC_CTX_G16"
+      "top_doc_ids": "DOC_CTX_G36;DOC_CTX_C36;DOC_CTX_C42;DOC_CTX_P37;DOC_CTX_P90"
     },
     {
       "qid": "Q_SYN_1556",
@@ -2569,7 +2569,7 @@
       "gen_f1": 0.5,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H1003;DOC_CTX_H41;DOC_CTX_H52;DOC_CTX_H49;DOC_CTX_H56"
+      "top_doc_ids": "DOC_CTX_H1003;DOC_CTX_G67;DOC_CTX_R161;DOC_CTX_BA6;DOC_CTX_C98"
     },
     {
       "qid": "Q_SYN_1558",
@@ -2578,11 +2578,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.5,
-      "ndcg_at_k": 0.4415,
-      "gen_f1": 0.2936,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5585,
+      "gen_f1": 0.3077,
+      "citation_correctness": 0.3333,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH3;DOC_CTX_PH34;DOC_CTX_PH7;DOC_CTX_PH30;DOC_CTX_PH68"
+      "top_doc_ids": "DOC_CTX_PH34;DOC_CTX_PH3;DOC_CTX_PH40;DOC_CTX_PH49;DOC_CTX_PH68"
     },
     {
       "qid": "Q_SYN_1559",
@@ -2592,10 +2592,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1887,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4906,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH64;DOC_CTX_PH17;DOC_CTX_PH43;DOC_CTX_PH45;DOC_CTX_PH56"
+      "top_doc_ids": "DOC_CTX_PH64;DOC_CTX_H26;DOC_CTX_BA35;DOC_CTX_R176;DOC_CTX_R156"
     },
     {
       "qid": "Q_SYN_1561",
@@ -2603,12 +2603,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.8319,
-      "gen_f1": 0.4658,
-      "citation_correctness": 0.75,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.6367,
+      "gen_f1": 0.3333,
+      "citation_correctness": 0.6667,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G32;DOC_CTX_G10;DOC_CTX_G36;DOC_CTX_G16;DOC_CTX_G44"
+      "top_doc_ids": "DOC_CTX_G10;DOC_CTX_G36;DOC_CTX_G16;DOC_CTX_C36;DOC_CTX_C42"
     },
     {
       "qid": "Q_SYN_1564",
@@ -2616,12 +2616,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.7877,
-      "gen_f1": 0.3125,
-      "citation_correctness": 1.0,
+      "recall_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.5135,
+      "citation_correctness": 0.8,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P71;DOC_CTX_P73;DOC_CTX_P84;DOC_CTX_P43;DOC_CTX_P46"
+      "top_doc_ids": "DOC_CTX_P71;DOC_CTX_P46;DOC_CTX_P42;DOC_CTX_P73;DOC_CTX_P84"
     },
     {
       "qid": "Q_SYN_1565",
@@ -2631,10 +2631,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.9197,
-      "gen_f1": 0.3881,
+      "gen_f1": 0.3284,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA22;DOC_CTX_BA28;DOC_CTX_BA27;DOC_CTX_BA8;DOC_CTX_BA3"
+      "top_doc_ids": "DOC_CTX_BA22;DOC_CTX_BA28;DOC_CTX_BA27;DOC_CTX_H53;DOC_CTX_M9"
     },
     {
       "qid": "Q_SYN_1567",
@@ -2644,10 +2644,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4082,
+      "gen_f1": 0.4348,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B42;DOC_CTX_B17;DOC_CTX_B9;DOC_CTX_B15;DOC_CTX_B20"
+      "top_doc_ids": "DOC_CTX_B42;DOC_CTX_T38;DOC_CTX_G50;DOC_CTX_BA9;DOC_CTX_G31"
     },
     {
       "qid": "Q_SYN_1570",
@@ -2655,12 +2655,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.3973,
-      "gen_f1": 0.2254,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.2571,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R1001;DOC_CTX_R89;DOC_CTX_R159;DOC_CTX_R18;DOC_CTX_R75"
+      "top_doc_ids": "DOC_CTX_R60;DOC_CTX_R159;DOC_CTX_R1001;DOC_CTX_H45;DOC_CTX_G18"
     },
     {
       "qid": "Q_SYN_1572",
@@ -2670,10 +2670,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4595,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5152,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S79;DOC_CTX_S70;DOC_CTX_S117;DOC_CTX_S43;DOC_CTX_S84"
+      "top_doc_ids": "DOC_CTX_S79;DOC_CTX_HS1;DOC_CTX_H52;DOC_CTX_HS15;DOC_CTX_BA36"
     },
     {
       "qid": "Q_SYN_1573",
@@ -2681,12 +2681,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.1127,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.3633,
+      "gen_f1": 0.4103,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P62;DOC_CTX_P71;DOC_CTX_P2;DOC_CTX_P50;DOC_CTX_P26"
+      "top_doc_ids": "DOC_CTX_P56;DOC_CTX_P13;DOC_CTX_P57;DOC_CTX_P59;DOC_CTX_H80"
     },
     {
       "qid": "Q_SYN_1579",
@@ -2694,12 +2694,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9558,
-      "gen_f1": 0.3836,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.6096,
+      "gen_f1": 0.2,
+      "citation_correctness": 0.6,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H21;DOC_CTX_H8;DOC_CTX_H38;DOC_CTX_H15;DOC_CTX_H16"
+      "top_doc_ids": "DOC_CTX_H53;DOC_CTX_H15;DOC_CTX_H21;DOC_CTX_H16;DOC_CTX_H38"
     },
     {
       "qid": "Q_SYN_1581",
@@ -2708,11 +2708,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.2769,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.3855,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L16;DOC_CTX_L33;DOC_CTX_L6;DOC_CTX_L4;DOC_CTX_L44"
+      "top_doc_ids": "DOC_CTX_M17;DOC_CTX_C23;DOC_CTX_L16;DOC_CTX_R169;DOC_CTX_R52"
     },
     {
       "qid": "Q_SYN_1586",
@@ -2722,10 +2722,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3019,
+      "gen_f1": 0.2308,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G76;DOC_CTX_G63;DOC_CTX_G55;DOC_CTX_G24;DOC_CTX_G40"
+      "top_doc_ids": "DOC_CTX_G76;DOC_CTX_G55;DOC_CTX_G63;DOC_CTX_P85;DOC_CTX_B55"
     },
     {
       "qid": "Q_SYN_1588",
@@ -2733,12 +2733,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.25,
-      "ndcg_at_k": 0.2463,
-      "gen_f1": 0.1739,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.2029,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH29;DOC_CTX_PH43;DOC_CTX_PH4;DOC_CTX_PH46;DOC_CTX_PH57"
+      "top_doc_ids": "DOC_CTX_PH4;DOC_CTX_PH57;DOC_CTX_PH64;DOC_CTX_PH46;DOC_CTX_PH41"
     },
     {
       "qid": "Q_SYN_1594",
@@ -2748,10 +2748,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2857,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3714,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH70;DOC_CTX_PH62;DOC_CTX_PH20;DOC_CTX_PH61;DOC_CTX_PH60"
+      "top_doc_ids": "DOC_CTX_PH70;DOC_CTX_HS22;DOC_CTX_C36;DOC_CTX_G32;DOC_CTX_C56"
     },
     {
       "qid": "Q_SYN_1597",
@@ -2759,12 +2759,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.5856,
-      "gen_f1": 0.4211,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.7366,
+      "gen_f1": 0.4533,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S43;DOC_CTX_S84;DOC_CTX_S87;DOC_CTX_S53;DOC_CTX_S7"
+      "top_doc_ids": "DOC_CTX_S99;DOC_CTX_S101;DOC_CTX_S59;DOC_CTX_S7;DOC_CTX_S43"
     },
     {
       "qid": "Q_SYN_1604",
@@ -2773,11 +2773,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.5185,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R69;DOC_CTX_R32;DOC_CTX_R159;DOC_CTX_R119;DOC_CTX_R57"
+      "top_doc_ids": "DOC_CTX_R159;DOC_CTX_S96;DOC_CTX_R69;DOC_CTX_G35;DOC_CTX_R32"
     },
     {
       "qid": "Q_SYN_1606",
@@ -2787,10 +2787,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 0.0,
       "ndcg_at_k": 0.0,
-      "gen_f1": 0.2632,
+      "gen_f1": 0.4103,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S35;DOC_CTX_S65;DOC_CTX_S70;DOC_CTX_S79;DOC_CTX_S82"
+      "top_doc_ids": "DOC_CTX_S39;DOC_CTX_S120;DOC_CTX_S26;DOC_CTX_S32;DOC_CTX_S96"
     },
     {
       "qid": "Q_SYN_1609",
@@ -2799,11 +2799,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.75,
-      "ndcg_at_k": 0.8319,
-      "gen_f1": 0.3158,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.7366,
+      "gen_f1": 0.3288,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T7;DOC_CTX_T24;DOC_CTX_T1;DOC_CTX_T16;DOC_CTX_T19"
+      "top_doc_ids": "DOC_CTX_T7;DOC_CTX_T5;DOC_CTX_T24;DOC_CTX_T38;DOC_CTX_T1"
     },
     {
       "qid": "Q_SYN_1610",
@@ -2813,10 +2813,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3273,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4571,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T32;DOC_CTX_T18;DOC_CTX_T17;DOC_CTX_T25;DOC_CTX_T6"
+      "top_doc_ids": "DOC_CTX_T32;DOC_CTX_H79;DOC_CTX_G12;DOC_CTX_S26;DOC_CTX_H25"
     },
     {
       "qid": "Q_SYN_1612",
@@ -2825,11 +2825,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.5,
-      "ndcg_at_k": 0.3973,
-      "gen_f1": 0.3478,
+      "ndcg_at_k": 0.4144,
+      "gen_f1": 0.3188,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B34;DOC_CTX_B12;DOC_CTX_B21;DOC_CTX_B22;DOC_CTX_B44"
+      "top_doc_ids": "DOC_CTX_B34;DOC_CTX_B12;DOC_CTX_B21;DOC_CTX_B45;DOC_CTX_B22"
     },
     {
       "qid": "Q_SYN_1615",
@@ -2839,10 +2839,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1702,
+      "gen_f1": 0.1277,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R142;DOC_CTX_R59;DOC_CTX_R150;DOC_CTX_R41;DOC_CTX_R40"
+      "top_doc_ids": "DOC_CTX_R142;DOC_CTX_C3;DOC_CTX_R59;DOC_CTX_S103;DOC_CTX_R77"
     },
     {
       "qid": "Q_SYN_1617",
@@ -2852,10 +2852,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3889,
+      "gen_f1": 0.4688,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L18;DOC_CTX_L39;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L42"
+      "top_doc_ids": "DOC_CTX_L18;DOC_CTX_L39;DOC_CTX_C34;DOC_CTX_G28;DOC_CTX_G78"
     },
     {
       "qid": "Q_SYN_1619",
@@ -2864,11 +2864,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.4,
-      "ndcg_at_k": 0.5531,
-      "gen_f1": 0.2857,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.2773,
+      "gen_f1": 0.3421,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H66;DOC_CTX_H26;DOC_CTX_H74;DOC_CTX_H39;DOC_CTX_H41"
+      "top_doc_ids": "DOC_CTX_H37;DOC_CTX_H82;DOC_CTX_H41;DOC_CTX_H9;DOC_CTX_H66"
     },
     {
       "qid": "Q_SYN_1621",
@@ -2878,10 +2878,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3421,
+      "gen_f1": 0.3467,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T16;DOC_CTX_T19;DOC_CTX_T5;DOC_CTX_T15;DOC_CTX_T38"
+      "top_doc_ids": "DOC_CTX_T5;DOC_CTX_T19;DOC_CTX_T16;DOC_CTX_G10;DOC_CTX_C31"
     },
     {
       "qid": "Q_SYN_1624",
@@ -2889,12 +2889,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.5856,
-      "gen_f1": 0.3662,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.2463,
+      "gen_f1": 0.3429,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H85;DOC_CTX_H21;DOC_CTX_H8;DOC_CTX_H14;DOC_CTX_H73"
+      "top_doc_ids": "DOC_CTX_H73;DOC_CTX_H15;DOC_CTX_H64;DOC_CTX_H21;DOC_CTX_H55"
     },
     {
       "qid": "Q_SYN_1625",
@@ -2904,10 +2904,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.6207,
+      "gen_f1": 0.5067,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G29;DOC_CTX_G44;DOC_CTX_G47;DOC_CTX_G49;DOC_CTX_G50"
+      "top_doc_ids": "DOC_CTX_G29;DOC_CTX_C74;DOC_CTX_H17;DOC_CTX_M9;DOC_CTX_H65"
     },
     {
       "qid": "Q_SYN_1627",
@@ -2917,10 +2917,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3385,
+      "gen_f1": 0.1935,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L43;DOC_CTX_L22;DOC_CTX_L15;DOC_CTX_L25;DOC_CTX_L33"
+      "top_doc_ids": "DOC_CTX_L22;DOC_CTX_L43;DOC_CTX_B42;DOC_CTX_M38;DOC_CTX_T7"
     },
     {
       "qid": "Q_SYN_1632",
@@ -2930,10 +2930,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4127,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R35;DOC_CTX_R106;DOC_CTX_R1002;DOC_CTX_R81;DOC_CTX_R29"
+      "top_doc_ids": "DOC_CTX_R35;DOC_CTX_G43;DOC_CTX_S110;DOC_CTX_B36;DOC_CTX_HS9"
     },
     {
       "qid": "Q_SYN_1633",
@@ -2942,11 +2942,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4681,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.4074,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA35;DOC_CTX_BA4;DOC_CTX_BA11;DOC_CTX_BA21;DOC_CTX_BA17"
+      "top_doc_ids": "DOC_CTX_P38;DOC_CTX_L1;DOC_CTX_BA35;DOC_CTX_P64;DOC_CTX_P44"
     },
     {
       "qid": "Q_SYN_1636",
@@ -2956,10 +2956,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1455,
+      "gen_f1": 0.1481,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R20;DOC_CTX_R148;DOC_CTX_R119;DOC_CTX_R57;DOC_CTX_R96"
+      "top_doc_ids": "DOC_CTX_R20;DOC_CTX_B53;DOC_CTX_R119;DOC_CTX_R148;DOC_CTX_R57"
     },
     {
       "qid": "Q_SYN_1638",
@@ -2967,12 +2967,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.3869,
-      "gen_f1": 0.3291,
-      "citation_correctness": 0.5,
+      "recall_at_k": 1.0,
+      "ndcg_at_k": 0.5438,
+      "gen_f1": 0.4051,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M4;DOC_CTX_M47;DOC_CTX_M1;DOC_CTX_M11;DOC_CTX_M3"
+      "top_doc_ids": "DOC_CTX_T38;DOC_CTX_M11;DOC_CTX_M38;DOC_CTX_M4;DOC_CTX_M47"
     },
     {
       "qid": "Q_SYN_1639",
@@ -2981,11 +2981,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3939,
+      "ndcg_at_k": 0.6934,
+      "gen_f1": 0.35,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G32;DOC_CTX_G74;DOC_CTX_G10;DOC_CTX_G36;DOC_CTX_G16"
+      "top_doc_ids": "DOC_CTX_C36;DOC_CTX_G32;DOC_CTX_G74;DOC_CTX_PH70;DOC_CTX_HS22"
     },
     {
       "qid": "Q_SYN_1641",
@@ -2994,11 +2994,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4,
+      "ndcg_at_k": 0.8772,
+      "gen_f1": 0.3951,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L20;DOC_CTX_L40;DOC_CTX_L29;DOC_CTX_L43;DOC_CTX_L22"
+      "top_doc_ids": "DOC_CTX_L20;DOC_CTX_S27;DOC_CTX_S85;DOC_CTX_L40;DOC_CTX_H15"
     },
     {
       "qid": "Q_SYN_1642",
@@ -3008,10 +3008,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4615,
-      "citation_correctness": 1.0,
+      "gen_f1": 0.3019,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R60;DOC_CTX_R57;DOC_CTX_R71;DOC_CTX_R1001;DOC_CTX_R89"
+      "top_doc_ids": "DOC_CTX_R60;DOC_CTX_G18;DOC_CTX_PH41;DOC_CTX_R1001;DOC_CTX_R8"
     },
     {
       "qid": "Q_SYN_1646",
@@ -3020,11 +3020,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
+      "ndcg_at_k": 0.9829,
       "gen_f1": 0.3243,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P59;DOC_CTX_P90;DOC_CTX_P80;DOC_CTX_P57;DOC_CTX_P37"
+      "top_doc_ids": "DOC_CTX_P59;DOC_CTX_P57;DOC_CTX_P80;DOC_CTX_P37;DOC_CTX_P90"
     },
     {
       "qid": "Q_SYN_1648",
@@ -3034,10 +3034,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4762,
+      "gen_f1": 0.2933,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H66;DOC_CTX_H84;DOC_CTX_H29;DOC_CTX_H18;DOC_CTX_H47"
+      "top_doc_ids": "DOC_CTX_H66;DOC_CTX_P44;DOC_CTX_T33;DOC_CTX_T26;DOC_CTX_C103"
     },
     {
       "qid": "Q_SYN_1651",
@@ -3045,12 +3045,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3733,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.151,
+      "gen_f1": 0.2895,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA9;DOC_CTX_BA3;DOC_CTX_BA8;DOC_CTX_BA26;DOC_CTX_BA4"
+      "top_doc_ids": "DOC_CTX_P37;DOC_CTX_P21;DOC_CTX_P90;DOC_CTX_P88;DOC_CTX_BA9"
     },
     {
       "qid": "Q_SYN_1653",
@@ -3060,10 +3060,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3385,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3934,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T30;DOC_CTX_T21;DOC_CTX_T24;DOC_CTX_T1;DOC_CTX_T16"
+      "top_doc_ids": "DOC_CTX_T30;DOC_CTX_T21;DOC_CTX_M47;DOC_CTX_M35;DOC_CTX_H27"
     },
     {
       "qid": "Q_SYN_1656",
@@ -3073,10 +3073,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3571,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4839,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T23;DOC_CTX_T39;DOC_CTX_T10;DOC_CTX_T31;DOC_CTX_T26"
+      "top_doc_ids": "DOC_CTX_T23;DOC_CTX_M41;DOC_CTX_M50;DOC_CTX_G75;DOC_CTX_H66"
     },
     {
       "qid": "Q_SYN_1660",
@@ -3086,10 +3086,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2593,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4615,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S103;DOC_CTX_S92;DOC_CTX_S74;DOC_CTX_S102;DOC_CTX_S47"
+      "top_doc_ids": "DOC_CTX_S103;DOC_CTX_C3;DOC_CTX_R59;DOC_CTX_R142;DOC_CTX_S107"
     },
     {
       "qid": "Q_SYN_1661",
@@ -3099,10 +3099,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2449,
+      "gen_f1": 0.3636,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH61;DOC_CTX_PH20;DOC_CTX_PH56;DOC_CTX_PH58;DOC_CTX_PH70"
+      "top_doc_ids": "DOC_CTX_PH61;DOC_CTX_H13;DOC_CTX_R104;DOC_CTX_PH20;DOC_CTX_PH58"
     },
     {
       "qid": "Q_SYN_1666",
@@ -3110,12 +3110,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.5654,
-      "gen_f1": 0.3291,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.5856,
+      "gen_f1": 0.2857,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G20;DOC_CTX_G11;DOC_CTX_G32;DOC_CTX_G13;DOC_CTX_G74"
+      "top_doc_ids": "DOC_CTX_G43;DOC_CTX_G32;DOC_CTX_G13;DOC_CTX_S76;DOC_CTX_S15"
     },
     {
       "qid": "Q_SYN_1668",
@@ -3125,10 +3125,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3548,
+      "gen_f1": 0.2903,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H21;DOC_CTX_H38;DOC_CTX_H53;DOC_CTX_H25;DOC_CTX_H54"
+      "top_doc_ids": "DOC_CTX_H21;DOC_CTX_H38;DOC_CTX_H53;DOC_CTX_R111;DOC_CTX_R80"
     },
     {
       "qid": "Q_SYN_1669",
@@ -3138,10 +3138,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4898,
+      "gen_f1": 0.3421,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L16;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L42;DOC_CTX_L41"
+      "top_doc_ids": "DOC_CTX_L16;DOC_CTX_B46;DOC_CTX_B27;DOC_CTX_M17;DOC_CTX_S99"
     },
     {
       "qid": "Q_SYN_1671",
@@ -3151,10 +3151,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4054,
-      "citation_correctness": 1.0,
+      "gen_f1": 0.2727,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G51;DOC_CTX_G42;DOC_CTX_G20;DOC_CTX_G1;DOC_CTX_G33"
+      "top_doc_ids": "DOC_CTX_G51;DOC_CTX_R1003;DOC_CTX_P71;DOC_CTX_G42;DOC_CTX_L29"
     },
     {
       "qid": "Q_SYN_1676",
@@ -3164,10 +3164,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2807,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5714,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B10;DOC_CTX_B23;DOC_CTX_B14;DOC_CTX_B13;DOC_CTX_B41"
+      "top_doc_ids": "DOC_CTX_B10;DOC_CTX_C58;DOC_CTX_S53;DOC_CTX_B46;DOC_CTX_B27"
     },
     {
       "qid": "Q_SYN_1681",
@@ -3177,10 +3177,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2597,
+      "gen_f1": 0.339,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L21;DOC_CTX_L9;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L42"
+      "top_doc_ids": "DOC_CTX_L21;DOC_CTX_L9;DOC_CTX_S107;DOC_CTX_S92;DOC_CTX_M12"
     },
     {
       "qid": "Q_SYN_1684",
@@ -3188,12 +3188,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.5143,
-      "gen_f1": 0.3871,
-      "citation_correctness": 0.6,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.1952,
+      "gen_f1": 0.2254,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H29;DOC_CTX_H18;DOC_CTX_H47;DOC_CTX_H83;DOC_CTX_H7"
+      "top_doc_ids": "DOC_CTX_S40;DOC_CTX_S51;DOC_CTX_H83;DOC_CTX_H77;DOC_CTX_H18"
     },
     {
       "qid": "Q_SYN_1687",
@@ -3201,12 +3201,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.5856,
-      "gen_f1": 0.4211,
+      "recall_at_k": 0.75,
+      "ndcg_at_k": 0.7366,
+      "gen_f1": 0.4533,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S43;DOC_CTX_S84;DOC_CTX_S87;DOC_CTX_S53;DOC_CTX_S7"
+      "top_doc_ids": "DOC_CTX_S99;DOC_CTX_S101;DOC_CTX_S59;DOC_CTX_S7;DOC_CTX_S43"
     },
     {
       "qid": "Q_SYN_1692",
@@ -3216,10 +3216,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3478,
+      "gen_f1": 0.2703,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P73;DOC_CTX_P46;DOC_CTX_P62;DOC_CTX_P71;DOC_CTX_P84"
+      "top_doc_ids": "DOC_CTX_P73;DOC_CTX_P46;DOC_CTX_S22;DOC_CTX_S75;DOC_CTX_M48"
     },
     {
       "qid": "Q_SYN_1693",
@@ -3227,12 +3227,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3836,
+      "recall_at_k": 0.6667,
+      "ndcg_at_k": 0.4367,
+      "gen_f1": 0.3659,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P50;DOC_CTX_P54;DOC_CTX_P14;DOC_CTX_P18;DOC_CTX_P12"
+      "top_doc_ids": "DOC_CTX_S40;DOC_CTX_S51;DOC_CTX_P50;DOC_CTX_P54;DOC_CTX_H83"
     },
     {
       "qid": "Q_SYN_1696",
@@ -3241,11 +3241,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.7606,
+      "ndcg_at_k": 0.9047,
       "gen_f1": 0.4167,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS6;DOC_CTX_HS14;DOC_CTX_HS23;DOC_CTX_HS3;DOC_CTX_HS7"
+      "top_doc_ids": "DOC_CTX_HS14;DOC_CTX_HS6;DOC_CTX_HS3;DOC_CTX_HS23;DOC_CTX_HS7"
     },
     {
       "qid": "Q_SYN_1697",
@@ -3255,10 +3255,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2963,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3404,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T37;DOC_CTX_T4;DOC_CTX_T22;DOC_CTX_T29;DOC_CTX_T40"
+      "top_doc_ids": "DOC_CTX_T37;DOC_CTX_M26;DOC_CTX_R41;DOC_CTX_P6;DOC_CTX_S1002"
     },
     {
       "qid": "Q_SYN_1700",
@@ -3268,10 +3268,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3415,
-      "citation_correctness": 0.0,
+      "gen_f1": 0.2424,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B42;DOC_CTX_B1;DOC_CTX_B16;DOC_CTX_B2;DOC_CTX_B21"
+      "top_doc_ids": "DOC_CTX_B1;DOC_CTX_B42;DOC_CTX_B16;DOC_CTX_G19;DOC_CTX_L15"
     },
     {
       "qid": "Q_SYN_1702",
@@ -3279,12 +3279,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4167,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.5414,
+      "gen_f1": 0.3582,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P18;DOC_CTX_P28;DOC_CTX_P85;DOC_CTX_P68;DOC_CTX_P12"
+      "top_doc_ids": "DOC_CTX_P85;DOC_CTX_S71;DOC_CTX_S81;DOC_CTX_S20;DOC_CTX_P28"
     },
     {
       "qid": "Q_SYN_1703",
@@ -3293,11 +3293,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.4528,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.549,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S1002;DOC_CTX_S11;DOC_CTX_S1003;DOC_CTX_S36;DOC_CTX_S45"
+      "top_doc_ids": "DOC_CTX_S1002;DOC_CTX_S1003;DOC_CTX_S11;DOC_CTX_C65;DOC_CTX_R41"
     },
     {
       "qid": "Q_SYN_1707",
@@ -3306,11 +3306,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.375,
+      "ndcg_at_k": 0.4307,
+      "gen_f1": 0.4706,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R66;DOC_CTX_R175;DOC_CTX_R97;DOC_CTX_R131;DOC_CTX_R103"
+      "top_doc_ids": "DOC_CTX_S71;DOC_CTX_C107;DOC_CTX_H67;DOC_CTX_R66;DOC_CTX_G24"
     },
     {
       "qid": "Q_SYN_1709",
@@ -3320,10 +3320,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1538,
+      "gen_f1": 0.1132,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B42;DOC_CTX_B9;DOC_CTX_B17;DOC_CTX_B20;DOC_CTX_B19"
+      "top_doc_ids": "DOC_CTX_B42;DOC_CTX_G19;DOC_CTX_M38;DOC_CTX_T38;DOC_CTX_H27"
     },
     {
       "qid": "Q_SYN_1719",
@@ -3331,12 +3331,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.6367,
-      "gen_f1": 0.3944,
+      "recall_at_k": 0.25,
+      "ndcg_at_k": 0.1952,
+      "gen_f1": 0.3662,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R135;DOC_CTX_R165;DOC_CTX_R26;DOC_CTX_R48;DOC_CTX_R47"
+      "top_doc_ids": "DOC_CTX_H61;DOC_CTX_R177;DOC_CTX_R165;DOC_CTX_R26;DOC_CTX_R47"
     },
     {
       "qid": "Q_SYN_1721",
@@ -3346,10 +3346,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3099,
+      "gen_f1": 0.4074,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R171;DOC_CTX_R170;DOC_CTX_R91;DOC_CTX_R45;DOC_CTX_R85"
+      "top_doc_ids": "DOC_CTX_R171;DOC_CTX_R170;DOC_CTX_R91;DOC_CTX_G46;DOC_CTX_H41"
     },
     {
       "qid": "Q_SYN_1728",
@@ -3359,10 +3359,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.381,
+      "gen_f1": 0.3175,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H15;DOC_CTX_H16;DOC_CTX_H21;DOC_CTX_H73;DOC_CTX_H85"
+      "top_doc_ids": "DOC_CTX_H15;DOC_CTX_H16;DOC_CTX_C73;DOC_CTX_S27;DOC_CTX_G48"
     },
     {
       "qid": "Q_SYN_1731",
@@ -3372,10 +3372,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2545,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.386,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G18;DOC_CTX_G9;DOC_CTX_G8;DOC_CTX_G35;DOC_CTX_G69"
+      "top_doc_ids": "DOC_CTX_G18;DOC_CTX_G9;DOC_CTX_PH64;DOC_CTX_R60;DOC_CTX_H26"
     },
     {
       "qid": "Q_SYN_1733",
@@ -3385,10 +3385,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4068,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.36,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M45;DOC_CTX_M10;DOC_CTX_M50;DOC_CTX_M40;DOC_CTX_M41"
+      "top_doc_ids": "DOC_CTX_M45;DOC_CTX_P64;DOC_CTX_G18;DOC_CTX_BA35;DOC_CTX_G21"
     },
     {
       "qid": "Q_SYN_1738",
@@ -3398,10 +3398,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4127,
+      "gen_f1": 0.381,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L4;DOC_CTX_L12;DOC_CTX_L35;DOC_CTX_L1;DOC_CTX_L26"
+      "top_doc_ids": "DOC_CTX_L4;DOC_CTX_M54;DOC_CTX_P11;DOC_CTX_C62;DOC_CTX_G30"
     },
     {
       "qid": "Q_SYN_1749",
@@ -3411,10 +3411,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3582,
+      "gen_f1": 0.4103,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H2;DOC_CTX_H30;DOC_CTX_H23;DOC_CTX_H13;DOC_CTX_H1"
+      "top_doc_ids": "DOC_CTX_H2;DOC_CTX_T38;DOC_CTX_R44;DOC_CTX_M49;DOC_CTX_BA9"
     },
     {
       "qid": "Q_SYN_1753",
@@ -3424,10 +3424,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2687,
+      "gen_f1": 0.3607,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H73;DOC_CTX_H15;DOC_CTX_H85;DOC_CTX_H8;DOC_CTX_H55"
+      "top_doc_ids": "DOC_CTX_H73;DOC_CTX_H15;DOC_CTX_H8;DOC_CTX_H85;DOC_CTX_H55"
     },
     {
       "qid": "Q_SYN_1757",
@@ -3437,10 +3437,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4545,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS2;DOC_CTX_HS11;DOC_CTX_HS6;DOC_CTX_HS13;DOC_CTX_HS16"
+      "top_doc_ids": "DOC_CTX_HS2;DOC_CTX_L29;DOC_CTX_H8;DOC_CTX_H14;DOC_CTX_PH59"
     },
     {
       "qid": "Q_SYN_1761",
@@ -3448,12 +3448,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.906,
-      "gen_f1": 0.2785,
+      "recall_at_k": 0.6667,
+      "ndcg_at_k": 0.5307,
+      "gen_f1": 0.2025,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C93;DOC_CTX_C49;DOC_CTX_C65;DOC_CTX_C37;DOC_CTX_C90"
+      "top_doc_ids": "DOC_CTX_C90;DOC_CTX_C93;DOC_CTX_C65;DOC_CTX_S100;DOC_CTX_S107"
     },
     {
       "qid": "Q_SYN_1764",
@@ -3463,10 +3463,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2712,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4416,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P8;DOC_CTX_P90;DOC_CTX_P56;DOC_CTX_P88;DOC_CTX_P12"
+      "top_doc_ids": "DOC_CTX_P8;DOC_CTX_L15;DOC_CTX_C44;DOC_CTX_C15;DOC_CTX_S114"
     },
     {
       "qid": "Q_SYN_1772",
@@ -3476,10 +3476,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4,
+      "gen_f1": 0.4407,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH12;DOC_CTX_PH29;DOC_CTX_PH2;DOC_CTX_PH33;DOC_CTX_PH6"
+      "top_doc_ids": "DOC_CTX_PH12;DOC_CTX_S36;DOC_CTX_G67;DOC_CTX_S64;DOC_CTX_C30"
     },
     {
       "qid": "Q_SYN_1773",
@@ -3489,10 +3489,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3607,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.549,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S36;DOC_CTX_S66;DOC_CTX_S43;DOC_CTX_S84;DOC_CTX_S87"
+      "top_doc_ids": "DOC_CTX_S36;DOC_CTX_S66;DOC_CTX_C30;DOC_CTX_C70;DOC_CTX_P25"
     },
     {
       "qid": "Q_SYN_1775",
@@ -3501,11 +3501,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.5106,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.4571,
+      "citation_correctness": 0.3333,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P30;DOC_CTX_P51;DOC_CTX_P38;DOC_CTX_P27;DOC_CTX_P34"
+      "top_doc_ids": "DOC_CTX_P30;DOC_CTX_P38;DOC_CTX_P51;DOC_CTX_H82;DOC_CTX_L34"
     },
     {
       "qid": "Q_SYN_1779",
@@ -3515,10 +3515,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3582,
+      "gen_f1": 0.2154,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B34;DOC_CTX_B48;DOC_CTX_B15;DOC_CTX_B12;DOC_CTX_B32"
+      "top_doc_ids": "DOC_CTX_B34;DOC_CTX_B48;DOC_CTX_L1;DOC_CTX_G75;DOC_CTX_PH64"
     },
     {
       "qid": "Q_SYN_1780",
@@ -3526,12 +3526,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.8048,
-      "gen_f1": 0.3918,
-      "citation_correctness": 0.6667,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.3633,
+      "gen_f1": 0.3273,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H64;DOC_CTX_H15;DOC_CTX_H85;DOC_CTX_H21;DOC_CTX_H8"
+      "top_doc_ids": "DOC_CTX_H73;DOC_CTX_H17;DOC_CTX_H64;DOC_CTX_H15;DOC_CTX_H55"
     },
     {
       "qid": "Q_SYN_1786",
@@ -3539,12 +3539,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.75,
-      "ndcg_at_k": 0.8048,
-      "gen_f1": 0.4396,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.3191,
+      "gen_f1": 0.4091,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M5;DOC_CTX_M45;DOC_CTX_M10;DOC_CTX_M50;DOC_CTX_M55"
+      "top_doc_ids": "DOC_CTX_M55;DOC_CTX_M29;DOC_CTX_M40;DOC_CTX_M37;DOC_CTX_M50"
     },
     {
       "qid": "Q_SYN_1787",
@@ -3553,11 +3553,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.2667,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.3729,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P63;DOC_CTX_P31;DOC_CTX_P37;DOC_CTX_P21;DOC_CTX_P90"
+      "top_doc_ids": "DOC_CTX_P31;DOC_CTX_C36;DOC_CTX_HS22;DOC_CTX_C56;DOC_CTX_C91"
     },
     {
       "qid": "Q_SYN_1788",
@@ -3567,10 +3567,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2581,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4359,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L43;DOC_CTX_L22;DOC_CTX_L15;DOC_CTX_L5;DOC_CTX_L33"
+      "top_doc_ids": "DOC_CTX_L43;DOC_CTX_BA9;DOC_CTX_T38;DOC_CTX_P8;DOC_CTX_M38"
     },
     {
       "qid": "Q_SYN_1793",
@@ -3578,12 +3578,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.4407,
-      "citation_correctness": 0.0,
+      "recall_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.4,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S58;DOC_CTX_S111;DOC_CTX_S114;DOC_CTX_S95;DOC_CTX_S28"
+      "top_doc_ids": "DOC_CTX_S3;DOC_CTX_S111;DOC_CTX_S114;DOC_CTX_S58;DOC_CTX_S28"
     },
     {
       "qid": "Q_SYN_1803",
@@ -3593,10 +3593,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.274,
-      "citation_correctness": 0.0,
+      "gen_f1": 0.4889,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R106;DOC_CTX_R35;DOC_CTX_R3;DOC_CTX_R37;DOC_CTX_R141"
+      "top_doc_ids": "DOC_CTX_R106;DOC_CTX_S76;DOC_CTX_C13;DOC_CTX_H81;DOC_CTX_C84"
     },
     {
       "qid": "Q_SYN_1808",
@@ -3606,10 +3606,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.5231,
+      "gen_f1": 0.5517,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P64;DOC_CTX_P30;DOC_CTX_P51;DOC_CTX_P27;DOC_CTX_P38"
+      "top_doc_ids": "DOC_CTX_P64;DOC_CTX_M45;DOC_CTX_M10;DOC_CTX_C95;DOC_CTX_L12"
     },
     {
       "qid": "Q_SYN_1809",
@@ -3619,10 +3619,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2456,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3939,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B36;DOC_CTX_B50;DOC_CTX_B49;DOC_CTX_B18;DOC_CTX_B14"
+      "top_doc_ids": "DOC_CTX_B36;DOC_CTX_T13;DOC_CTX_G43;DOC_CTX_R35;DOC_CTX_HS9"
     },
     {
       "qid": "Q_SYN_1814",
@@ -3631,11 +3631,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3478,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.6309,
+      "gen_f1": 0.396,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L20;DOC_CTX_L42;DOC_CTX_L29;DOC_CTX_L40;DOC_CTX_L15"
+      "top_doc_ids": "DOC_CTX_M53;DOC_CTX_L20;DOC_CTX_S85;DOC_CTX_P43;DOC_CTX_H53"
     },
     {
       "qid": "Q_SYN_1818",
@@ -3645,10 +3645,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3014,
+      "gen_f1": 0.3784,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C16;DOC_CTX_C3;DOC_CTX_C93;DOC_CTX_C55;DOC_CTX_C96"
+      "top_doc_ids": "DOC_CTX_C16;DOC_CTX_C3;DOC_CTX_P77;DOC_CTX_M8;DOC_CTX_R142"
     },
     {
       "qid": "Q_SYN_1822",
@@ -3658,10 +3658,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2687,
+      "gen_f1": 0.2121,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C102;DOC_CTX_C46;DOC_CTX_C109;DOC_CTX_C105;DOC_CTX_C93"
+      "top_doc_ids": "DOC_CTX_C102;DOC_CTX_H1003;DOC_CTX_S117;DOC_CTX_C109;DOC_CTX_C46"
     },
     {
       "qid": "Q_SYN_1826",
@@ -3671,10 +3671,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.25,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4706,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P71;DOC_CTX_P42;DOC_CTX_P13;DOC_CTX_P29;DOC_CTX_P84"
+      "top_doc_ids": "DOC_CTX_P71;DOC_CTX_S97;DOC_CTX_P42;DOC_CTX_H73;DOC_CTX_C73"
     },
     {
       "qid": "Q_SYN_1839",
@@ -3684,10 +3684,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3953,
-      "citation_correctness": 0.2,
+      "gen_f1": 0.3824,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R29;DOC_CTX_R37;DOC_CTX_R141;DOC_CTX_R25;DOC_CTX_R1002"
+      "top_doc_ids": "DOC_CTX_R29;DOC_CTX_S15;DOC_CTX_H19;DOC_CTX_C71;DOC_CTX_S4"
     },
     {
       "qid": "Q_SYN_1840",
@@ -3697,10 +3697,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3077,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4267,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B14;DOC_CTX_B23;DOC_CTX_B13;DOC_CTX_B41;DOC_CTX_B10"
+      "top_doc_ids": "DOC_CTX_B14;DOC_CTX_M17;DOC_CTX_C68;DOC_CTX_PH36;DOC_CTX_R169"
     },
     {
       "qid": "Q_SYN_1846",
@@ -3710,10 +3710,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.381,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G75;DOC_CTX_G12;DOC_CTX_G30;DOC_CTX_G45;DOC_CTX_G6"
+      "top_doc_ids": "DOC_CTX_G75;DOC_CTX_R93;DOC_CTX_R18;DOC_CTX_R98;DOC_CTX_PH51"
     },
     {
       "qid": "Q_SYN_1848",
@@ -3723,10 +3723,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3836,
+      "gen_f1": 0.3846,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH28;DOC_CTX_PH57;DOC_CTX_PH46;DOC_CTX_PH19;DOC_CTX_PH43"
+      "top_doc_ids": "DOC_CTX_PH28;DOC_CTX_PH57;DOC_CTX_G71;DOC_CTX_HS23;DOC_CTX_HS3"
     },
     {
       "qid": "Q_SYN_1849",
@@ -3736,10 +3736,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2857,
+      "gen_f1": 0.2564,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H55;DOC_CTX_H85;DOC_CTX_H73;DOC_CTX_H17;DOC_CTX_H21"
+      "top_doc_ids": "DOC_CTX_H55;DOC_CTX_H73;DOC_CTX_H85;DOC_CTX_C28;DOC_CTX_R80"
     },
     {
       "qid": "Q_SYN_1855",
@@ -3747,12 +3747,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.5075,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.4,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA26;DOC_CTX_BA28;DOC_CTX_BA4;DOC_CTX_BA9;DOC_CTX_BA8"
+      "top_doc_ids": "DOC_CTX_H80;DOC_CTX_P13;DOC_CTX_P52;DOC_CTX_R83;DOC_CTX_P29"
     },
     {
       "qid": "Q_SYN_1858",
@@ -3762,10 +3762,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3636,
+      "gen_f1": 0.25,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R180;DOC_CTX_R1001;DOC_CTX_R75;DOC_CTX_R176;DOC_CTX_R156"
+      "top_doc_ids": "DOC_CTX_R180;DOC_CTX_L1;DOC_CTX_B22;DOC_CTX_R1001;DOC_CTX_B48"
     },
     {
       "qid": "Q_SYN_1868",
@@ -3774,11 +3774,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6509,
-      "gen_f1": 0.3582,
+      "ndcg_at_k": 0.8503,
+      "gen_f1": 0.3188,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P8;DOC_CTX_P82;DOC_CTX_P29;DOC_CTX_P56;DOC_CTX_P88"
+      "top_doc_ids": "DOC_CTX_P56;DOC_CTX_P8;DOC_CTX_P29;DOC_CTX_H80;DOC_CTX_P82"
     },
     {
       "qid": "Q_SYN_1876",
@@ -3787,11 +3787,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3636,
+      "ndcg_at_k": 0.9197,
+      "gen_f1": 0.3684,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L8;DOC_CTX_L38;DOC_CTX_L27;DOC_CTX_L15;DOC_CTX_L43"
+      "top_doc_ids": "DOC_CTX_L8;DOC_CTX_L27;DOC_CTX_L38;DOC_CTX_H63;DOC_CTX_H1002"
     },
     {
       "qid": "Q_SYN_1877",
@@ -3801,10 +3801,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.5417,
+      "gen_f1": 0.4483,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S36;DOC_CTX_S66;DOC_CTX_S43;DOC_CTX_S84;DOC_CTX_S87"
+      "top_doc_ids": "DOC_CTX_S36;DOC_CTX_S66;DOC_CTX_C30;DOC_CTX_C70;DOC_CTX_P25"
     },
     {
       "qid": "Q_SYN_1880",
@@ -3812,12 +3812,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.5,
-      "ndcg_at_k": 0.2641,
-      "gen_f1": 0.411,
+      "recall_at_k": 1.0,
+      "ndcg_at_k": 0.9197,
+      "gen_f1": 0.42,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S110;DOC_CTX_S109;DOC_CTX_S88;DOC_CTX_S15;DOC_CTX_S76"
+      "top_doc_ids": "DOC_CTX_S15;DOC_CTX_S76;DOC_CTX_S40;DOC_CTX_S4;DOC_CTX_S109"
     },
     {
       "qid": "Q_SYN_1881",
@@ -3826,11 +3826,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3226,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.8772,
+      "gen_f1": 0.2581,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G10;DOC_CTX_G47;DOC_CTX_G2;DOC_CTX_G34;DOC_CTX_G32"
+      "top_doc_ids": "DOC_CTX_G10;DOC_CTX_G2;DOC_CTX_G34;DOC_CTX_G47;DOC_CTX_C31"
     },
     {
       "qid": "Q_SYN_1883",
@@ -3840,10 +3840,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4062,
+      "gen_f1": 0.4333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH41;DOC_CTX_PH55;DOC_CTX_PH43;DOC_CTX_PH57;DOC_CTX_PH35"
+      "top_doc_ids": "DOC_CTX_PH41;DOC_CTX_PH55;DOC_CTX_B38;DOC_CTX_B31;DOC_CTX_R8"
     },
     {
       "qid": "Q_SYN_1887",
@@ -3853,10 +3853,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1667,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4167,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH69;DOC_CTX_PH54;DOC_CTX_PH65;DOC_CTX_PH2;DOC_CTX_PH26"
+      "top_doc_ids": "DOC_CTX_PH69;DOC_CTX_HS1;DOC_CTX_HS15;DOC_CTX_S69;DOC_CTX_S65"
     },
     {
       "qid": "Q_SYN_1888",
@@ -3866,10 +3866,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4819,
+      "gen_f1": 0.4167,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R43;DOC_CTX_R37;DOC_CTX_R25;DOC_CTX_R1002;DOC_CTX_R35"
+      "top_doc_ids": "DOC_CTX_R43;DOC_CTX_R35;DOC_CTX_R1002;DOC_CTX_R37;DOC_CTX_R25"
     },
     {
       "qid": "Q_SYN_1891",
@@ -3878,11 +3878,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.2333,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.2,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C49;DOC_CTX_C14;DOC_CTX_C89;DOC_CTX_C82;DOC_CTX_C4"
+      "top_doc_ids": "DOC_CTX_S1002;DOC_CTX_S100;DOC_CTX_C49;DOC_CTX_R77;DOC_CTX_H42"
     },
     {
       "qid": "Q_SYN_1895",
@@ -3892,10 +3892,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2857,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5098,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T31;DOC_CTX_T34;DOC_CTX_T39;DOC_CTX_T20;DOC_CTX_T7"
+      "top_doc_ids": "DOC_CTX_T31;DOC_CTX_T34;DOC_CTX_M50;DOC_CTX_M10;DOC_CTX_H66"
     },
     {
       "qid": "Q_SYN_1897",
@@ -3904,11 +3904,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3729,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.507,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G12;DOC_CTX_G45;DOC_CTX_G54;DOC_CTX_G57;DOC_CTX_G30"
+      "top_doc_ids": "DOC_CTX_G45;DOC_CTX_G12;DOC_CTX_H79;DOC_CTX_R130;DOC_CTX_R76"
     },
     {
       "qid": "Q_SYN_1900",
@@ -3917,11 +3917,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
+      "ndcg_at_k": 1.0,
       "gen_f1": 0.3188,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS13;DOC_CTX_HS14;DOC_CTX_HS6;DOC_CTX_HS7;DOC_CTX_HS20"
+      "top_doc_ids": "DOC_CTX_HS14;DOC_CTX_HS13;DOC_CTX_S96;DOC_CTX_M19;DOC_CTX_M34"
     },
     {
       "qid": "Q_SYN_1905",
@@ -3931,10 +3931,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1754,
+      "gen_f1": 0.1455,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B37;DOC_CTX_B21;DOC_CTX_B4;DOC_CTX_B20;DOC_CTX_B2"
+      "top_doc_ids": "DOC_CTX_B37;DOC_CTX_H15;DOC_CTX_H16;DOC_CTX_C73;DOC_CTX_B4"
     },
     {
       "qid": "Q_SYN_1917",
@@ -3944,10 +3944,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3944,
+      "gen_f1": 0.3947,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L20;DOC_CTX_L40;DOC_CTX_L29;DOC_CTX_L32;DOC_CTX_L31"
+      "top_doc_ids": "DOC_CTX_L20;DOC_CTX_L40;DOC_CTX_H15;DOC_CTX_S27;DOC_CTX_H16"
     },
     {
       "qid": "Q_SYN_1919",
@@ -3957,10 +3957,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.16,
+      "gen_f1": 0.1961,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH34;DOC_CTX_PH49;DOC_CTX_PH7;DOC_CTX_PH53;DOC_CTX_PH29"
+      "top_doc_ids": "DOC_CTX_PH34;DOC_CTX_S81;DOC_CTX_PH49;DOC_CTX_PH7;DOC_CTX_PH53"
     },
     {
       "qid": "Q_SYN_1920",
@@ -3970,10 +3970,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3143,
+      "gen_f1": 0.3056,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B21;DOC_CTX_B37;DOC_CTX_B42;DOC_CTX_B1;DOC_CTX_B16"
+      "top_doc_ids": "DOC_CTX_B21;DOC_CTX_L29;DOC_CTX_B37;DOC_CTX_H73;DOC_CTX_BA28"
     },
     {
       "qid": "Q_SYN_1925",
@@ -3983,10 +3983,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.52,
+      "gen_f1": 0.4615,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS2;DOC_CTX_HS11;DOC_CTX_HS20;DOC_CTX_HS17;DOC_CTX_HS8"
+      "top_doc_ids": "DOC_CTX_HS2;DOC_CTX_HS11;DOC_CTX_S97;DOC_CTX_S22;DOC_CTX_S75"
     },
     {
       "qid": "Q_SYN_1930",
@@ -3995,11 +3995,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3548,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.3226,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R18;DOC_CTX_R98;DOC_CTX_R93;DOC_CTX_R22;DOC_CTX_R148"
+      "top_doc_ids": "DOC_CTX_R98;DOC_CTX_G75;DOC_CTX_R18;DOC_CTX_H66;DOC_CTX_C43"
     },
     {
       "qid": "Q_SYN_1932",
@@ -4008,11 +4008,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.5,
+      "ndcg_at_k": 1.0,
       "gen_f1": 0.2353,
-      "citation_correctness": 0.0,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C31;DOC_CTX_C44;DOC_CTX_C57;DOC_CTX_C99;DOC_CTX_C40"
+      "top_doc_ids": "DOC_CTX_C57;DOC_CTX_C40;DOC_CTX_C44;DOC_CTX_C31;DOC_CTX_C99"
     },
     {
       "qid": "Q_SYN_1934",
@@ -4022,10 +4022,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3878,
-      "citation_correctness": 0.0,
+      "gen_f1": 0.4242,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L32;DOC_CTX_L15;DOC_CTX_L29;DOC_CTX_L20;DOC_CTX_L40"
+      "top_doc_ids": "DOC_CTX_L32;DOC_CTX_P73;DOC_CTX_S75;DOC_CTX_S22;DOC_CTX_M32"
     },
     {
       "qid": "Q_SYN_1947",
@@ -4034,11 +4034,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.7328,
-      "gen_f1": 0.2368,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.2105,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C48;DOC_CTX_C11;DOC_CTX_C59;DOC_CTX_C53;DOC_CTX_C9"
+      "top_doc_ids": "DOC_CTX_C11;DOC_CTX_C59;DOC_CTX_C53;DOC_CTX_G61;DOC_CTX_C48"
     },
     {
       "qid": "Q_SYN_1948",
@@ -4048,10 +4048,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4179,
+      "gen_f1": 0.2059,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA8;DOC_CTX_BA9;DOC_CTX_BA26;DOC_CTX_BA3;DOC_CTX_BA4"
+      "top_doc_ids": "DOC_CTX_BA8;DOC_CTX_P57;DOC_CTX_C53;DOC_CTX_P80;DOC_CTX_H12"
     },
     {
       "qid": "Q_SYN_1949",
@@ -4064,7 +4064,7 @@
       "gen_f1": 0.2647,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T10;DOC_CTX_T31;DOC_CTX_T26;DOC_CTX_T33;DOC_CTX_T11"
+      "top_doc_ids": "DOC_CTX_T31;DOC_CTX_T10;DOC_CTX_T26;DOC_CTX_T33;DOC_CTX_T32"
     },
     {
       "qid": "Q_SYN_1957",
@@ -4073,11 +4073,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4746,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.5714,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T22;DOC_CTX_T4;DOC_CTX_T9;DOC_CTX_T40;DOC_CTX_T6"
+      "top_doc_ids": "DOC_CTX_S34;DOC_CTX_S64;DOC_CTX_T22;DOC_CTX_R121;DOC_CTX_C30"
     },
     {
       "qid": "Q_SYN_1961",
@@ -4087,10 +4087,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4471,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.2222,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P3;DOC_CTX_P94;DOC_CTX_P95;DOC_CTX_P18;DOC_CTX_P2"
+      "top_doc_ids": "DOC_CTX_P94;DOC_CTX_P3;DOC_CTX_R52;DOC_CTX_S99;DOC_CTX_G59"
     },
     {
       "qid": "Q_SYN_1965",
@@ -4100,10 +4100,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3492,
+      "gen_f1": 0.325,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P87;DOC_CTX_P2;DOC_CTX_P71;DOC_CTX_P42;DOC_CTX_P62"
+      "top_doc_ids": "DOC_CTX_P87;DOC_CTX_P2;DOC_CTX_BA3;DOC_CTX_G61;DOC_CTX_T21"
     },
     {
       "qid": "Q_SYN_1973",
@@ -4113,10 +4113,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2769,
+      "gen_f1": 0.3077,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R91;DOC_CTX_R58;DOC_CTX_R1001;DOC_CTX_R170;DOC_CTX_R100"
+      "top_doc_ids": "DOC_CTX_R91;DOC_CTX_R58;DOC_CTX_R1001;DOC_CTX_R170;DOC_CTX_H41"
     },
     {
       "qid": "Q_SYN_1976",
@@ -4125,11 +4125,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.906,
+      "ndcg_at_k": 1.0,
       "gen_f1": 0.4167,
-      "citation_correctness": 0.5,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G60;DOC_CTX_G50;DOC_CTX_G17;DOC_CTX_G19;DOC_CTX_G10"
+      "top_doc_ids": "DOC_CTX_G60;DOC_CTX_G19;DOC_CTX_G17;DOC_CTX_G50;DOC_CTX_G10"
     },
     {
       "qid": "Q_SYN_1977",
@@ -4138,11 +4138,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6934,
-      "gen_f1": 0.4179,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.4,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H74;DOC_CTX_H82;DOC_CTX_H9;DOC_CTX_H26;DOC_CTX_H37"
+      "top_doc_ids": "DOC_CTX_H82;DOC_CTX_H9;DOC_CTX_M20;DOC_CTX_M31;DOC_CTX_H74"
     },
     {
       "qid": "Q_SYN_1979",
@@ -4152,10 +4152,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1569,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3922,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH66;DOC_CTX_PH39;DOC_CTX_PH67;DOC_CTX_PH24;DOC_CTX_PH21"
+      "top_doc_ids": "DOC_CTX_PH66;DOC_CTX_G77;DOC_CTX_S92;DOC_CTX_C65;DOC_CTX_P65"
     },
     {
       "qid": "Q_SYN_1980",
@@ -4165,8 +4165,8 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3243,
-      "citation_correctness": 1.0,
+      "gen_f1": 0.3175,
+      "citation_correctness": 0.2,
       "ale_m": 0.0,
       "top_doc_ids": "DOC_CTX_P90;DOC_CTX_P81;DOC_CTX_P88;DOC_CTX_P93;DOC_CTX_P69"
     },
@@ -4178,10 +4178,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3429,
+      "gen_f1": 0.4054,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH61;DOC_CTX_PH50;DOC_CTX_PH62;DOC_CTX_PH20;DOC_CTX_PH8"
+      "top_doc_ids": "DOC_CTX_PH61;DOC_CTX_PH50;DOC_CTX_S72;DOC_CTX_M24;DOC_CTX_H40"
     },
     {
       "qid": "Q_SYN_1983",
@@ -4191,10 +4191,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1509,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.1212,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R20;DOC_CTX_R148;DOC_CTX_R119;DOC_CTX_R140;DOC_CTX_R57"
+      "top_doc_ids": "DOC_CTX_R20;DOC_CTX_B53;DOC_CTX_H37;DOC_CTX_H82;DOC_CTX_G56"
     },
     {
       "qid": "Q_SYN_1988",
@@ -4203,11 +4203,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.8503,
+      "ndcg_at_k": 0.6241,
       "gen_f1": 0.3457,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C101;DOC_CTX_C94;DOC_CTX_C99;DOC_CTX_C15;DOC_CTX_C31"
+      "top_doc_ids": "DOC_CTX_C94;DOC_CTX_C101;DOC_CTX_C15;DOC_CTX_C99;DOC_CTX_C31"
     },
     {
       "qid": "Q_SYN_1989",
@@ -4220,7 +4220,7 @@
       "gen_f1": 0.3478,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B11;DOC_CTX_B45;DOC_CTX_B28;DOC_CTX_B12;DOC_CTX_B44"
+      "top_doc_ids": "DOC_CTX_B45;DOC_CTX_B28;DOC_CTX_B11;DOC_CTX_B44;DOC_CTX_B12"
     },
     {
       "qid": "Q_SYN_1991",
@@ -4228,12 +4228,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.5706,
-      "gen_f1": 0.2222,
-      "citation_correctness": 0.0,
+      "recall_at_k": 0.5,
+      "ndcg_at_k": 0.6131,
+      "gen_f1": 0.3614,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R172;DOC_CTX_R83;DOC_CTX_R54;DOC_CTX_R128;DOC_CTX_R37"
+      "top_doc_ids": "DOC_CTX_R128;DOC_CTX_R172;DOC_CTX_G2;DOC_CTX_C57;DOC_CTX_C99"
     },
     {
       "qid": "Q_SYN_1994",
@@ -4243,10 +4243,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3415,
+      "gen_f1": 0.3962,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C91;DOC_CTX_C56;DOC_CTX_C36;DOC_CTX_C66;DOC_CTX_C24"
+      "top_doc_ids": "DOC_CTX_C56;DOC_CTX_C91;DOC_CTX_C36;DOC_CTX_C66;DOC_CTX_G32"
     },
     {
       "qid": "Q_SYN_2001",
@@ -4256,10 +4256,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3019,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4706,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M3;DOC_CTX_M35;DOC_CTX_M47;DOC_CTX_M4;DOC_CTX_M1"
+      "top_doc_ids": "DOC_CTX_M3;DOC_CTX_M47;DOC_CTX_M35;DOC_CTX_C53;DOC_CTX_P57"
     },
     {
       "qid": "Q_SYN_2003",
@@ -4268,11 +4268,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9197,
-      "gen_f1": 0.4407,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.2449,
+      "citation_correctness": 0.6667,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B42;DOC_CTX_B17;DOC_CTX_B9;DOC_CTX_B8;DOC_CTX_B2"
+      "top_doc_ids": "DOC_CTX_B42;DOC_CTX_B9;DOC_CTX_B17;DOC_CTX_H1;DOC_CTX_L43"
     },
     {
       "qid": "Q_SYN_2007",
@@ -4282,10 +4282,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.5902,
+      "gen_f1": 0.6102,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S6;DOC_CTX_S35;DOC_CTX_S70;DOC_CTX_S82;DOC_CTX_S112"
+      "top_doc_ids": "DOC_CTX_S6;DOC_CTX_M41;DOC_CTX_G75;DOC_CTX_H72;DOC_CTX_S32"
     },
     {
       "qid": "Q_SYN_2009",
@@ -4295,10 +4295,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3158,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T9;DOC_CTX_T29;DOC_CTX_T40;DOC_CTX_T4;DOC_CTX_T22"
+      "top_doc_ids": "DOC_CTX_T9;DOC_CTX_M2;DOC_CTX_M23;DOC_CTX_L37;DOC_CTX_G25"
     },
     {
       "qid": "Q_SYN_2011",
@@ -4311,7 +4311,7 @@
       "gen_f1": 0.6087,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS23;DOC_CTX_HS7;DOC_CTX_HS3;DOC_CTX_HS6;DOC_CTX_HS13"
+      "top_doc_ids": "DOC_CTX_HS23;DOC_CTX_S112;DOC_CTX_G71;DOC_CTX_R156;DOC_CTX_HS7"
     },
     {
       "qid": "Q_SYN_2016",
@@ -4321,10 +4321,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2769,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4308,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L29;DOC_CTX_L32;DOC_CTX_L33;DOC_CTX_L6;DOC_CTX_L4"
+      "top_doc_ids": "DOC_CTX_L29;DOC_CTX_S75;DOC_CTX_C9;DOC_CTX_C104;DOC_CTX_H15"
     },
     {
       "qid": "Q_SYN_2021",
@@ -4333,11 +4333,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.3869,
+      "ndcg_at_k": 0.5,
       "gen_f1": 0.2857,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H2;DOC_CTX_H30;DOC_CTX_H23;DOC_CTX_H13;DOC_CTX_H1"
+      "top_doc_ids": "DOC_CTX_H2;DOC_CTX_H13;DOC_CTX_H1;DOC_CTX_H30;DOC_CTX_H23"
     },
     {
       "qid": "Q_SYN_2022",
@@ -4346,11 +4346,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9197,
-      "gen_f1": 0.4051,
+      "ndcg_at_k": 0.6934,
+      "gen_f1": 0.3291,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS3;DOC_CTX_HS23;DOC_CTX_HS20;DOC_CTX_HS8;DOC_CTX_HS10"
+      "top_doc_ids": "DOC_CTX_HS8;DOC_CTX_HS3;DOC_CTX_HS20;DOC_CTX_HS23;DOC_CTX_PH57"
     },
     {
       "qid": "Q_SYN_2023",
@@ -4360,10 +4360,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1633,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3243,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH20;DOC_CTX_PH62;DOC_CTX_PH56;DOC_CTX_PH58;DOC_CTX_PH23"
+      "top_doc_ids": "DOC_CTX_PH20;DOC_CTX_C59;DOC_CTX_P87;DOC_CTX_T21;DOC_CTX_C11"
     },
     {
       "qid": "Q_SYN_2026",
@@ -4373,10 +4373,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2687,
+      "gen_f1": 0.1791,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C22;DOC_CTX_C101;DOC_CTX_C94;DOC_CTX_C74;DOC_CTX_C75"
+      "top_doc_ids": "DOC_CTX_C22;DOC_CTX_C101;DOC_CTX_C94;DOC_CTX_C74;DOC_CTX_G17"
     },
     {
       "qid": "Q_SYN_2035",
@@ -4386,10 +4386,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.566,
+      "gen_f1": 0.4906,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T40;DOC_CTX_T9;DOC_CTX_T4;DOC_CTX_T22;DOC_CTX_T15"
+      "top_doc_ids": "DOC_CTX_T40;DOC_CTX_M2;DOC_CTX_M15;DOC_CTX_M33;DOC_CTX_S67"
     },
     {
       "qid": "Q_SYN_2039",
@@ -4399,10 +4399,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3448,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4127,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M50;DOC_CTX_M45;DOC_CTX_M10;DOC_CTX_M40;DOC_CTX_M19"
+      "top_doc_ids": "DOC_CTX_M50;DOC_CTX_B28;DOC_CTX_H66;DOC_CTX_G69;DOC_CTX_C21"
     },
     {
       "qid": "Q_SYN_2047",
@@ -4411,11 +4411,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.1961,
+      "ndcg_at_k": 0.6309,
+      "gen_f1": 0.3333,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L7;DOC_CTX_L4;DOC_CTX_L35;DOC_CTX_L10;DOC_CTX_L34"
+      "top_doc_ids": "DOC_CTX_L4;DOC_CTX_L7;DOC_CTX_C86;DOC_CTX_C62;DOC_CTX_M34"
     },
     {
       "qid": "Q_SYN_2052",
@@ -4425,10 +4425,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3729,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4762,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T23;DOC_CTX_T6;DOC_CTX_T39;DOC_CTX_T10;DOC_CTX_T31"
+      "top_doc_ids": "DOC_CTX_T23;DOC_CTX_T6;DOC_CTX_M41;DOC_CTX_M40;DOC_CTX_L1"
     },
     {
       "qid": "Q_SYN_2056",
@@ -4438,10 +4438,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3356,
-      "citation_correctness": 0.3333,
+      "gen_f1": 0.4524,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T1;DOC_CTX_T24;DOC_CTX_T27;DOC_CTX_T7;DOC_CTX_T38"
+      "top_doc_ids": "DOC_CTX_T1;DOC_CTX_S116;DOC_CTX_P52;DOC_CTX_H80;DOC_CTX_M30"
     },
     {
       "qid": "Q_SYN_2061",
@@ -4451,10 +4451,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3333,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4737,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S48;DOC_CTX_S21;DOC_CTX_S79;DOC_CTX_S8;DOC_CTX_S18"
+      "top_doc_ids": "DOC_CTX_S79;DOC_CTX_S21;DOC_CTX_S48;DOC_CTX_R101;DOC_CTX_PH54"
     },
     {
       "qid": "Q_SYN_2065",
@@ -4463,11 +4463,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.6,
-      "ndcg_at_k": 0.4913,
-      "gen_f1": 0.475,
-      "citation_correctness": 0.6,
+      "ndcg_at_k": 0.6548,
+      "gen_f1": 0.3288,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P84;DOC_CTX_P59;DOC_CTX_P8;DOC_CTX_P56;DOC_CTX_P57"
+      "top_doc_ids": "DOC_CTX_P59;DOC_CTX_P84;DOC_CTX_P57;DOC_CTX_P29;DOC_CTX_P8"
     },
     {
       "qid": "Q_SYN_2066",
@@ -4477,10 +4477,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3291,
+      "gen_f1": 0.338,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P12;DOC_CTX_P7;DOC_CTX_P16;DOC_CTX_P55;DOC_CTX_P79"
+      "top_doc_ids": "DOC_CTX_P12;DOC_CTX_M15;DOC_CTX_PH2;DOC_CTX_R133;DOC_CTX_P79"
     },
     {
       "qid": "Q_SYN_2068",
@@ -4490,10 +4490,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.25,
+      "gen_f1": 0.2462,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH63;DOC_CTX_PH36;DOC_CTX_PH22;DOC_CTX_PH30;DOC_CTX_PH14"
+      "top_doc_ids": "DOC_CTX_PH63;DOC_CTX_C23;DOC_CTX_B27;DOC_CTX_B46;DOC_CTX_PH36"
     },
     {
       "qid": "Q_SYN_2072",
@@ -4502,11 +4502,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.2667,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.3944,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L37;DOC_CTX_L11;DOC_CTX_L10;DOC_CTX_L6;DOC_CTX_L12"
+      "top_doc_ids": "DOC_CTX_M23;DOC_CTX_M15;DOC_CTX_L37;DOC_CTX_L11;DOC_CTX_S67"
     },
     {
       "qid": "Q_SYN_2076",
@@ -4516,10 +4516,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2899,
+      "gen_f1": 0.3429,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L21;DOC_CTX_L9;DOC_CTX_L25;DOC_CTX_L33;DOC_CTX_L34"
+      "top_doc_ids": "DOC_CTX_L21;DOC_CTX_L9;DOC_CTX_P5;DOC_CTX_S107;DOC_CTX_S106"
     },
     {
       "qid": "Q_SYN_2084",
@@ -4529,10 +4529,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.9197,
-      "gen_f1": 0.4096,
+      "gen_f1": 0.45,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B22;DOC_CTX_B48;DOC_CTX_B34;DOC_CTX_B7;DOC_CTX_B15"
+      "top_doc_ids": "DOC_CTX_B22;DOC_CTX_B48;DOC_CTX_B34;DOC_CTX_L26;DOC_CTX_L1"
     },
     {
       "qid": "Q_SYN_2091",
@@ -4542,10 +4542,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.4127,
-      "citation_correctness": 0.0,
+      "gen_f1": 0.2264,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L11;DOC_CTX_L37;DOC_CTX_L10;DOC_CTX_L34;DOC_CTX_L35"
+      "top_doc_ids": "DOC_CTX_L11;DOC_CTX_L37;DOC_CTX_M15;DOC_CTX_M23;DOC_CTX_T40"
     },
     {
       "qid": "Q_SYN_2093",
@@ -4555,10 +4555,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.24,
+      "gen_f1": 0.1509,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T32;DOC_CTX_T23;DOC_CTX_T6;DOC_CTX_T2;DOC_CTX_T33"
+      "top_doc_ids": "DOC_CTX_T32;DOC_CTX_T23;DOC_CTX_H45;DOC_CTX_B28;DOC_CTX_H79"
     },
     {
       "qid": "Q_SYN_2098",
@@ -4568,10 +4568,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3662,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5217,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA24;DOC_CTX_BA31;DOC_CTX_BA39;DOC_CTX_BA38;DOC_CTX_BA2"
+      "top_doc_ids": "DOC_CTX_BA24;DOC_CTX_M52;DOC_CTX_M27;DOC_CTX_P10;DOC_CTX_R56"
     },
     {
       "qid": "Q_SYN_2103",
@@ -4581,10 +4581,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3667,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H51;DOC_CTX_H66;DOC_CTX_H26;DOC_CTX_H39;DOC_CTX_H41"
+      "top_doc_ids": "DOC_CTX_H51;DOC_CTX_R159;DOC_CTX_C21;DOC_CTX_C103;DOC_CTX_C86"
     },
     {
       "qid": "Q_SYN_2111",
@@ -4594,10 +4594,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3333,
+      "gen_f1": 0.2927,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS18;DOC_CTX_HS9;DOC_CTX_HS22;DOC_CTX_HS25;DOC_CTX_HS11"
+      "top_doc_ids": "DOC_CTX_HS22;DOC_CTX_HS18;DOC_CTX_HS9;DOC_CTX_H5;DOC_CTX_H13"
     },
     {
       "qid": "Q_SYN_2117",
@@ -4607,10 +4607,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4304,
+      "gen_f1": 0.4444,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA27;DOC_CTX_BA9;DOC_CTX_BA4;DOC_CTX_BA3;DOC_CTX_BA8"
+      "top_doc_ids": "DOC_CTX_BA27;DOC_CTX_G70;DOC_CTX_G30;DOC_CTX_H21;DOC_CTX_C106"
     },
     {
       "qid": "Q_SYN_2120",
@@ -4620,10 +4620,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.25,
+      "gen_f1": 0.2712,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH35;DOC_CTX_PH43;DOC_CTX_PH51;DOC_CTX_PH46;DOC_CTX_PH11"
+      "top_doc_ids": "DOC_CTX_PH35;DOC_CTX_BA37;DOC_CTX_M55;DOC_CTX_PH46;DOC_CTX_PH11"
     },
     {
       "qid": "Q_SYN_2125",
@@ -4633,10 +4633,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.5424,
+      "gen_f1": 0.4615,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T16;DOC_CTX_T38;DOC_CTX_T19;DOC_CTX_T5;DOC_CTX_T9"
+      "top_doc_ids": "DOC_CTX_T16;DOC_CTX_G10;DOC_CTX_S28;DOC_CTX_T38;DOC_CTX_T5"
     },
     {
       "qid": "Q_SYN_2129",
@@ -4646,10 +4646,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3881,
+      "gen_f1": 0.4396,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M35;DOC_CTX_M49;DOC_CTX_M4;DOC_CTX_M47;DOC_CTX_M1"
+      "top_doc_ids": "DOC_CTX_M35;DOC_CTX_M49;DOC_CTX_H2;DOC_CTX_T38;DOC_CTX_BA3"
     },
     {
       "qid": "Q_SYN_2131",
@@ -4659,10 +4659,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.338,
+      "gen_f1": 0.2647,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C93;DOC_CTX_C65;DOC_CTX_C110;DOC_CTX_C98;DOC_CTX_C79"
+      "top_doc_ids": "DOC_CTX_C65;DOC_CTX_C93;DOC_CTX_S1002;DOC_CTX_S1003;DOC_CTX_R41"
     },
     {
       "qid": "Q_SYN_2137",
@@ -4672,10 +4672,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6934,
-      "gen_f1": 0.2951,
+      "gen_f1": 0.4242,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C23;DOC_CTX_C58;DOC_CTX_C68;DOC_CTX_C48;DOC_CTX_C14"
+      "top_doc_ids": "DOC_CTX_C23;DOC_CTX_C68;DOC_CTX_C58;DOC_CTX_R155;DOC_CTX_S99"
     },
     {
       "qid": "Q_SYN_2141",
@@ -4685,10 +4685,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2759,
+      "gen_f1": 0.2887,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P73;DOC_CTX_P71;DOC_CTX_P12;DOC_CTX_P51;DOC_CTX_P27"
+      "top_doc_ids": "DOC_CTX_P73;DOC_CTX_T14;DOC_CTX_B4;DOC_CTX_P71;DOC_CTX_M4"
     },
     {
       "qid": "Q_SYN_2149",
@@ -4698,10 +4698,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3934,
+      "gen_f1": 0.2188,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T18;DOC_CTX_T2;DOC_CTX_T32;DOC_CTX_T6;DOC_CTX_T33"
+      "top_doc_ids": "DOC_CTX_T18;DOC_CTX_T2;DOC_CTX_S96;DOC_CTX_M29;DOC_CTX_M22"
     },
     {
       "qid": "Q_SYN_2152",
@@ -4711,10 +4711,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.5714,
+      "gen_f1": 0.6087,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S63;DOC_CTX_S73;DOC_CTX_S93;DOC_CTX_S35;DOC_CTX_S70"
+      "top_doc_ids": "DOC_CTX_S63;DOC_CTX_S73;DOC_CTX_S93;DOC_CTX_L12;DOC_CTX_T2"
     },
     {
       "qid": "Q_SYN_2153",
@@ -4724,10 +4724,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.339,
+      "gen_f1": 0.4483,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R42;DOC_CTX_R74;DOC_CTX_R28;DOC_CTX_R138;DOC_CTX_R10"
+      "top_doc_ids": "DOC_CTX_R42;DOC_CTX_R10;DOC_CTX_R17;DOC_CTX_R28;DOC_CTX_H56"
     },
     {
       "qid": "Q_SYN_2181",
@@ -4737,10 +4737,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2963,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3871,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G35;DOC_CTX_G12;DOC_CTX_G75;DOC_CTX_G18;DOC_CTX_G8"
+      "top_doc_ids": "DOC_CTX_G35;DOC_CTX_H66;DOC_CTX_P44;DOC_CTX_R75;DOC_CTX_T2"
     },
     {
       "qid": "Q_SYN_2182",
@@ -4749,11 +4749,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4848,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.4773,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S88;DOC_CTX_S54;DOC_CTX_S9;DOC_CTX_S8;DOC_CTX_S12"
+      "top_doc_ids": "DOC_CTX_S54;DOC_CTX_S9;DOC_CTX_S88;DOC_CTX_H5;DOC_CTX_C66"
     },
     {
       "qid": "Q_SYN_2185",
@@ -4762,11 +4762,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 0.6667,
-      "ndcg_at_k": 0.6508,
-      "gen_f1": 0.3714,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.5307,
+      "gen_f1": 0.2376,
+      "citation_correctness": 0.4,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H12;DOC_CTX_H30;DOC_CTX_H2;DOC_CTX_H17;DOC_CTX_H27"
+      "top_doc_ids": "DOC_CTX_H30;DOC_CTX_H27;DOC_CTX_H65;DOC_CTX_H17;DOC_CTX_H2"
     },
     {
       "qid": "Q_SYN_2194",
@@ -4775,11 +4775,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.4783,
+      "ndcg_at_k": 0.4307,
+      "gen_f1": 0.4536,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R17;DOC_CTX_R99;DOC_CTX_R28;DOC_CTX_R42;DOC_CTX_R86"
+      "top_doc_ids": "DOC_CTX_R17;DOC_CTX_R42;DOC_CTX_R86;DOC_CTX_R99;DOC_CTX_R28"
     },
     {
       "qid": "Q_SYN_2195",
@@ -4789,10 +4789,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.5778,
+      "gen_f1": 0.44,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P46;DOC_CTX_P84;DOC_CTX_P59;DOC_CTX_P8;DOC_CTX_P82"
+      "top_doc_ids": "DOC_CTX_P46;DOC_CTX_S62;DOC_CTX_R151;DOC_CTX_G62;DOC_CTX_H14"
     },
     {
       "qid": "Q_SYN_2197",
@@ -4800,12 +4800,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.2222,
-      "citation_correctness": 1.0,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.0635,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R164;DOC_CTX_R120;DOC_CTX_R87;DOC_CTX_R61;DOC_CTX_R79"
+      "top_doc_ids": "DOC_CTX_R61;DOC_CTX_G47;DOC_CTX_G19;DOC_CTX_H80;DOC_CTX_C44"
     },
     {
       "qid": "Q_SYN_2201",
@@ -4814,11 +4814,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.5306,
+      "ndcg_at_k": 0.4307,
+      "gen_f1": 0.4,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R131;DOC_CTX_R84;DOC_CTX_R175;DOC_CTX_R97;DOC_CTX_R103"
+      "top_doc_ids": "DOC_CTX_S30;DOC_CTX_H32;DOC_CTX_S89;DOC_CTX_R84;DOC_CTX_S94"
     },
     {
       "qid": "Q_SYN_2202",
@@ -4828,10 +4828,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3662,
+      "gen_f1": 0.2254,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M50;DOC_CTX_M10;DOC_CTX_M19;DOC_CTX_M34;DOC_CTX_M5"
+      "top_doc_ids": "DOC_CTX_M50;DOC_CTX_C21;DOC_CTX_H66;DOC_CTX_S73;DOC_CTX_S57"
     },
     {
       "qid": "Q_SYN_2204",
@@ -4841,10 +4841,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2857,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.5882,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P29;DOC_CTX_P59;DOC_CTX_P8;DOC_CTX_P56;DOC_CTX_P13"
+      "top_doc_ids": "DOC_CTX_P29;DOC_CTX_H80;DOC_CTX_S111;DOC_CTX_M30;DOC_CTX_B1"
     },
     {
       "qid": "Q_SYN_2208",
@@ -4854,10 +4854,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3768,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4935,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G22;DOC_CTX_G56;DOC_CTX_G65;DOC_CTX_G15;DOC_CTX_G72"
+      "top_doc_ids": "DOC_CTX_G22;DOC_CTX_G56;DOC_CTX_B53;DOC_CTX_PH21;DOC_CTX_H9"
     },
     {
       "qid": "Q_SYN_2210",
@@ -4866,11 +4866,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4054,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.3733,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S18;DOC_CTX_S50;DOC_CTX_S119;DOC_CTX_S8;DOC_CTX_S12"
+      "top_doc_ids": "DOC_CTX_S50;DOC_CTX_S119;DOC_CTX_S18;DOC_CTX_R141;DOC_CTX_R25"
     },
     {
       "qid": "Q_SYN_2214",
@@ -4880,10 +4880,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4,
-      "citation_correctness": 1.0,
+      "gen_f1": 0.3333,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R75;DOC_CTX_R71;DOC_CTX_R176;DOC_CTX_R156;DOC_CTX_R180"
+      "top_doc_ids": "DOC_CTX_R75;DOC_CTX_M10;DOC_CTX_S63;DOC_CTX_L12;DOC_CTX_R176"
     },
     {
       "qid": "Q_SYN_2217",
@@ -4893,10 +4893,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3158,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4058,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_H71;DOC_CTX_H2;DOC_CTX_H12;DOC_CTX_H3;DOC_CTX_H30"
+      "top_doc_ids": "DOC_CTX_H71;DOC_CTX_R81;DOC_CTX_G36;DOC_CTX_C32;DOC_CTX_G32"
     },
     {
       "qid": "Q_SYN_2221",
@@ -4905,11 +4905,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.9558,
+      "ndcg_at_k": 0.9047,
       "gen_f1": 0.2647,
-      "citation_correctness": 1.0,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH8;DOC_CTX_PH23;DOC_CTX_PH56;DOC_CTX_PH62;DOC_CTX_PH20"
+      "top_doc_ids": "DOC_CTX_PH23;DOC_CTX_PH56;DOC_CTX_PH8;DOC_CTX_PH62;DOC_CTX_PH20"
     },
     {
       "qid": "Q_SYN_2230",
@@ -4918,11 +4918,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.6309,
-      "gen_f1": 0.2258,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.5,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B12;DOC_CTX_B45;DOC_CTX_B8;DOC_CTX_B42;DOC_CTX_B44"
+      "top_doc_ids": "DOC_CTX_B45;DOC_CTX_B12;DOC_CTX_G12;DOC_CTX_G45;DOC_CTX_H79"
     },
     {
       "qid": "Q_SYN_2233",
@@ -4930,12 +4930,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.8529,
-      "gen_f1": 0.3826,
-      "citation_correctness": 0.5,
+      "recall_at_k": 0.3333,
+      "ndcg_at_k": 0.2961,
+      "gen_f1": 0.367,
+      "citation_correctness": 0.3333,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C57;DOC_CTX_C99;DOC_CTX_C40;DOC_CTX_C31;DOC_CTX_C74"
+      "top_doc_ids": "DOC_CTX_C99;DOC_CTX_C57;DOC_CTX_R83;DOC_CTX_H80;DOC_CTX_C40"
     },
     {
       "qid": "Q_SYN_2234",
@@ -4943,12 +4943,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 1.0,
-      "ndcg_at_k": 0.5438,
-      "gen_f1": 0.32,
+      "recall_at_k": 0.0,
+      "ndcg_at_k": 0.0,
+      "gen_f1": 0.3958,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R37;DOC_CTX_R141;DOC_CTX_R25;DOC_CTX_R1002;DOC_CTX_R35"
+      "top_doc_ids": "DOC_CTX_G43;DOC_CTX_H83;DOC_CTX_R1002;DOC_CTX_C81;DOC_CTX_H77"
     },
     {
       "qid": "Q_SYN_2238",
@@ -4958,10 +4958,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3768,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M50;DOC_CTX_M19;DOC_CTX_M10;DOC_CTX_M40;DOC_CTX_M5"
+      "top_doc_ids": "DOC_CTX_M50;DOC_CTX_M19;DOC_CTX_T26;DOC_CTX_T10;DOC_CTX_T31"
     },
     {
       "qid": "Q_SYN_2269",
@@ -4970,11 +4970,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
+      "ndcg_at_k": 0.5706,
       "gen_f1": 0.2759,
-      "citation_correctness": 1.0,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH56;DOC_CTX_PH8;DOC_CTX_PH23;DOC_CTX_PH62;DOC_CTX_PH20"
+      "top_doc_ids": "DOC_CTX_PH23;DOC_CTX_PH62;DOC_CTX_PH56;DOC_CTX_PH8;DOC_CTX_PH20"
     },
     {
       "qid": "Q_SYN_2273",
@@ -4983,11 +4983,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3238,
+      "ndcg_at_k": 0.5706,
+      "gen_f1": 0.3333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R1001;DOC_CTX_R180;DOC_CTX_R89;DOC_CTX_R159;DOC_CTX_R18"
+      "top_doc_ids": "DOC_CTX_L1;DOC_CTX_B22;DOC_CTX_R180;DOC_CTX_R1001;DOC_CTX_PH57"
     },
     {
       "qid": "Q_SYN_2284",
@@ -4997,10 +4997,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3333,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4242,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C32;DOC_CTX_C45;DOC_CTX_C15;DOC_CTX_C44;DOC_CTX_C72"
+      "top_doc_ids": "DOC_CTX_C32;DOC_CTX_R81;DOC_CTX_G36;DOC_CTX_PH61;DOC_CTX_P90"
     },
     {
       "qid": "Q_SYN_2294",
@@ -5010,10 +5010,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2759,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.3944,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T6;DOC_CTX_T2;DOC_CTX_T33;DOC_CTX_T34;DOC_CTX_T10"
+      "top_doc_ids": "DOC_CTX_T6;DOC_CTX_M40;DOC_CTX_R5;DOC_CTX_H70;DOC_CTX_C1"
     },
     {
       "qid": "Q_SYN_2303",
@@ -5023,10 +5023,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2182,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4194,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T27;DOC_CTX_T15;DOC_CTX_T24;DOC_CTX_T1;DOC_CTX_T13"
+      "top_doc_ids": "DOC_CTX_T27;DOC_CTX_P42;DOC_CTX_G61;DOC_CTX_M35;DOC_CTX_M21"
     },
     {
       "qid": "Q_SYN_2305",
@@ -5035,11 +5035,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.8772,
-      "gen_f1": 0.3529,
+      "ndcg_at_k": 0.6509,
+      "gen_f1": 0.3235,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C57;DOC_CTX_C99;DOC_CTX_C40;DOC_CTX_C31;DOC_CTX_C22"
+      "top_doc_ids": "DOC_CTX_C99;DOC_CTX_C31;DOC_CTX_C40;DOC_CTX_C57;DOC_CTX_G2"
     },
     {
       "qid": "Q_SYN_2306",
@@ -5049,10 +5049,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3889,
+      "gen_f1": 0.5,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T21;DOC_CTX_T19;DOC_CTX_T38;DOC_CTX_T7;DOC_CTX_T16"
+      "top_doc_ids": "DOC_CTX_T21;DOC_CTX_C59;DOC_CTX_S33;DOC_CTX_S37;DOC_CTX_P2"
     },
     {
       "qid": "Q_SYN_2310",
@@ -5061,11 +5061,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.4595,
+      "ndcg_at_k": 0.8503,
+      "gen_f1": 0.3951,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G10;DOC_CTX_G47;DOC_CTX_G2;DOC_CTX_G34;DOC_CTX_G32"
+      "top_doc_ids": "DOC_CTX_G10;DOC_CTX_G2;DOC_CTX_G34;DOC_CTX_C31;DOC_CTX_G47"
     },
     {
       "qid": "Q_SYN_2315",
@@ -5075,10 +5075,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4848,
+      "gen_f1": 0.5161,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G6;DOC_CTX_G1;DOC_CTX_G53;DOC_CTX_G11;DOC_CTX_G22"
+      "top_doc_ids": "DOC_CTX_G6;DOC_CTX_B27;DOC_CTX_PH63;DOC_CTX_R168;DOC_CTX_R155"
     },
     {
       "qid": "Q_SYN_2322",
@@ -5088,10 +5088,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3333,
+      "gen_f1": 0.2295,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T3;DOC_CTX_T12;DOC_CTX_T30;DOC_CTX_T7;DOC_CTX_T5"
+      "top_doc_ids": "DOC_CTX_T3;DOC_CTX_T12;DOC_CTX_T30;DOC_CTX_R35;DOC_CTX_HS18"
     },
     {
       "qid": "Q_SYN_2329",
@@ -5104,7 +5104,7 @@
       "gen_f1": 0.338,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH4;DOC_CTX_PH28;DOC_CTX_PH25;DOC_CTX_PH26;DOC_CTX_PH57"
+      "top_doc_ids": "DOC_CTX_PH4;DOC_CTX_PH25;DOC_CTX_PH26;DOC_CTX_PH28;DOC_CTX_PH57"
     },
     {
       "qid": "Q_SYN_2331",
@@ -5114,10 +5114,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2333,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4444,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C92;DOC_CTX_C14;DOC_CTX_C26;DOC_CTX_C80;DOC_CTX_C4"
+      "top_doc_ids": "DOC_CTX_C92;DOC_CTX_P92;DOC_CTX_S120;DOC_CTX_S32;DOC_CTX_HS20"
     },
     {
       "qid": "Q_SYN_2339",
@@ -5127,10 +5127,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2759,
+      "gen_f1": 0.3333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH54;DOC_CTX_PH65;DOC_CTX_PH4;DOC_CTX_PH57;DOC_CTX_PH26"
+      "top_doc_ids": "DOC_CTX_PH65;DOC_CTX_PH54;DOC_CTX_G64;DOC_CTX_S48;DOC_CTX_H44"
     },
     {
       "qid": "Q_SYN_2350",
@@ -5140,10 +5140,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2813,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4416,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH23;DOC_CTX_PH27;DOC_CTX_PH9;DOC_CTX_PH42;DOC_CTX_PH48"
+      "top_doc_ids": "DOC_CTX_PH23;DOC_CTX_H27;DOC_CTX_G49;DOC_CTX_G44;DOC_CTX_H3"
     },
     {
       "qid": "Q_SYN_2355",
@@ -5153,10 +5153,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4906,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA8;DOC_CTX_BA9;DOC_CTX_BA26;DOC_CTX_BA4;DOC_CTX_BA30"
+      "top_doc_ids": "DOC_CTX_BA8;DOC_CTX_H1;DOC_CTX_P26;DOC_CTX_P56;DOC_CTX_L43"
     },
     {
       "qid": "Q_SYN_2364",
@@ -5166,10 +5166,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.3077,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4615,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA8;DOC_CTX_BA3;DOC_CTX_BA28;DOC_CTX_BA30;DOC_CTX_BA22"
+      "top_doc_ids": "DOC_CTX_BA22;DOC_CTX_BA3;DOC_CTX_BA28;DOC_CTX_BA8;DOC_CTX_BA27"
     },
     {
       "qid": "Q_SYN_2369",
@@ -5178,11 +5178,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.3333,
-      "citation_correctness": 1.0,
+      "ndcg_at_k": 0.9197,
+      "gen_f1": 0.2029,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P71;DOC_CTX_P42;DOC_CTX_P87;DOC_CTX_P12;DOC_CTX_P51"
+      "top_doc_ids": "DOC_CTX_P71;DOC_CTX_BA28;DOC_CTX_P42;DOC_CTX_M21;DOC_CTX_M9"
     },
     {
       "qid": "Q_SYN_2374",
@@ -5192,10 +5192,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3077,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4545,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B17;DOC_CTX_B42;DOC_CTX_B9;DOC_CTX_B12;DOC_CTX_B54"
+      "top_doc_ids": "DOC_CTX_B17;DOC_CTX_C42;DOC_CTX_P37;DOC_CTX_P21;DOC_CTX_H5"
     },
     {
       "qid": "Q_SYN_2376",
@@ -5205,10 +5205,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4333,
+      "gen_f1": 0.4179,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P12;DOC_CTX_P7;DOC_CTX_P16;DOC_CTX_P51;DOC_CTX_P71"
+      "top_doc_ids": "DOC_CTX_P12;DOC_CTX_P7;DOC_CTX_P16;DOC_CTX_S70;DOC_CTX_C109"
     },
     {
       "qid": "Q_SYN_2379",
@@ -5218,10 +5218,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.56,
+      "gen_f1": 0.5818,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S35;DOC_CTX_S82;DOC_CTX_S65;DOC_CTX_S48;DOC_CTX_S70"
+      "top_doc_ids": "DOC_CTX_S35;DOC_CTX_S82;DOC_CTX_C52;DOC_CTX_R99;DOC_CTX_R170"
     },
     {
       "qid": "Q_SYN_2381",
@@ -5230,11 +5230,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 0.4307,
-      "gen_f1": 0.2545,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.2182,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G46;DOC_CTX_G3;DOC_CTX_G28;DOC_CTX_G66;DOC_CTX_G12"
+      "top_doc_ids": "DOC_CTX_G66;DOC_CTX_L18;DOC_CTX_L26;DOC_CTX_G28;DOC_CTX_L1"
     },
     {
       "qid": "Q_SYN_2383",
@@ -5244,10 +5244,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4828,
-      "citation_correctness": 0.0,
+      "gen_f1": 0.3409,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L38;DOC_CTX_L8;DOC_CTX_L27;DOC_CTX_L42;DOC_CTX_L34"
+      "top_doc_ids": "DOC_CTX_L38;DOC_CTX_P69;DOC_CTX_B8;DOC_CTX_H31;DOC_CTX_B19"
     },
     {
       "qid": "Q_SYN_2391",
@@ -5256,11 +5256,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.2951,
-      "citation_correctness": 0.5,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.2333,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_BA19;DOC_CTX_BA10;DOC_CTX_BA29;DOC_CTX_BA8;DOC_CTX_BA14"
+      "top_doc_ids": "DOC_CTX_BA10;DOC_CTX_H42;DOC_CTX_BA19;DOC_CTX_S100;DOC_CTX_R77"
     },
     {
       "qid": "Q_SYN_2392",
@@ -5270,10 +5270,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3077,
+      "gen_f1": 0.3333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P46;DOC_CTX_P71;DOC_CTX_P73;DOC_CTX_P84;DOC_CTX_P43"
+      "top_doc_ids": "DOC_CTX_P46;DOC_CTX_S62;DOC_CTX_G62;DOC_CTX_H14;DOC_CTX_PH59"
     },
     {
       "qid": "Q_SYN_2393",
@@ -5283,10 +5283,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.2857,
+      "gen_f1": 0.3714,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_PH42;DOC_CTX_PH27;DOC_CTX_PH48;DOC_CTX_PH9;DOC_CTX_PH56"
+      "top_doc_ids": "DOC_CTX_PH42;DOC_CTX_PH27;DOC_CTX_PH48;DOC_CTX_G19;DOC_CTX_G17"
     },
     {
       "qid": "Q_SYN_2394",
@@ -5296,10 +5296,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.3099,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4096,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G48;DOC_CTX_G42;DOC_CTX_G70;DOC_CTX_G62;DOC_CTX_G51"
+      "top_doc_ids": "DOC_CTX_G48;DOC_CTX_C73;DOC_CTX_S27;DOC_CTX_B2;DOC_CTX_H15"
     },
     {
       "qid": "Q_SYN_2403",
@@ -5309,10 +5309,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4058,
+      "gen_f1": 0.4333,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_M50;DOC_CTX_M41;DOC_CTX_M5;DOC_CTX_M45;DOC_CTX_M10"
+      "top_doc_ids": "DOC_CTX_M50;DOC_CTX_M41;DOC_CTX_T23;DOC_CTX_B28;DOC_CTX_H66"
     },
     {
       "qid": "Q_SYN_2405",
@@ -5322,10 +5322,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.5,
-      "gen_f1": 0.3014,
+      "gen_f1": 0.3133,
       "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R1;DOC_CTX_R3;DOC_CTX_R2;DOC_CTX_R37;DOC_CTX_R141"
+      "top_doc_ids": "DOC_CTX_R1;DOC_CTX_R3;DOC_CTX_R2;DOC_CTX_S1;DOC_CTX_L24"
     },
     {
       "qid": "Q_SYN_2406",
@@ -5335,10 +5335,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4912,
+      "gen_f1": 0.5085,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_S104;DOC_CTX_S6;DOC_CTX_S112;DOC_CTX_S63;DOC_CTX_S73"
+      "top_doc_ids": "DOC_CTX_S104;DOC_CTX_R60;DOC_CTX_PH64;DOC_CTX_H26;DOC_CTX_R176"
     },
     {
       "qid": "Q_SYN_2412",
@@ -5346,12 +5346,12 @@
       "mode": "baseline",
       "epsilon": null,
       "lambda_weight": 0.65,
-      "recall_at_k": 0.0,
-      "ndcg_at_k": 0.0,
-      "gen_f1": 0.4068,
-      "citation_correctness": 0.0,
+      "recall_at_k": 1.0,
+      "ndcg_at_k": 1.0,
+      "gen_f1": 0.4062,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_R170;DOC_CTX_R100;DOC_CTX_R91;DOC_CTX_R99;DOC_CTX_R45"
+      "top_doc_ids": "DOC_CTX_R180;DOC_CTX_R91;DOC_CTX_G46;DOC_CTX_R170;DOC_CTX_R171"
     },
     {
       "qid": "Q_SYN_2413",
@@ -5361,10 +5361,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.48,
+      "gen_f1": 0.4615,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T39;DOC_CTX_T10;DOC_CTX_T23;DOC_CTX_T31;DOC_CTX_T26"
+      "top_doc_ids": "DOC_CTX_T39;DOC_CTX_S39;DOC_CTX_B38;DOC_CTX_B32;DOC_CTX_M45"
     },
     {
       "qid": "Q_SYN_2416",
@@ -5374,10 +5374,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1961,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L7;DOC_CTX_L1;DOC_CTX_L12;DOC_CTX_L42;DOC_CTX_L41"
+      "top_doc_ids": "DOC_CTX_L7;DOC_CTX_M34;DOC_CTX_B43;DOC_CTX_T10;DOC_CTX_T31"
     },
     {
       "qid": "Q_SYN_2418",
@@ -5387,10 +5387,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.381,
+      "gen_f1": 0.25,
       "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS23;DOC_CTX_HS7;DOC_CTX_HS3;DOC_CTX_HS6;DOC_CTX_HS13"
+      "top_doc_ids": "DOC_CTX_HS23;DOC_CTX_HS7;DOC_CTX_HS3;DOC_CTX_PH57;DOC_CTX_H26"
     },
     {
       "qid": "Q_SYN_2421",
@@ -5400,10 +5400,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 0.6309,
-      "gen_f1": 0.2105,
+      "gen_f1": 0.303,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C36;DOC_CTX_C91;DOC_CTX_C42;DOC_CTX_C59;DOC_CTX_C45"
+      "top_doc_ids": "DOC_CTX_C36;DOC_CTX_C91;DOC_CTX_HS22;DOC_CTX_C42;DOC_CTX_C59"
     },
     {
       "qid": "Q_SYN_2422",
@@ -5413,10 +5413,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1961,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4286,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_T5;DOC_CTX_T16;DOC_CTX_T15;DOC_CTX_T7;DOC_CTX_T38"
+      "top_doc_ids": "DOC_CTX_T5;DOC_CTX_T16;DOC_CTX_S3;DOC_CTX_H1002;DOC_CTX_M11"
     },
     {
       "qid": "Q_SYN_2430",
@@ -5426,10 +5426,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4286,
-      "citation_correctness": 1.0,
+      "gen_f1": 0.339,
+      "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_G1;DOC_CTX_G33;DOC_CTX_G53;DOC_CTX_G22;DOC_CTX_G56"
+      "top_doc_ids": "DOC_CTX_G1;DOC_CTX_G33;DOC_CTX_G53;DOC_CTX_P27;DOC_CTX_L37"
     },
     {
       "qid": "Q_SYN_2434",
@@ -5439,10 +5439,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.1923,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4324,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P66;DOC_CTX_P83;DOC_CTX_P27;DOC_CTX_P30;DOC_CTX_P2"
+      "top_doc_ids": "DOC_CTX_P66;DOC_CTX_BA23;DOC_CTX_P83;DOC_CTX_P27;DOC_CTX_C95"
     },
     {
       "qid": "Q_SYN_2436",
@@ -5451,11 +5451,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
+      "ndcg_at_k": 0.5438,
       "gen_f1": 0.2623,
-      "citation_correctness": 1.0,
+      "citation_correctness": 0.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_L10;DOC_CTX_L11;DOC_CTX_L37;DOC_CTX_L35;DOC_CTX_L6"
+      "top_doc_ids": "DOC_CTX_M15;DOC_CTX_L37;DOC_CTX_L11;DOC_CTX_M23;DOC_CTX_L10"
     },
     {
       "qid": "Q_SYN_2444",
@@ -5465,10 +5465,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.25,
+      "gen_f1": 0.1429,
       "citation_correctness": 0.5,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_C36;DOC_CTX_C91;DOC_CTX_C56;DOC_CTX_C66;DOC_CTX_C42"
+      "top_doc_ids": "DOC_CTX_C36;DOC_CTX_C56;DOC_CTX_C91;DOC_CTX_C66;DOC_CTX_G32"
     },
     {
       "qid": "Q_SYN_2449",
@@ -5477,11 +5477,11 @@
       "epsilon": null,
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
-      "ndcg_at_k": 1.0,
-      "gen_f1": 0.386,
-      "citation_correctness": 0.0,
+      "ndcg_at_k": 0.5,
+      "gen_f1": 0.4412,
+      "citation_correctness": 0.3333,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_P30;DOC_CTX_P51;DOC_CTX_P38;DOC_CTX_P89;DOC_CTX_P9"
+      "top_doc_ids": "DOC_CTX_P38;DOC_CTX_P51;DOC_CTX_P30;DOC_CTX_H82;DOC_CTX_S49"
     },
     {
       "qid": "Q_SYN_2450",
@@ -5491,10 +5491,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.4638,
-      "citation_correctness": 0.5,
+      "gen_f1": 0.4286,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_B13;DOC_CTX_B41;DOC_CTX_B23;DOC_CTX_B14;DOC_CTX_B10"
+      "top_doc_ids": "DOC_CTX_B13;DOC_CTX_G5;DOC_CTX_R95;DOC_CTX_R168;DOC_CTX_R33"
     },
     {
       "qid": "Q_SYN_2451",
@@ -5504,10 +5504,10 @@
       "lambda_weight": 0.65,
       "recall_at_k": 1.0,
       "ndcg_at_k": 1.0,
-      "gen_f1": 0.303,
-      "citation_correctness": 0.0,
+      "gen_f1": 0.3636,
+      "citation_correctness": 1.0,
       "ale_m": 0.0,
-      "top_doc_ids": "DOC_CTX_HS7;DOC_CTX_HS14;DOC_CTX_HS20;DOC_CTX_HS6;DOC_CTX_HS13"
+      "top_doc_ids": "DOC_CTX_HS7;DOC_CTX_PH4;DOC_CTX_M40;DOC_CTX_L39;DOC_CTX_S69"
     }
   ]
 }

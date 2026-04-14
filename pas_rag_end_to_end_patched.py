@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import random
 import statistics
 from pathlib import Path
@@ -9,6 +10,9 @@ from typing import Any, Dict, List, Optional, Tuple
 
 BASE = Path(__file__).resolve().parent
 RNG = random.Random(42)
+_SEMANTIC_EMBEDDER = None
+_QUERY_EMBED_CACHE: Dict[str, List[float]] = {}
+_CHUNK_EMBED_CACHE: Dict[str, List[float]] = {}
 
 
 # -----------------------------
@@ -150,64 +154,224 @@ def build_pas_token(query: Dict[str, Any], anchors: List[Dict[str, Any]], epsilo
 # Query parsing
 # -----------------------------
 
+# def parse_query(raw_query: str, fallback_query: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+#     q = raw_query.lower()
+#     entity = 'place'
+#     if 'restaurant' in q:
+#         entity = 'restaurant'
+#     elif 'hotel' in q or 'inn' in q or 'suite' in q:
+#         entity = 'hotel'
+#     elif 'subway' in q or 'station' in q or 'transit' in q:
+#         entity = 'subway_station'
+
+#     direction = 'ANY'
+#     for candidate in ['NE', 'NW', 'SE', 'SW', 'N', 'E', 'S', 'W']:
+#         # raw query is not tokenized for NE etc, so use word boundaries for single letters only where practical
+#         needle = candidate.lower()
+#         if candidate in {'NE', 'NW', 'SE', 'SW'}:
+#             if needle in q:
+#                 direction = candidate
+#                 break
+#         else:
+#             keywords = {
+#                 'N': [' north ', ' northern '],
+#                 'E': [' east ', ' eastern '],
+#                 'S': [' south ', ' southern '],
+#                 'W': [' west ', ' western '],
+#             }
+#             padded = f' {q} '
+#             if any(k in padded for k in keywords[candidate]):
+#                 direction = candidate
+#                 break
+
+#     radius = None
+#     for candidate in [0.5, 1.0, 2.0, 3.0]:
+#         pattern = f'{int(candidate) if candidate.is_integer() else candidate} mile'
+#         if pattern in q or pattern + 's' in q:
+#             radius = candidate
+#             break
+#     if radius is None and fallback_query:
+#         radius = fallback_query['spatial_intent']['radius_miles']
+#     radius = radius or 2.0
+
+#     parsed = {
+#         'raw_query': raw_query,
+#         'semantic_intent': {
+#             'entity_type': entity,
+#             'attributes': [],
+#         },
+#         'spatial_intent': {
+#             'direction_constraint': direction,
+#             'radius_miles': radius,
+#         },
+#     }
+
+#     if fallback_query:
+#         parsed['spatial_intent']['user_location'] = fallback_query['spatial_intent']['user_location']
+#         # Keep user location from the eval query, but do not pass any anchor hint into runtime retrieval.
+#         # preserve richer attributes when we have them
+#         parsed['semantic_intent']['attributes'] = fallback_query.get('semantic_intent', {}).get('attributes', [])
+#         parsed['semantic_intent']['must_have_tags'] = fallback_query.get('semantic_intent', {}).get('must_have_tags', [entity])
+
+#     return parsed
+
+
+import re
+from typing import Dict, Any, Optional
+
+
 def parse_query(raw_query: str, fallback_query: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
-    q = raw_query.lower()
-    entity = 'place'
-    if 'restaurant' in q:
-        entity = 'restaurant'
-    elif 'hotel' in q or 'inn' in q or 'suite' in q:
-        entity = 'hotel'
-    elif 'subway' in q or 'station' in q or 'transit' in q:
-        entity = 'subway_station'
+    q = raw_query.lower().strip()
 
-    direction = 'ANY'
-    for candidate in ['NE', 'NW', 'SE', 'SW', 'N', 'E', 'S', 'W']:
-        # raw query is not tokenized for NE etc, so use word boundaries for single letters only where practical
-        needle = candidate.lower()
-        if candidate in {'NE', 'NW', 'SE', 'SW'}:
-            if needle in q:
-                direction = candidate
-                break
-        else:
-            keywords = {
-                'N': [' north ', ' northern '],
-                'E': [' east ', ' eastern '],
-                'S': [' south ', ' southern '],
-                'W': [' west ', ' western '],
-            }
-            padded = f' {q} '
-            if any(k in padded for k in keywords[candidate]):
-                direction = candidate
-                break
+    # ---------------------------
+    # Semantic entity detection
+    # ---------------------------
+    entity = "place"
 
-    radius = None
-    for candidate in [0.5, 1.0, 2.0, 3.0]:
-        pattern = f'{int(candidate) if candidate.is_integer() else candidate} mile'
-        if pattern in q or pattern + 's' in q:
-            radius = candidate
+    restaurant_patterns = [
+        r"\brestaurant\b", r"\brestaurants\b", r"\beatery\b", r"\beateries\b",
+        r"\bdining\b", r"\bpizza\b", r"\bburger\b", r"\btaco\b", r"\btaqueria\b",
+        r"\bsushi\b", r"\bgrill\b", r"\bkitchen\b", r"\bcafe\b", r"\bcafes\b",
+        r"\bcoffee shop\b", r"\bcoffee shops\b"
+    ]
+    hotel_patterns = [
+        r"\bhotel\b", r"\bhotels\b", r"\binn\b", r"\binns\b",
+        r"\bsuite\b", r"\bsuites\b", r"\blodging\b", r"\bmotel\b", r"\bmotels\b"
+    ]
+    subway_patterns = [
+        r"\bsubway\b", r"\bsubway station\b", r"\bsubway stations\b",
+        r"\bstation\b", r"\bstations\b", r"\btransit\b", r"\btrain station\b", r"\bmetro\b"
+    ]
+
+    if any(re.search(p, q) for p in restaurant_patterns):
+        entity = "restaurant"
+    elif any(re.search(p, q) for p in hotel_patterns):
+        entity = "hotel"
+    elif any(re.search(p, q) for p in subway_patterns):
+        entity = "subway_station"
+
+    # ---------------------------
+    # Direction detection
+    # ---------------------------
+    # Supported direction-style mentions:
+    # e, n, w, se, near, sw
+    #
+    # Important:
+    # - "near" should NOT become "NE"
+    # - single-letter directions should only count as standalone tokens
+    # - diagonal abbreviations like "se" / "sw" should only count as standalone tokens
+    #
+    # We treat "near" as a proximity cue, not a direction cue.
+    direction = "ANY"
+
+    # Normalize punctuation around tokens a bit
+    q_norm = re.sub(r"[/,;()]+", " ", q)
+    q_norm = re.sub(r"\s+", " ", q_norm).strip()
+
+    # If the user says "near", "nearby", "close to", etc., that implies proximity,
+    # but not a direction.
+    proximity_patterns = [
+        r"\bnear\b",
+        r"\bnearby\b",
+        r"\bclose to\b",
+        r"\bwithin\b",
+        r"\baround\b",
+    ]
+    has_proximity_language = any(re.search(p, q_norm) for p in proximity_patterns)
+
+    diagonal_patterns = {
+        "NE": [
+            r"\bnortheast\b",
+            r"\bnorth[-\s]?east\b",
+            r"\bne\b",
+        ],
+        "NW": [
+            r"\bnorthwest\b",
+            r"\bnorth[-\s]?west\b",
+            r"\bnw\b",
+        ],
+        "SE": [
+            r"\bsoutheast\b",
+            r"\bsouth[-\s]?east\b",
+            r"\bse\b",
+        ],
+        "SW": [
+            r"\bsouthwest\b",
+            r"\bsouth[-\s]?west\b",
+            r"\bsw\b",
+        ],
+    }
+
+    cardinal_patterns = {
+        "N": [r"\bnorth\b", r"\bnorthern\b", r"\bn\b"],
+        "E": [r"\beast\b", r"\beastern\b", r"\be\b"],
+        "S": [r"\bsouth\b", r"\bsouthern\b", r"\bs\b"],
+        "W": [r"\bwest\b", r"\bwestern\b", r"\bw\b"],
+    }
+
+    # Match diagonals first
+    for candidate, patterns in diagonal_patterns.items():
+        if any(re.search(p, q_norm) for p in patterns):
+            direction = candidate
             break
+
+    # Then cardinals if no diagonal found
+    if direction == "ANY":
+        for candidate, patterns in cardinal_patterns.items():
+            if any(re.search(p, q_norm) for p in patterns):
+                direction = candidate
+                break
+
+    # If the query only signals proximity like "near" and no explicit direction,
+    # keep direction as ANY.
+    if has_proximity_language and direction == "ANY":
+        direction = "ANY"
+
+    # ---------------------------
+    # Radius detection
+    # ---------------------------
+    radius = None
+
+    radius_patterns = [
+        (0.25, [r"\b0\.25\s*miles?\b", r"\bquarter mile\b", r"\bquarter-mile\b"]),
+        (0.5,  [r"\b0\.5\s*miles?\b", r"\bhalf mile\b", r"\bhalf-mile\b"]),
+        (1.0,  [r"\b1\s*miles?\b", r"\bone mile\b", r"\bone-mile\b"]),
+        (2.0,  [r"\b2\s*miles?\b", r"\btwo miles\b", r"\btwo-mile\b"]),
+        (3.0,  [r"\b3\s*miles?\b", r"\bthree miles\b", r"\bthree-mile\b"]),
+    ]
+
+    for value, patterns in radius_patterns:
+        if any(re.search(p, q_norm) for p in patterns):
+            radius = value
+            break
+
     if radius is None and fallback_query:
-        radius = fallback_query['spatial_intent']['radius_miles']
+        radius = fallback_query["spatial_intent"]["radius_miles"]
     radius = radius or 2.0
 
+    # ---------------------------
+    # Build parsed output
+    # ---------------------------
     parsed = {
-        'raw_query': raw_query,
-        'semantic_intent': {
-            'entity_type': entity,
-            'attributes': [],
+        "raw_query": raw_query,
+        "semantic_intent": {
+            "entity_type": entity,
+            "attributes": [],
+            "must_have_tags": [entity],
         },
-        'spatial_intent': {
-            'direction_constraint': direction,
-            'radius_miles': radius,
+        "spatial_intent": {
+            "direction_constraint": direction,
+            "radius_miles": radius,
         },
     }
 
+    # Preserve richer eval-time fields if available
     if fallback_query:
-        parsed['spatial_intent']['user_location'] = fallback_query['spatial_intent']['user_location']
-        # Keep user location from the eval query, but do not pass any anchor hint into runtime retrieval.
-        # preserve richer attributes when we have them
-        parsed['semantic_intent']['attributes'] = fallback_query.get('semantic_intent', {}).get('attributes', [])
-        parsed['semantic_intent']['must_have_tags'] = fallback_query.get('semantic_intent', {}).get('must_have_tags', [entity])
+        parsed["spatial_intent"]["user_location"] = fallback_query["spatial_intent"]["user_location"]
+        parsed["semantic_intent"]["attributes"] = fallback_query.get("semantic_intent", {}).get("attributes", [])
+        parsed["semantic_intent"]["must_have_tags"] = fallback_query.get(
+            "semantic_intent", {}
+        ).get("must_have_tags", [entity])
 
     return parsed
 
@@ -234,31 +398,83 @@ def build_latent_user_samples(
 # Retrieval
 # -----------------------------
 
+def _cosine_similarity(a: List[float], b: List[float]) -> float:
+    if not a or not b or len(a) != len(b):
+        return 0.0
+    dot = sum(x * y for x, y in zip(a, b))
+    na = math.sqrt(sum(x * x for x in a))
+    nb = math.sqrt(sum(y * y for y in b))
+    if na == 0.0 or nb == 0.0:
+        return 0.0
+    return dot / (na * nb)
+
+
+def _get_semantic_embedder():
+    global _SEMANTIC_EMBEDDER
+    if _SEMANTIC_EMBEDDER is not None:
+        return _SEMANTIC_EMBEDDER
+
+    model_name = os.getenv('PAS_EMBED_MODEL', 'sentence-transformers/all-MiniLM-L6-v2')
+    try:
+        from sentence_transformers import SentenceTransformer
+    except ImportError as exc:
+        raise RuntimeError(
+            "Embedding scoring requires sentence-transformers. Install it with: pip install sentence-transformers"
+        ) from exc
+
+    _SEMANTIC_EMBEDDER = SentenceTransformer(model_name)
+    return _SEMANTIC_EMBEDDER
+
+
+def _embed_text(text: str) -> List[float]:
+    embedder = _get_semantic_embedder()
+    vec = embedder.encode(text, normalize_embeddings=True)
+    # vec may be numpy array depending on backend; convert to plain list for lightweight ops/caching.
+    if hasattr(vec, 'tolist'):
+        return vec.tolist()
+    return list(vec)
+
+
+def _query_semantic_text(query: Dict[str, Any]) -> str:
+    semantic = query.get('semantic_intent', {}) or {}
+    attrs = semantic.get('attributes', [])
+    attr_parts = []
+    for a in attrs:
+        if isinstance(a, dict):
+            t = a.get('type', '')
+            v = a.get('value', '')
+            if t or v:
+                attr_parts.append(f"{t}:{v}".strip(':'))
+        elif isinstance(a, str):
+            attr_parts.append(a)
+    entity = semantic.get('entity_type', '')
+    return f"{query.get('raw_query', '')} entity:{entity} attrs:{' | '.join(attr_parts)}"
+
+
+def _chunk_semantic_text(chunk: Dict[str, Any]) -> str:
+    md = chunk.get('metadata', {}) or {}
+    tags = ', '.join(md.get('tags', []) or [])
+    return (
+        f"title: {chunk.get('title', '')}\n"
+        f"category: {chunk.get('category', '')}\n"
+        f"subcategory: {chunk.get('subcategory', '')}\n"
+        f"tags: {tags}\n"
+        f"content: {chunk.get('content', '')}"
+    )
+
+
 def semantic_score(query: Dict[str, Any], chunk: Dict[str, Any]) -> float:
-    entity = query['semantic_intent']['entity_type'].lower().replace(' ', '_')
-    title = chunk['title'].lower()
-    content = chunk['content'].lower()
-    tags = [t.lower().replace(' ', '_') for t in chunk['metadata'].get('tags', [])]
-    category = chunk['category'].lower().replace(' ', '_')
-    subcategory = (chunk.get('subcategory') or '').lower().replace(' ', '_')
+    query_text = _query_semantic_text(query)
+    chunk_id = chunk.get('chunk_id', '')
 
-    score = 0.05
-    if entity == category or entity == subcategory or entity in tags:
-        score += 0.75
-    if entity == 'subway_station' and ('station' in title or 'station' in content or 'transit' in tags):
-        score += 0.15
-    if entity == 'hotel' and any(k in content for k in ['hotel', 'lodging', 'suites', 'inn']):
-        score += 0.15
-    if entity == 'restaurant' and any(k in content for k in ['restaurant', 'eatery', 'dining', 'pizza', 'kitchen']):
-        score += 0.15
+    if query_text not in _QUERY_EMBED_CACHE:
+        _QUERY_EMBED_CACHE[query_text] = _embed_text(query_text)
+    if chunk_id not in _CHUNK_EMBED_CACHE:
+        _CHUNK_EMBED_CACHE[chunk_id] = _embed_text(_chunk_semantic_text(chunk))
 
-    query_text = query['raw_query'].lower()
-    lexical_hits = 0
-    for token in set(query_text.replace('–', ' ').replace('-', ' ').split()):
-        if len(token) >= 5 and (token in title or token in content):
-            lexical_hits += 1
-    score += min(0.1, lexical_hits * 0.02)
-    return min(score, 1.0)
+    cos = _cosine_similarity(_QUERY_EMBED_CACHE[query_text], _CHUNK_EMBED_CACHE[chunk_id])
+    # map cosine range [-1, 1] to score range [0, 1]
+    return max(0.0, min(1.0, (cos + 1.0) / 2.0))
 
 
 def spatial_score(
@@ -297,8 +513,10 @@ def spatial_score(
                 if within and directional:
                     good += 1
             score = good / len(latent_user_samples)
+            
         else:
             # Fallback deterministic check using anchor-relative tag fields.
+            print("BACK TO FALLBACK IN SPATIAL SCORE")
             distance_m = tag.get('distance_m')
             direction_ok = required_dir == 'ANY' or tag.get('direction_bin') == required_dir
             if distance_m is not None and distance_m <= radius_m and direction_ok:
@@ -353,6 +571,7 @@ def hybrid_retrieve(
     for idx, row in enumerate(ranked[:top_k], start=1):
         row['rank'] = idx
     return ranked[:top_k]
+
 
 
 # -----------------------------

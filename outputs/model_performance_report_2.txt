@@ -1,0 +1,120 @@
+MODEL PERFORMANCE REPORT
+Generated from outputs/baseline, outputs/pas_output, outputs/tradeoff
+
+==========
+Model : Meta-Llama-3.3-70B-Instruct
+Baseline Performance:
+  - n_queries: 423
+  - lambda_weight: 0.65
+  - mean_recall_at_k: 0.8719
+  - mean_ndcg_at_k: 0.8091
+  - mean_gen_f1: 0.2455
+  - mean_citation_correctness: 0.8119
+  - mean_ale_m: 0.0
+==========
+Model : Meta-Llama-3.3-70B-Instruct
+Pas Defense Performance:
+  - n_queries: 423
+  - epsilon: 1.0
+  - lambda_weight: 0.65
+  - mean_recall_at_k: 0.5173
+  - mean_ndcg_at_k: 0.4523
+  - mean_gen_f1: 0.258
+  - mean_citation_correctness: 0.5591
+  - mean_ale_m: 378.78
+==========
+Model : Meta-Llama-3.3-70B-Instruct
+epsilon - lambda Tradeoff Performance:
+  Summary:
+  - best mean_recall_at_k: 0.5283 (epsilon=5.0, lambda=0.8)
+  - best mean_ndcg_at_k: 0.5072 (epsilon=5.0, lambda=0.8)
+  - best privacy (min mean_ale_m): 389.78 (epsilon=5.0, lambda=0.8)
+  All sweep rows:
+  - epsilon=5.0, lambda=0.8, mean_ale_m=389.78, mean_recall_at_k=0.5283, mean_ndcg_at_k=0.5072, mean_gen_f1=0.2683, mean_citation_correctness=0.618
+  - epsilon=5.0, lambda=0.85, mean_ale_m=395.0, mean_recall_at_k=0.5092, mean_ndcg_at_k=0.4855, mean_gen_f1=0.2783, mean_citation_correctness=0.57
+  - epsilon=5.0, lambda=0.9, mean_ale_m=392.91, mean_recall_at_k=0.5275, mean_ndcg_at_k=0.5012, mean_gen_f1=0.2815, mean_citation_correctness=0.5535
+  - epsilon=10.0, lambda=0.8, mean_ale_m=395.9, mean_recall_at_k=0.5058, mean_ndcg_at_k=0.4762, mean_gen_f1=0.272, mean_citation_correctness=0.6015
+  - epsilon=10.0, lambda=0.85, mean_ale_m=396.8, mean_recall_at_k=0.5133, mean_ndcg_at_k=0.4895, mean_gen_f1=0.2745, mean_citation_correctness=0.5732
+  - epsilon=10.0, lambda=0.9, mean_ale_m=395.9, mean_recall_at_k=0.5183, mean_ndcg_at_k=0.4927, mean_gen_f1=0.2641, mean_citation_correctness=0.5552
+  - epsilon=15.0, lambda=0.8, mean_ale_m=395.9, mean_recall_at_k=0.5083, mean_ndcg_at_k=0.483, mean_gen_f1=0.268, mean_citation_correctness=0.6223
+  - epsilon=15.0, lambda=0.85, mean_ale_m=396.8, mean_recall_at_k=0.5083, mean_ndcg_at_k=0.4941, mean_gen_f1=0.2763, mean_citation_correctness=0.5765
+  - epsilon=15.0, lambda=0.9, mean_ale_m=395.0, mean_recall_at_k=0.52, mean_ndcg_at_k=0.4964, mean_gen_f1=0.2774, mean_citation_correctness=0.56
+
+==========
+Model : gemma-3-12b-it
+Baseline Performance:
+  - n_queries: 423
+  - lambda_weight: 0.8
+  - mean_recall_at_k: 0.8719
+  - mean_ndcg_at_k: 0.8089
+  - mean_gen_f1: 0.4779
+  - mean_citation_correctness: 0.669
+  - mean_ale_m: 0.0
+==========
+Model : gemma-3-12b-it
+Pas Defense Performance:
+  - n_queries: 423
+  - epsilon: 5.0
+  - lambda_weight: 0.8
+  - mean_recall_at_k: 0.5504
+  - mean_ndcg_at_k: 0.4896
+  - mean_gen_f1: 0.43
+  - mean_citation_correctness: 0.5112
+  - mean_ale_m: 397.88
+==========
+Model : gemma-3-12b-it
+epsilon - lambda Tradeoff Performance:
+  Summary:
+  - best mean_recall_at_k: 0.5408 (epsilon=5.0, lambda=0.9)
+  - best mean_ndcg_at_k: 0.5088 (epsilon=5.0, lambda=0.9)
+  - best privacy (min mean_ale_m): 392.98 (epsilon=5.0, lambda=0.85)
+  All sweep rows:
+  - epsilon=5.0, lambda=0.8, mean_ale_m=393.87, mean_recall_at_k=0.5125, mean_ndcg_at_k=0.4812, mean_gen_f1=0.4195, mean_citation_correctness=0.5923
+  - epsilon=5.0, lambda=0.85, mean_ale_m=392.98, mean_recall_at_k=0.5167, mean_ndcg_at_k=0.5054, mean_gen_f1=0.4287, mean_citation_correctness=0.556
+  - epsilon=5.0, lambda=0.9, mean_ale_m=393.21, mean_recall_at_k=0.5408, mean_ndcg_at_k=0.5088, mean_gen_f1=0.4304, mean_citation_correctness=0.5202
+  - epsilon=10.0, lambda=0.8, mean_ale_m=395.9, mean_recall_at_k=0.505, mean_ndcg_at_k=0.4834, mean_gen_f1=0.4327, mean_citation_correctness=0.5828
+  - epsilon=10.0, lambda=0.85, mean_ale_m=395.9, mean_recall_at_k=0.5175, mean_ndcg_at_k=0.4971, mean_gen_f1=0.4356, mean_citation_correctness=0.5365
+  - epsilon=10.0, lambda=0.9, mean_ale_m=396.57, mean_recall_at_k=0.5183, mean_ndcg_at_k=0.4904, mean_gen_f1=0.4323, mean_citation_correctness=0.5025
+  - epsilon=15.0, lambda=0.8, mean_ale_m=396.8, mean_recall_at_k=0.5108, mean_ndcg_at_k=0.4821, mean_gen_f1=0.4215, mean_citation_correctness=0.591
+  - epsilon=15.0, lambda=0.85, mean_ale_m=396.8, mean_recall_at_k=0.525, mean_ndcg_at_k=0.4908, mean_gen_f1=0.4333, mean_citation_correctness=0.5478
+  - epsilon=15.0, lambda=0.9, mean_ale_m=396.8, mean_recall_at_k=0.495, mean_ndcg_at_k=0.48, mean_gen_f1=0.4298, mean_citation_correctness=0.5007
+
+==========
+Model : gpt-oss-120b
+Baseline Performance:
+  - n_queries: 423
+  - lambda_weight: 0.65
+  - mean_recall_at_k: 0.8719
+  - mean_ndcg_at_k: 0.8091
+  - mean_gen_f1: 0.3566
+  - mean_citation_correctness: 0.7589
+  - mean_ale_m: 0.0
+==========
+Model : gpt-oss-120b
+Pas Defense Performance:
+  - n_queries: 423
+  - epsilon: 1.0
+  - lambda_weight: 0.65
+  - mean_recall_at_k: 0.5173
+  - mean_ndcg_at_k: 0.4523
+  - mean_gen_f1: 0.377
+  - mean_citation_correctness: 0.5374
+  - mean_ale_m: 378.78
+==========
+Model : gpt-oss-120b
+epsilon - lambda Tradeoff Performance:
+  Summary:
+  - best mean_recall_at_k: 0.5308 (epsilon=5.0, lambda=0.8)
+  - best mean_ndcg_at_k: 0.5046 (epsilon=5.0, lambda=0.9)
+  - best privacy (min mean_ale_m): 394.1 (epsilon=5.0, lambda=0.8)
+  All sweep rows:
+  - epsilon=5.0, lambda=0.8, mean_ale_m=394.1, mean_recall_at_k=0.5308, mean_ndcg_at_k=0.499, mean_gen_f1=0.3805, mean_citation_correctness=0.6108
+  - epsilon=5.0, lambda=0.85, mean_ale_m=394.1, mean_recall_at_k=0.5275, mean_ndcg_at_k=0.5004, mean_gen_f1=0.3712, mean_citation_correctness=0.57
+  - epsilon=5.0, lambda=0.9, mean_ale_m=394.1, mean_recall_at_k=0.53, mean_ndcg_at_k=0.5046, mean_gen_f1=0.3669, mean_citation_correctness=0.5977
+  - epsilon=10.0, lambda=0.8, mean_ale_m=395.9, mean_recall_at_k=0.4875, mean_ndcg_at_k=0.4664, mean_gen_f1=0.372, mean_citation_correctness=0.575
+  - epsilon=10.0, lambda=0.85, mean_ale_m=395.67, mean_recall_at_k=0.51, mean_ndcg_at_k=0.4913, mean_gen_f1=0.3657, mean_citation_correctness=0.5635
+  - epsilon=10.0, lambda=0.9, mean_ale_m=395.9, mean_recall_at_k=0.5125, mean_ndcg_at_k=0.4808, mean_gen_f1=0.3778, mean_citation_correctness=0.5708
+  - epsilon=15.0, lambda=0.8, mean_ale_m=396.57, mean_recall_at_k=0.5158, mean_ndcg_at_k=0.4746, mean_gen_f1=0.3709, mean_citation_correctness=0.5682
+  - epsilon=15.0, lambda=0.85, mean_ale_m=396.8, mean_recall_at_k=0.5125, mean_ndcg_at_k=0.4946, mean_gen_f1=0.3596, mean_citation_correctness=0.5913
+  - epsilon=15.0, lambda=0.9, mean_ale_m=396.57, mean_recall_at_k=0.51, mean_ndcg_at_k=0.4871, mean_gen_f1=0.3638, mean_citation_correctness=0.5515
+
