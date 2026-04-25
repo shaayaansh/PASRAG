@@ -1,0 +1,9 @@
+model_name,retriever,epsilon,lambda_weight,pas_mean_recall_at_k,pas_mean_ndcg_at_k,pas_mean_citation_correctness,pas_mean_ale_m
+gemma-3-12b-it,minilm,1.0,0.2,0.4307,0.3966,0.5229,366.92
+gemma-3-12b-it,minilm,1.0,0.4,0.4336,0.3903,0.5177,366.32
+gemma-3-12b-it,minilm,1.0,0.5,0.4559,0.421,0.5431,381.94
+gemma-3-12b-it,minilm,1.0,0.6,0.4983,0.4601,0.572,366.85
+gemma-3-12b-it,minilm,2.0,0.2,0.4258,0.3966,0.5199,387.33
+gemma-3-12b-it,minilm,2.0,0.4,0.4366,0.4036,0.5265,383.48
+gemma-3-12b-it,minilm,2.0,0.5,0.4669,0.4281,0.5534,381.06
+gemma-3-12b-it,minilm,2.0,0.6,0.4803,0.4413,0.5531,388.82

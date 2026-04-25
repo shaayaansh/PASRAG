@@ -1,0 +1,7 @@
+model_name,retriever,epsilon,lambda_weight,mean_ale_m,mean_recall_at_k,mean_ndcg_at_k,mean_gen_f1,mean_citation_correctness
+gpt-oss-120b,bge-base,1.0,0.7,379.88,0.4228,0.3936,0.362,0.5516
+gpt-oss-120b,bge-base,1.0,0.8,370.61,0.4508,0.427,0.3625,0.5567
+gpt-oss-120b,bge-base,2.0,0.7,392.17,0.4128,0.3911,0.357,0.5385
+gpt-oss-120b,bge-base,2.0,0.8,386.74,0.4632,0.431,0.3715,0.5821
+gpt-oss-120b,bge-base,5.0,0.7,394.45,0.4253,0.4021,0.3615,0.5416
+gpt-oss-120b,bge-base,5.0,0.8,395.3,0.4487,0.4195,0.3696,0.5737

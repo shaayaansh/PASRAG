@@ -415,6 +415,7 @@ def _get_semantic_embedder():
         return _SEMANTIC_EMBEDDER
 
     model_name = os.getenv('PAS_EMBED_MODEL', 'sentence-transformers/all-MiniLM-L6-v2')
+    requested_device = os.getenv('PAS_EMBED_DEVICE', 'auto').strip().lower()
     try:
         from sentence_transformers import SentenceTransformer
     except ImportError as exc:
@@ -422,7 +423,38 @@ def _get_semantic_embedder():
             "Embedding scoring requires sentence-transformers. Install it with: pip install sentence-transformers"
         ) from exc
 
-    _SEMANTIC_EMBEDDER = SentenceTransformer(model_name)
+    def _resolve_device(req: str) -> str:
+        # auto -> mps (Apple) -> cuda -> cpu
+        try:
+            import torch
+        except Exception:
+            return 'cpu'
+
+        mps_available = bool(getattr(torch.backends, 'mps', None)) and torch.backends.mps.is_available()
+        cuda_available = torch.cuda.is_available()
+
+        if req == 'mps':
+            if mps_available:
+                return 'mps'
+            print("[PAS] Requested PAS_EMBED_DEVICE='mps' but MPS is unavailable. Falling back to cpu.")
+            return 'cpu'
+        if req == 'cuda':
+            if cuda_available:
+                return 'cuda'
+            print("[PAS] Requested PAS_EMBED_DEVICE='cuda' but CUDA is unavailable. Falling back to cpu.")
+            return 'cpu'
+        if req == 'cpu':
+            return 'cpu'
+
+        if mps_available:
+            return 'mps'
+        if cuda_available:
+            return 'cuda'
+        return 'cpu'
+
+    device_name = _resolve_device(requested_device)
+    _SEMANTIC_EMBEDDER = SentenceTransformer(model_name, device=device_name)
+    print(f"[PAS] Semantic embedder initialized: model='{model_name}', device='{device_name}'")
     return _SEMANTIC_EMBEDDER
 
 

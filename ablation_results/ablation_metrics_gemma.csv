@@ -1,0 +1,17 @@
+file_name,model_name,retriever,epsilon,lambda_weight,max_queries,pas_mean_recall_at_k,pas_mean_ndcg_at_k,pas_mean_citation_correctness,pas_mean_ale_m
+ablation_results_bge-base_epsilon_10_lambda_0p7.json,gemma-3-12b-it,bge-base,10.0,0.7,250,0.4981,0.4706,0.5514,397.04
+ablation_results_bge-base_epsilon_10_lambda_0p8.json,gemma-3-12b-it,bge-base,10.0,0.8,250,0.5365,0.4985,0.5527,398.41
+ablation_results_bge-base_epsilon_20_lambda_0p7.json,gemma-3-12b-it,bge-base,20.0,0.7,250,0.4927,0.4581,0.5576,399.85
+ablation_results_bge-base_epsilon_20_lambda_0p8.json,gemma-3-12b-it,bge-base,20.0,0.8,250,0.5415,0.4997,0.5552,399.85
+ablation_results_bge-base_epsilon_50_lambda_0p7.json,gemma-3-12b-it,bge-base,50.0,0.7,250,0.4861,0.4543,0.5458,399.85
+ablation_results_bge-base_epsilon_50_lambda_0p8.json,gemma-3-12b-it,bge-base,50.0,0.8,250,0.5382,0.4971,0.5573,399.85
+ablation_results_bge-base_epsilon_100_lambda_0p7.json,gemma-3-12b-it,bge-base,100.0,0.7,250,0.4831,0.4541,0.5388,399.85
+ablation_results_bge-base_epsilon_100_lambda_0p8.json,gemma-3-12b-it,bge-base,100.0,0.8,250,0.5402,0.4974,0.5562,399.85
+ablation_results_minilm_epsilon_10_lambda_0p7.json,gemma-3-12b-it,minilm,10.0,0.7,250,0.4879,0.4608,0.5545,398.68
+ablation_results_minilm_epsilon_10_lambda_0p8.json,gemma-3-12b-it,minilm,10.0,0.8,250,0.5355,0.504,0.5527,397.04
+ablation_results_minilm_epsilon_20_lambda_0p7.json,gemma-3-12b-it,minilm,20.0,0.7,250,0.4901,0.4589,0.5439,399.13
+ablation_results_minilm_epsilon_20_lambda_0p8.json,gemma-3-12b-it,minilm,20.0,0.8,250,0.5372,0.498,0.5615,399.85
+ablation_results_minilm_epsilon_50_lambda_0p7.json,gemma-3-12b-it,minilm,50.0,0.7,250,0.4891,0.4584,0.5476,399.85
+ablation_results_minilm_epsilon_50_lambda_0p8.json,gemma-3-12b-it,minilm,50.0,0.8,250,0.5412,0.4975,0.5631,399.85
+ablation_results_minilm_epsilon_100_lambda_0p7.json,gemma-3-12b-it,minilm,100.0,0.7,250,0.4857,0.46,0.544,399.85
+ablation_results_minilm_epsilon_100_lambda_0p8.json,gemma-3-12b-it,minilm,100.0,0.8,250,0.5304,0.4927,0.5592,399.85

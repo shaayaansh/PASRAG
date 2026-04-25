@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import random
 import statistics
 from pathlib import Path
@@ -9,6 +10,9 @@ from typing import Any, Dict, List, Optional, Tuple
 
 BASE = Path(__file__).resolve().parent
 RNG = random.Random(42)
+_SEMANTIC_EMBEDDER = None
+_QUERY_EMBED_CACHE: Dict[str, List[float]] = {}
+_CHUNK_EMBED_CACHE: Dict[str, List[float]] = {}
 
 
 # -----------------------------
@@ -252,31 +256,112 @@ def build_latent_user_samples(
 # Retrieval
 # -----------------------------
 
+def _cosine_similarity(a: List[float], b: List[float]) -> float:
+    if not a or not b or len(a) != len(b):
+        return 0.0
+    dot = sum(x * y for x, y in zip(a, b))
+    na = math.sqrt(sum(x * x for x in a))
+    nb = math.sqrt(sum(y * y for y in b))
+    if na == 0.0 or nb == 0.0:
+        return 0.0
+    return dot / (na * nb)
+
+
+def _get_semantic_embedder():
+    global _SEMANTIC_EMBEDDER
+    if _SEMANTIC_EMBEDDER is not None:
+        return _SEMANTIC_EMBEDDER
+
+    model_name = os.getenv('PAS_EMBED_MODEL', 'sentence-transformers/all-MiniLM-L6-v2')
+    requested_device = os.getenv('PAS_EMBED_DEVICE', 'auto').strip().lower()
+    try:
+        from sentence_transformers import SentenceTransformer
+    except ImportError as exc:
+        raise RuntimeError(
+            "Embedding scoring requires sentence-transformers. Install it with: pip install sentence-transformers"
+        ) from exc
+
+    def _resolve_device(req: str) -> str:
+        try:
+            import torch
+        except Exception:
+            return 'cpu'
+
+        mps_available = bool(getattr(torch.backends, 'mps', None)) and torch.backends.mps.is_available()
+        cuda_available = torch.cuda.is_available()
+
+        if req == 'mps':
+            if mps_available:
+                return 'mps'
+            print("[PAS-v3] Requested PAS_EMBED_DEVICE='mps' but MPS is unavailable. Falling back to cpu.")
+            return 'cpu'
+        if req == 'cuda':
+            if cuda_available:
+                return 'cuda'
+            print("[PAS-v3] Requested PAS_EMBED_DEVICE='cuda' but CUDA is unavailable. Falling back to cpu.")
+            return 'cpu'
+        if req == 'cpu':
+            return 'cpu'
+
+        if mps_available:
+            return 'mps'
+        if cuda_available:
+            return 'cuda'
+        return 'cpu'
+
+    device_name = _resolve_device(requested_device)
+    _SEMANTIC_EMBEDDER = SentenceTransformer(model_name, device=device_name)
+    print(f"[PAS-v3] Semantic embedder initialized: model='{model_name}', device='{device_name}'")
+    return _SEMANTIC_EMBEDDER
+
+
+def _embed_text(text: str) -> List[float]:
+    embedder = _get_semantic_embedder()
+    vec = embedder.encode(text, normalize_embeddings=True)
+    if hasattr(vec, 'tolist'):
+        return vec.tolist()
+    return list(vec)
+
+
+def _query_semantic_text(query: Dict[str, Any]) -> str:
+    semantic = query.get('semantic_intent', {}) or {}
+    attrs = semantic.get('attributes', [])
+    attr_parts = []
+    for a in attrs:
+        if isinstance(a, dict):
+            t = a.get('type', '')
+            v = a.get('value', '')
+            if t or v:
+                attr_parts.append(f"{t}:{v}".strip(':'))
+        elif isinstance(a, str):
+            attr_parts.append(a)
+    entity = semantic.get('entity_type', '')
+    return f"{query.get('raw_query', '')} entity:{entity} attrs:{' | '.join(attr_parts)}"
+
+
+def _chunk_semantic_text(chunk: Dict[str, Any]) -> str:
+    md = chunk.get('metadata', {}) or {}
+    tags = ', '.join(md.get('tags', []) or [])
+    return (
+        f"title: {chunk.get('title', '')}\n"
+        f"category: {chunk.get('category', '')}\n"
+        f"subcategory: {chunk.get('subcategory', '')}\n"
+        f"tags: {tags}\n"
+        f"content: {chunk.get('content', '')}"
+    )
+
+
 def semantic_score(query: Dict[str, Any], chunk: Dict[str, Any]) -> float:
-    entity = query['semantic_intent']['entity_type'].lower().replace(' ', '_')
-    title = chunk['title'].lower()
-    content = chunk['content'].lower()
-    tags = [t.lower().replace(' ', '_') for t in chunk['metadata'].get('tags', [])]
-    category = chunk['category'].lower().replace(' ', '_')
-    subcategory = (chunk.get('subcategory') or '').lower().replace(' ', '_')
+    query_text = _query_semantic_text(query)
+    chunk_id = chunk.get('chunk_id', '')
 
-    score = 0.05
-    if entity == category or entity == subcategory or entity in tags:
-        score += 0.75
-    if entity == 'subway_station' and ('station' in title or 'station' in content or 'transit' in tags):
-        score += 0.15
-    if entity == 'hotel' and any(k in content for k in ['hotel', 'lodging', 'suites', 'inn']):
-        score += 0.15
-    if entity == 'restaurant' and any(k in content for k in ['restaurant', 'eatery', 'dining', 'pizza', 'kitchen']):
-        score += 0.15
+    if query_text not in _QUERY_EMBED_CACHE:
+        _QUERY_EMBED_CACHE[query_text] = _embed_text(query_text)
+    if chunk_id not in _CHUNK_EMBED_CACHE:
+        _CHUNK_EMBED_CACHE[chunk_id] = _embed_text(_chunk_semantic_text(chunk))
 
-    query_text = query['raw_query'].lower()
-    lexical_hits = 0
-    for token in set(query_text.replace('–', ' ').replace('-', ' ').split()):
-        if len(token) >= 5 and (token in title or token in content):
-            lexical_hits += 1
-    score += min(0.1, lexical_hits * 0.02)
-    return min(score, 1.0)
+    cos = _cosine_similarity(_QUERY_EMBED_CACHE[query_text], _CHUNK_EMBED_CACHE[chunk_id])
+    return max(0.0, min(1.0, (cos + 1.0) / 2.0))
 
 
 def spatial_score(
@@ -293,48 +378,36 @@ def spatial_score(
     lon = geo.get('lon')
     if lat is None or lon is None:
         return 0.0, None
+
     item_loc = (lat, lon)
 
-    candidate_tags = chunk['spatial']['anchor_tags']
-    if pas_token:
-        same_anchor_tags = [t for t in candidate_tags if t['anchor_id'] == pas_token['anchor_id']]
-        if same_anchor_tags:
-            candidate_tags = same_anchor_tags
-
-    best_score = 0.0
-    best_tag = None
-    for tag in candidate_tags:
-        if latent_user_samples:
-            good = 0
-            for x in latent_user_samples:
-                within = haversine_m(x, item_loc) <= radius_m
-                if required_dir == 'ANY':
-                    directional = True
-                else:
-                    directional = dir_bin(bearing_deg(x, item_loc)) == required_dir
-                if within and directional:
-                    good += 1
-            score = good / len(latent_user_samples)
-        else:
-            # Fallback deterministic check using anchor-relative tag fields.
-            distance_m = tag.get('distance_m')
-            direction_ok = required_dir == 'ANY' or tag.get('direction_bin') == required_dir
-            if distance_m is not None and distance_m <= radius_m and direction_ok:
-                score = 1.0
-            elif distance_m is not None and distance_m <= radius_m:
-                score = 0.45
+    if latent_user_samples:
+        good = 0
+        for x in latent_user_samples:
+            within = haversine_m(x, item_loc) <= radius_m
+            if required_dir == 'ANY':
+                directional = True
             else:
-                score = 0.0
+                directional = dir_bin(bearing_deg(x, item_loc)) == required_dir
+            if within and directional:
+                good += 1
+        return good / len(latent_user_samples), None
 
-        # Small preference for tags aligned with the sampled PAS anchor.
-        if pas_token and tag['anchor_id'] == pas_token['anchor_id']:
-            score = min(1.0, score + 0.05)
+    # Optional deterministic fallback
+    if pas_token:
+        anchor_loc = (
+            pas_token['anchor_location']['lat'],
+            pas_token['anchor_location']['lon'],
+        )
+        # conservative fallback: score using sampled anchor center only
+        within = haversine_m(anchor_loc, item_loc) <= radius_m
+        if required_dir == 'ANY':
+            directional = True
+        else:
+            directional = dir_bin(bearing_deg(anchor_loc, item_loc)) == required_dir
+        return (1.0 if within and directional else 0.0), None
 
-        if score > best_score:
-            best_score = min(score, 1.0)
-            best_tag = tag
-
-    return best_score, best_tag
+    return 0.0, None
 
 
 def hybrid_retrieve(
@@ -348,7 +421,8 @@ def hybrid_retrieve(
     ranked: List[Dict[str, Any]] = []
     for chunk in chunks:
         sem = semantic_score(query, chunk)
-        spa, matched_tag = spatial_score(query, chunk, pas_token=pas_token, latent_user_samples=latent_user_samples)
+        spa, _ = spatial_score(query, chunk, pas_token=pas_token, latent_user_samples=latent_user_samples)
+        matched_tag = None
         final = lambda_weight * sem + (1 - lambda_weight) * spa
         ranked.append(
             {
@@ -381,7 +455,6 @@ def build_grounded_prompt(query: Dict[str, Any], results: List[Dict[str, Any]], 
     blocks: List[str] = []
     for r in results:
         md = r['metadata']
-        anchor = r.get('matched_anchor_tag') or {}
         facts = '\n'.join(f'- {fact}' for fact in r.get('supporting_facts', [])[:3])
         blocks.append(
             f"[{r['rank']}] {r['title']} ({r['doc_id']})\n"
@@ -389,7 +462,7 @@ def build_grounded_prompt(query: Dict[str, Any], results: List[Dict[str, Any]], 
             f"Neighborhood: {md.get('neighborhood', 'unknown')}\n"
             f"Address: {md.get('address', 'unknown')}\n"
             f"Score: {r['score']} | semantic={r['semantic_score']} spatial={r['spatial_score']}\n"
-            f"Matched PAS relation: {anchor.get('spatial_relation_text', 'none')}\n"
+            f"Spatial score estimated from latent user samples: {r['spatial_score']}\n"
             f"Content: {r['content']}\n"
             f"Supporting facts:\n{facts}\n"
         )
