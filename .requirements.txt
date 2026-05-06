@@ -1,0 +1,18 @@
+# Core notebook/runtime dependencies
+pandas>=2.0
+matplotlib>=3.7
+tqdm>=4.66
+
+# LLM client
+sambanova>=1.0.0
+
+# Dense retrieval / embedding stack
+sentence-transformers>=2.7.0
+transformers>=4.40.0
+torch>=2.2.0
+scikit-learn>=1.3.0
+scipy>=1.10.0
+numpy>=1.24.0
+
+# Notebook kernel
+ipykernel>=6.29.0
